@@ -399,56 +399,44 @@
                     </div>
                     <div class="col-sm-6">
                       <div class="form-floating">
-                        <select
-                          class="form-select border-0 bg-white border-r8"
-                          id="dgcaCpl"
-                          name="Do you have a DGCA CPL?"
-                          placeholder="Email" required
-                        >
-                          <option value="" disabled selected>
-                            Select an option
-                          </option>
-                          <option value="yes">Yes</option>
-                          <option value="no">No</option>
-                        </select>
-                        <label for="dgcaCpl">Do you have a DGCA CPL?</label>
+                        <input type="date" class="form-control border-0 bg-white border-r8" id="dol" name="Date of Last flight" required />
+                        <label for="dol">Date of Last flight</label>
+                      </div>
+                    </div>                    
+                    <div class="col-sm-6">
+                      <div class="form-floating">
+                        <input type="text" class="form-control border-0 bg-white border-r8" id="stream" name="stream" placeholder="e.g.FAA ,SACAA, TC" required />
+                        <label for="stream">Name of Civil Aviation of Foreign License</label>
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="form-floating">
-                        <select
-                          class="form-select border-0 bg-white border-r8"
-                          id="meFlyingHours"
-                          name="Do you have more than 25hrs of ME flying?" required
-                        >
-                          <option value="" disabled selected>
-                            Select an option
-                          </option>
-                          <option value="yes">Yes</option>
-                          <option value="no">No</option>
-                        </select>
-                        <label for="meFlyingHours"
-                          >Do you have more than 25hrs of ME flying?</label
-                        >
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="form-floating">
-                        <select
-                          class="form-select border-0 bg-white border-r8"
-                          id="lookingFor"
-                          name="What are you looking for?" required
-                        >
-                          <option value="" disabled selected>
-                            Select an option
-                          </option>
-                          <option value="Pre Type Classes">Pre Type Classes</option>
-                          <option value="Type Rating Slots">Type Rating Slots</option>
+                        <select class="form-select border-0 bg-white border-r8" id="ConversionChoice" name="What type of conversion are you looking for?" required>
+                          <option value="" disabled selected>Select an option</option>
+                          <option value="Single Engine">Single Engine</option>
+                          <option value="Multi Engine">Multi Engine</option>
                           <option value="Both">Both</option>
                         </select>
-                        <label for="lookingFor"
-                          >What are you looking for?</label
-                        >
+                        <label for="ConversionChoice">What type of conversion are you looking for?</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <label class="form-label" for="stages">What stage of training are you in?</label>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="RTR Issued" id="stageA" name="stages[]">
+                        <label class="form-check-label" for="stageA">RTR Issued</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="DGCA Class 1 Medical Valid" id="stageB" name="stages[]">
+                        <label class="form-check-label" for="stageB">DGCA Class 1 Medical Valid</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="FRTOL Issued" id="stageC" name="stages[]">
+                        <label class="form-check-label" for="stageC">FRTOL Issued</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="CPL Exams Cleared(Nav, Met & Regs)" id="stageC" name="stages[]">
+                        <label class="form-check-label" for="stageC">CPL Exams Cleared(Nav, Met & Regs)</label>
                       </div>
                     </div>
                     <div class="col-12">
