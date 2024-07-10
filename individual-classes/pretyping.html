@@ -123,7 +123,7 @@
   <!-- Navbar End -->
 
   <!-- Detail Start -->
-  <section class="hero py-2 py-xl-5 py-6 imSection-bg" style="margin-top:-50px">
+  <section class="hero py-2 py-xl-5 py-6 imSection-bg" style="margin-top:-50px" id="demo">
     <div class="container-xxl grid py-3 mt-xl-1">
       <div class="row">
         <div class="hero-text-section col-lg-6 order-lg-1 order-2 py-3 py-sm-5">
@@ -321,83 +321,83 @@
             <div class="imPart-bg p-3 border-r10">
               <h6 class="text-primary text-uppercase mb-2">Apply now</h6>
               <h5 class="mb-4">Make An Appointment now</h5>
-                              <form id="pretypingForm" name="pretypingForm" onsubmit=" Sendmail();reset();">
-                                <div class="row g-3">
-                                  <div class="col-sm-6">
-                                    <div class="form-floating">
-                                      <input type="text" class="form-control border-0 bg-white border-r8" id="fname" name="fname"
-                                        placeholder="First Name" required />
-                                      <label for="fname">First Name</label>
-                                    </div>
-                                  </div>
-                                  <div class="col-sm-6">
-                                    <div class="form-floating">
-                                      <input type="text" class="form-control border-0 bg-white border-r8" id="lname" name="lname"
-                                        placeholder="Last Name" required />
-                                      <label for="lname">Last Name</label>
-                                    </div>
-                                  </div>
-                                  <div class="col-sm-6">
-                                    <div class="form-floating">
-                                      <input type="email" class="form-control border-0 bg-white border-r8" id="email" placeholder="Email" name="email"
-                                        required />
-                                      <label for="email">Email</label>
-                                    </div>
-                                  </div>
-                                  <div class="col-sm-6">
-                                    <div class="form-floating">
-                                      <input type="tel" class="form-control border-0 bg-white border-r8" id="phno" name="phone" placeholder="Phone No"
-                                        required />
-                                      <label for="phno">Phone No</label>
-                                    </div>
-                                  </div>
-                                  <div class="col-sm-6">
-                                    <div class="form-floating">
-                                      <select class="form-select border-0 bg-white border-r8" id="dgcaCpl" placeholder="Email"
-                                        name="Do you have a DGCA CPL?" required>
-                                        <option value="" disabled selected>
-                                          Select an option
-                                        </option>
-                                        <option value="yes">Yes</option>
-                                        <option value="no">No</option>
-                                      </select>
-                                      <label for="dgcaCpl">Do you have a DGCA CPL?</label>
-                                    </div>
-                                  </div>
-                                  <div class="col-sm-6">
-                                    <div class="form-floating">
-                                      <select class="form-select border-0 bg-white border-r8" id="meFlyingHours"
-                                        name="Do you have more than 25hrs of ME flying?" required>
-                                        <option value="" disabled selected>
-                                          Select an option
-                                        </option>
-                                        <option value="yes">Yes</option>
-                                        <option value="no">No</option>
-                                      </select>
-                                      <label for="meFlyingHours">Do you have more than 25hrs of ME flying?</label>
-                                    </div>
-                                  </div>
-                                  <div class="col-sm-6">
-                                    <div class="form-floating">
-                                      <select class="form-select border-0 bg-white border-r8" id="lookingFor" name="What are you looking for?"
-                                        required>
-                                        <option value="" disabled selected>
-                                          Select an option
-                                        </option>
-                                        <option value="Pre Type Classes">Pre Type Classes</option>
-                                        <option value="Type Rating Slots">Type Rating Slots</option>
-                                        <option value="Both">Both</option>
-                                      </select>
-                                      <label for="lookingFor">What are you looking for?</label>
-                                    </div>
-                                  </div>
-                                  <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3 border-r8" type="submit">
-                                      Submit
-                                    </button>
-                                  </div>
-                                </div>
-                              </form>
+              <form id="pretypingForm" name="pretypingForm" onsubmit=" Sendmail();reset();">
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input type="text" class="form-control border-0 bg-white border-r8" id="fname" name="fname"
+                        placeholder="First Name" required />
+                      <label for="fname">First Name</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input type="text" class="form-control border-0 bg-white border-r8" id="lname" name="lname"
+                        placeholder="Last Name" required />
+                      <label for="lname">Last Name</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input type="email" class="form-control border-0 bg-white border-r8" id="email"
+                        placeholder="Email" name="email" required />
+                      <label for="email">Email</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input type="tel" class="form-control border-0 bg-white border-r8" id="phno" name="phone"
+                        placeholder="Phone No" required />
+                      <label for="phno">Phone No</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <select class="form-select border-0 bg-white border-r8" id="dgcaCpl" placeholder="Email"
+                        name="Do you have a DGCA CPL?" required>
+                        <option value="" disabled selected>
+                          Select an option
+                        </option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                      </select>
+                      <label for="dgcaCpl">Do you have a DGCA CPL?</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <select class="form-select border-0 bg-white border-r8" id="meFlyingHours"
+                        name="Do you have more than 25hrs of ME flying?" required>
+                        <option value="" disabled selected>
+                          Select an option
+                        </option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                      </select>
+                      <label for="meFlyingHours">Do you have more than 25hrs of ME flying?</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <select class="form-select border-0 bg-white border-r8" id="lookingFor"
+                        name="What are you looking for?" required>
+                        <option value="" disabled selected>
+                          Select an option
+                        </option>
+                        <option value="Pre Type Classes">Pre Type Classes</option>
+                        <option value="Type Rating Slots">Type Rating Slots</option>
+                        <option value="Both">Both</option>
+                      </select>
+                      <label for="lookingFor">What are you looking for?</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary w-100 py-3 border-r8" type="submit">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -632,79 +632,73 @@
   </section>
   <!-- related-courses end -->
 
-<!-- Footer Start -->
-<footer class="new_footer_area bg_color  ft_mar">
-  <div class="new_footer_top">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s"
-            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
-            <h3 class="f-title f_600 t_color f_size_18">Contact</h3>
-            <p><i class="fa fa-map-marker-alt me-2"></i>Bengaluru, Karnataka </p>
-            <p><i class="fa-solid fa-phone me-2"></i>+91-8296076136 </p>
-            <p style="display:flex;">
-              <i class="fa-solid fa-envelope me-2" style="padding-top:6px;"></i>
-              <span>
-              <a href="mailto:himanshu@adynamics.in">himanshu@adynamics.in</a>
-              <a href="mailto:kriti@adynamics.in">kriti@adynamics.in</a>
-              </span>
-            </p>
-
+  <!-- Footer Start -->
+  <footer class="new_footer_area bg_color  ft_mar">
+    <div class="new_footer_top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s"
+              style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+              <h3 class="f-title f_600 t_color f_size_18">Contact</h3>
+              <p><i class="fa fa-map-marker-alt me-2"></i>Bengaluru, Karnataka </p>
+              <p><i class="fa-solid fa-phone me-2"></i>+91-8296076136 </p>
+              <p><a href="mailto:himanshu@adynamics.in"><i class="fa-solid fa-envelope me-2"></i>info@adynamics.com</a>
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s"
-            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
-            <h3 class="f_600 t_color f_size_18">Courses</h3>
-            <ul class="list-unstyled f_list" style="font-size: 1rem;margin-block:1rem;" >
-              <li><a href="./pretyping.html">A320 Pre Type Rating Class</a></li>
-              <li><a href="./dgcaground.html">DGCA Ground Classes</a></li>
-              <li><a href="./RTR.html">Radio Telephony (RTR) Class</a></li>
-              <li><a href="./niosclasses.html">NIOS Prep Class</a></li>
-              <li><a href="./conversion.html">CPL Conversion</a></li>
-              <li><a href="./cplsouth.html">sacAA CPL</a></li>
-            </ul>
+          <div class="col-lg-3 col-md-6">
+            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s"
+              style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+              <h3 class="f_600 t_color f_size_18">Courses</h3>
+              <ul class="list-unstyled f_list" style="font-size: 1rem;margin-block:1rem;">
+                <li><a href="./pretyping.html">A320 Pre Type Rating Class</a></li>
+                <li><a href="./dgcaground.html">DGCA Ground Classes</a></li>
+                <li><a href="./RTR.html">Radio Telephony (RTR) Class</a></li>
+                <li><a href="./niosclasses.html">NIOS Prep Class</a></li>
+                <li><a href="./conversion.html">CPL Conversion</a></li>
+                <li><a href="./cplsouth.html">sacAA CPL</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s"
-            style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
-            <h3 class="f_600 t_color f_size_18">Help</h3>
-            <ul class="list-unstyled f_list" style="font-size: 1rem;margin-block:1rem;" >
-              <li><a href="../testComponents/about.html">About Us</a></li>
-              <li><a href="../index.html#testi">Testimonial</a></li>
-              <!-- <li><a href="#teamm">Team</a></li> -->
-              <li><a href="#demo">Demo Video</a></li>
-              <li><a href="../testComponents/about.html#contact">Contact</a></li>
-              <li><a href="../testComponents/classes.html">Training</a></li>
-            </ul>
+          <div class="col-lg-3 col-md-6">
+            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s"
+              style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+              <h3 class="f_600 t_color f_size_18">Help</h3>
+              <ul class="list-unstyled f_list" style="font-size: 1rem;margin-block:1rem;">
+                <li><a href="../testComponents/about.html">About us</a></li>
+                <li><a href="#testi">Testimonial</a></li>
+                <!-- <li><a href="#teamm">Team</a></li> -->
+                <li><a href="#demo">Demo video</a></li>
+                <li><a href="../testComponents/about.html#contact">Contact</a></li>
+                <li><a href="../testComponents/classes.html">Training</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s"
-            style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
-            <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
-            <div class="f_social_icon">
-              <a href="#" class="fab fa-facebook"></a>
-              <a href="#" class="fab fa-twitter"></a>
-              <a href="#" class="fab fa-linkedin"></a>
-              <a href="#" class="fab fa-pinterest"></a>
+          <div class="col-lg-3 col-md-6">
+            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s"
+              style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+              <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+              <div class="f_social_icon">
+                <a href="https://www.facebook.com/people/ADynamics/100070159968453/" class="fab fa-facebook"></a>
+                <a href="https://www.linkedin.com/company/adynamics-aviation/" class="fab fa-linkedin"></a>
+                <a href="https://www.youtube.com/@ADynamics_class/" class="fab fa-youtube"></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="footer_bg">
+      </div>
     </div>
-    <div class="footer_bg">
-    </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- Footer End -->
+  <!-- Footer End -->
   <!-- Copyright End -->
 
   <!-- Back to Top -->
-  <a href="https://wa.me/8296076136?text=Hello!%20I%20would%20like%20to%20chat%20with%20you." class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-whatsapp"></i></a>
+  <a href="https://wa.me/8296076136?text=Hello!%20I%20would%20like%20to%20chat%20with%20you."
+    class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-whatsapp"></i></a>
 
   <!-- JavaScript Libraries -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -720,33 +714,33 @@
 
   <script src="../js/main.js"></script>
   <script src="../assets/js/main.js"></script>
-      <script>
-        scriptURL = 'https://script.google.com/macros/s/AKfycbw0RzzaprQP0V6d4EGX1ZaoboYzwxsBFP2pKWzBNVM4NylUtEPtEp5ldshWXRkP-J6wyg/exec'
+  <script>
+    scriptURL = 'https://script.google.com/macros/s/AKfycbw0RzzaprQP0V6d4EGX1ZaoboYzwxsBFP2pKWzBNVM4NylUtEPtEp5ldshWXRkP-J6wyg/exec'
 
-        pretypingForm = document.forms['pretypingForm']
+    pretypingForm = document.forms['pretypingForm']
 
-        pretypingForm.addEventListener('submit', e => {
-          e.preventDefault()
-          formData = new FormData(pretypingForm);
-          currentDate = new Date();
+    pretypingForm.addEventListener('submit', e => {
+      e.preventDefault()
+      formData = new FormData(pretypingForm);
+      currentDate = new Date();
 
-          formattedDate = currentDate.getFullYear() + '-' +
-            String(currentDate.getMonth() + 1).padStart(2, '0') + '-' +
-            String(currentDate.getDate()).padStart(2, '0') + ' ' +
-            String(currentDate.getHours()).padStart(2, '0') + ':' +
-            String(currentDate.getMinutes()).padStart(2, '0') + ':' +
-            String(currentDate.getSeconds()).padStart(2, '0');
+      formattedDate = currentDate.getFullYear() + '-' +
+        String(currentDate.getMonth() + 1).padStart(2, '0') + '-' +
+        String(currentDate.getDate()).padStart(2, '0') + ' ' +
+        String(currentDate.getHours()).padStart(2, '0') + ':' +
+        String(currentDate.getMinutes()).padStart(2, '0') + ':' +
+        String(currentDate.getSeconds()).padStart(2, '0');
 
-          formName = 'Pre typing Form';
-          formData.append('formName', formName);
-          formData.append('dateTime', formattedDate);
-          fetch(scriptURL, { method: 'POST', body: formData })
-            .then(response => alert("Thank you! your form is submitted successfully."))
-            .then(() => { window.location.reload(); })
-            .catch(error => console.error('Error!', error.message))
-        })
+      formName = 'Pre typing Form';
+      formData.append('formName', formName);
+      formData.append('dateTime', formattedDate);
+      fetch(scriptURL, { method: 'POST', body: formData })
+        .then(response => alert("Thank you! your form is submitted successfully."))
+        .then(() => { window.location.reload(); })
+        .catch(error => console.error('Error!', error.message))
+    })
 
-      </script>
+  </script>
 </body>
 
 </html>
