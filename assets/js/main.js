@@ -280,9 +280,9 @@
 	}
   })();
 
-function redirectEnquiry(){
-	window.location.href = "/enquiry.html";
-}
+// function redirectEnquiry(){
+// 	window.location.href = "/enquiry.html";
+// }
 
 document.addEventListener('DOMContentLoaded', function () {
   var videos = document.querySelectorAll('video');
