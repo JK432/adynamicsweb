@@ -13,11 +13,6 @@ body {
       overflow-x: hidden;
 }
 
-@media (max-width: 525px) {
-    .new_footer_top {
-        padding: 0px;
-    }    
-}
 .new_footer_area .footer_bottom {
     padding-top: 5px;
     padding-bottom: 50px;
@@ -147,7 +142,7 @@ h1, h2, h3, h4, h5, h6 {
 .new_footer_top .footer_bg {
     position: absolute;
     bottom: 0;
-    background: url("./img/s.png") no-repeat center center;
+    background: url("./img/footer.png") no-repeat center center;
     background-size: cover;
     width: 100%;
 }
@@ -159,12 +154,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 768px) {
     .new_footer_top .footer_bg {
-        height: 30vh; 
+        height: 25vh; 
     }
 }
 @media (max-width: 480px) {
     .new_footer_top .footer_bg {
-        height: 25vh;
+        height: 20vh;
     }
 }
 
