@@ -281,7 +281,7 @@
   })();
 
 function redirectEnquiry(){
-	window.location.href = "../../enquiry.html";
+	window.location.href = "/enquiry.html";
 }
 
 document.addEventListener('DOMContentLoaded', function () {
