@@ -3187,12 +3187,6 @@ textarea.form-control-lg {
   border-radius: 0px;
 }
 
-@media (max-width:525px){
-  .dropdown-menu{
-    
-  }
-}
-
 .dropdown-menu[data-bs-popper] {
   top: 100%;
   left: 0;
