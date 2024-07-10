@@ -164,8 +164,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 480px) {
     .new_footer_top .footer_bg {
-        height: 25vh; 
-        border: 2px solid red;
+        height: 25vh;
     }
 }
 
