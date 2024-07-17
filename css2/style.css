@@ -1215,8 +1215,11 @@ body {
 .single-timeline-area .single-timeline-content:focus .timeline-icon {
   background-color: #020710;
 }
-.single-timeline-area .single-timeline-content:hover .timeline-text h6,
+.single-timeline-area .single-timeline-content .timeline-text:hover h6,
 .single-timeline-area .single-timeline-content:focus .timeline-text h6 {
+  color: #49aaaa;
+}
+.hover-header:hover h5 {
   color: #49aaaa;
 }
 

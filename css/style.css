@@ -678,3 +678,9 @@ nav {
     height: auto;
   }
 }
+
+.clickable {
+  text-decoration: none; /* Remove underline from the link */
+  color: inherit; /* Inherit text color */
+  display: block; /* Make the anchor act like a block element */
+}
