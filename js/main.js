@@ -47,15 +47,19 @@
   
 })(jQuery);
 
+
 function playDemoClass(){
+  src = "https://www.youtube.com/embed/lKr-EdxFhnM?si=rVfbLDS_tgJVAEvE";
+  $('#player').attr('src', src);
   $('.demo-class').show();
 }
 
-function closeDemoClass(){
+function closeDemoClass() {
   $('.demo-class').hide();
-  let source = $('#player').attr('src');
-  $('#player').attr('src', '');
-  $('#player').attr('src', source);
+  const iframe = document.getElementById('player');
+  const src = iframe.src;
+  iframe.src = ''; // Temporarily set the src to empty to stop the video
+  iframe.src = src; // Reset the src to restart the video
 }
 
 
