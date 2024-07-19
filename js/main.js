@@ -52,6 +52,7 @@ function playDemoClass(){
   src = "https://www.youtube.com/embed/lKr-EdxFhnM?si=rVfbLDS_tgJVAEvE";
   $('#player').attr('src', src);
   $('.demo-class').show();
+  window.scrollTo(0, 0);
 }
 
 function closeDemoClass() {
