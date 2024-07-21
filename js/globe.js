@@ -35,30 +35,30 @@ function setupCountryEvents(countryId, cardClass, url) {
     }
   });
 
-  // // Mouseout event to hide the card after a delay
-  // $(`#${countryId}`).mouseout(function () {
-  //   if (isScreenLargeEnough()) {
-  //     fadeOutTimeout = setTimeout(function() {
-  //       $(`.${cardClass}`).fadeOut(500);
-  //     }, 500);
-  //   }
-  // });
+  // Mouseout event to hide the card after a delay
+  $(`#${countryId}`).mouseout(function () {
+    if (isScreenLargeEnough()) {
+      fadeOutTimeout = setTimeout(function() {
+        $(`.${cardClass}`).fadeOut(500);
+      }, 500);
+    }
+  });
 
-  // // Mouseover event to keep the card visible
-  // $(`.${cardClass}`).mouseover(function () {
-  //   if (isScreenLargeEnough()) {
-  //     clearTimeout(fadeOutTimeout); // Clear the timeout to prevent hiding
-  //   }
-  // });
+  // Mouseover event to keep the card visible
+  $(`.${cardClass}`).mouseover(function () {
+    if (isScreenLargeEnough()) {
+      clearTimeout(fadeOutTimeout); // Clear the timeout to prevent hiding
+    }
+  });
 
-  // // Mouseout event to hide the card after a delay
-  // $(`.${cardClass}`).mouseout(function () {
-  //   if (isScreenLargeEnough()) {
-  //     fadeOutTimeout = setTimeout(function() {
-  //       $(`.${cardClass}`).fadeOut(500);
-  //     }, 500);
-  //   }
-  // });
+  // Mouseout event to hide the card after a delay
+  $(`.${cardClass}`).mouseout(function () {
+    if (isScreenLargeEnough()) {
+      fadeOutTimeout = setTimeout(function() {
+        $(`.${cardClass}`).fadeOut(500);
+      }, 500);
+    }
+  });
 }
 
 // Setup events for each country
