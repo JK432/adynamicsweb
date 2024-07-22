@@ -1137,7 +1137,7 @@ body {
   content: "";
   background-color: #ebebeb;
   top: 0;
-  right: 40px;
+  right: 32px;
   z-index: 1;
 }
 .single-timeline-area .timeline-date::before {
@@ -1148,7 +1148,7 @@ body {
   background-color: #49aaaa;
   content: "";
   top: 50%;
-  right: 35px;
+  right: 28px;
   z-index: 5;
   margin-top: -5.5px;
 }
@@ -1728,3 +1728,11 @@ body {
     display: none;
   }
 }
+
+@media (max-width: 525px){
+  .home-demo  a{
+    display: none;
+  }
+  
+}
+
