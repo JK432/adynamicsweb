@@ -7,9 +7,9 @@ for (var i = 0; i < world.length; i++) {
   country.setAttribute("title", country.getAttribute("id"));
 }
 
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip();
-});
+// $(function () {
+//   $('[data-toggle="tooltip"]').tooltip();
+// });
 
 // Function to handle click and hover events for countries
 function setupCountryEvents(countryId, cardClass, url) {
@@ -168,10 +168,12 @@ const handleResize = () => {
   if (window.innerWidth < 578) {
       updateViewBox(currentIndex);
       $(".navigation-buttons").show();
+      $(".map-sub-text").show();
   } else {
       resetViewBox();
       $(".navigation-buttons").hide();
       hideTooltip();
+      $(".map-sub-text").hide();
   }
 };
 

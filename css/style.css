@@ -490,10 +490,6 @@ nav {
   color: #49aaaa;
 }
 
-.hero-banner {
- 
-}
-
 .hero {
   background-color: #006dda;
 }
@@ -511,8 +507,13 @@ nav {
 }
 
 .testimonial .personail p{
-  font-size: 1rem;
   margin-top: 3rem;
+}
+
+@media (max-width: 525px){
+  .testimonial .personail p{
+    margin-top: 1rem;
+  }
 }
 
 .testimonial .personal{
@@ -643,7 +644,6 @@ nav {
 
 
 
-
 @media screen and (orientation: landscape) {
   .carousel img {
     height: 100vh;
@@ -694,3 +694,4 @@ nav {
   color: inherit; /* Inherit text color */
   display: block; /* Make the anchor act like a block element */
 }
+
