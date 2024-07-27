@@ -312,7 +312,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (targetElement) {
                 // Smoothly scroll to the target element
                 window.scrollTo({
-                    top: targetElement.offsetTop - 50, // Adjust the offset as needed
+                    top: targetElement.offsetTop - 100, // Adjust the offset as needed
                     behavior: "smooth"
                 });
             }
