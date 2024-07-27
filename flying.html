@@ -60,6 +60,15 @@
 </head>
 
 <body>
+    <div class="demo-class">
+        <iframe src="https://www.youtube.com/embed/lKr-EdxFhnM?si=rVfbLDS_tgJVAEvE" id="player"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <button class="close-demo-class" onclick="closeDemoClass()">
+          <i class="fa fa-times"></i>
+        </button>
+      </div>
     <!-- Topbar Start -->
     <div class="container-fluid bg-dark text-light p-0">
         <div class="row gx-0 d-none d-lg-flex">
@@ -1130,7 +1139,7 @@
                                 <li><a href="./about.html">About us</a></li>
                                 <li><a href="./index.html#testi">Testimonial</a></li>
                                 <!-- <li><a href="#teamm">Team</a></li> -->
-                                <li><a href="./index.html#demo">Demo video</a></li>
+                                <li><a href="#" onclick="playDemoClass()">Demo video</a></li>
                                 <li><a href="./about.html#contact">Contact</a></li>
                                 <li><a href="./classes.html">Training</a></li>
                             </ul>
