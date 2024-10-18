@@ -44,24 +44,40 @@
     dots: true,
     loop: true,
   });
-  
 })(jQuery);
 
+// Function to handle the demo class
+let player;
 
-function playDemoClass(){
-  src = "https://www.youtube.com/embed/lKr-EdxFhnM?si=rVfbLDS_tgJVAEvE&autoplay=1";
-  $('#player').attr('src', src);
-  $('.demo-class').show();
-  window.scrollTo(0, 0);
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player("player", {
+    events: {
+      onReady: function (event) {
+        console.log("YouTube player is ready.");
+      },
+    },
+  });
 }
 
+// Function to play the demo class and autoplay the video
+function playDemoClass() {
+  if (player && typeof player.playVideo === "function") {
+    player.playVideo(); // Plays the video
+  }
+  $(".demo-class").show();
+  window.scrollTo(0, 0); // Scroll to top
+}
+
+// Function to pause the video and hide the demo class
 function closeDemoClass() {
-  $('.demo-class').hide();
-  const iframe = document.getElementById('player');
-  const src = iframe.src;
-  iframe.src = ''; // Temporarily set the src to empty to stop the video
-  iframe.src = src; // Reset the src to restart the video
+  if (player && typeof player.pauseVideo === "function") {
+    player.pauseVideo(); // Pauses the video
+  }
+  document.querySelector(".demo-class").style.display = "none";
 }
 
-
-
+// Load YouTube iframe API script
+var tag = document.createElement("script");
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName("script")[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
