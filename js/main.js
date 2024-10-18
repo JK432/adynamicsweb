@@ -81,3 +81,15 @@ var tag = document.createElement("script");
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName("script")[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// Function to open the modal
+function openModal() {
+  document.getElementById("instaModal").style.display = "flex";
+}
+
+// Function to close the modal and reset the video
+function closeModal() {
+  const iframe = document.querySelector("#instaModal iframe");
+  iframe.src = iframe.src;
+  document.getElementById("instaModal").style.display = "none";
+}

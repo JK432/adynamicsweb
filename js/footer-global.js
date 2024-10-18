@@ -65,6 +65,26 @@ class GlobalFooter extends HTMLElement {
       </div>
     </div>
   </footer>
+
+  <!-- Button for Instagram Reel -->
+  <button class="insta-button" onclick="openModal()">
+    <img src="../assets/img/Instagram_icon.png" alt="Instagram Reel" class="insta-icon">
+  </button>
+
+  <!-- Modal for Instagram Reel -->
+  <div id="instaModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <iframe src="https://www.instagram.com/reel/DBJiyZltvXW/embed" width="400" height="480" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Whatsapp Button -->
+  <a href="https://wa.me/8296076136?text=Hello!%20I%20would%20like%20to%20chat%20with%20you." target="_blank" title="Connect Whatsapp"
+    class="btn btn-lg btn-primary btn-lg-square back-to-top btn-whtsp"
+    style="right: 23px !important; bottom: 30px !important; border: none; color: green; font-size: 35px; background: white; padding: 1.75rem; border-radius: 100%; display: flex; align-items: center; justify-content: center; line-height: unset;"><i
+      class="bi bi-whatsapp"></i></a>
+
       `;
   }
 }

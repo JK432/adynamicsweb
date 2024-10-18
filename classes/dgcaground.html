@@ -446,6 +446,7 @@
           <h5 class="mb-4">Make An Appointment now</h5>
           <form id="dgcagroundForm" name="dgcagroundForm" onsubmit="Sendmail();reset();">
             <div class="row g-3">
+              <!-- First Name -->
               <div class="col-sm-6">
                 <div class="form-floating">
                   <input type="text" class="form-control border-0 bg-white border-r8" id="fname" name="fname"
@@ -453,6 +454,8 @@
                   <label for="fname">First Name</label>
                 </div>
               </div>
+
+              <!-- Last Name -->
               <div class="col-sm-6">
                 <div class="form-floating">
                   <input type="text" class="form-control border-0 bg-white border-r8" id="lname" name="lname"
@@ -460,6 +463,8 @@
                   <label for="lname">Last Name</label>
                 </div>
               </div>
+
+              <!-- Email -->
               <div class="col-sm-6">
                 <div class="form-floating">
                   <input type="email" class="form-control border-0 bg-white border-r8" id="email" placeholder="Email"
@@ -467,66 +472,87 @@
                   <label for="email">Email</label>
                 </div>
               </div>
+
+              <!-- Phone Number -->
               <div class="col-sm-6">
                 <div class="form-floating">
                   <input type="tel" class="form-control border-0 bg-white border-r8" id="phno" name="phone"
                     placeholder="Phone No" required />
-                  <label for="phno">Phone No</label>
+                  <label for="phno">Phone No (Include country code)</label>
                 </div>
               </div>
+
+              <!-- DGCA Class 1 Medical -->
+              <div class="col-sm-6">
+                <label class="form-label">DGCA Class 1 Medical Completed:</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" id="dgca_yes" name="dgca_class1" value="yes" required>
+                  <label class="form-check-label" for="dgca_yes">Yes</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" id="dgca_no" name="dgca_class1" value="no" required>
+                  <label class="form-check-label" for="dgca_no">No</label>
+                </div>
+              </div>
+
+              <!-- Medical Eye Sight -->
               <div class="col-sm-6">
                 <div class="form-floating">
-                  <select class="form-select border-0 bg-white border-r8" id="compNo"
-                    name="Do you have a Computer Number?" required>
-                    <option value="" disabled selected>Select an option</option>
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
+                  <select class="form-select border-0 bg-white border-r8" id="eyesight" name="eyesight" required>
+                    <option value="" disabled selected>Select option</option>
+                    <option value="normal">Normal</option>
+                    <option value="corrected">Corrected</option>
+                    <option value="other">Other</option>
                   </select>
-                  <label for="compNo">Do you have a Computer Number?</label>
+                  <label for="eyesight">Medical Eye Sight</label>
                 </div>
               </div>
-              <div class="col-sm-6">
-                <div class="form-floating">
-                  <select class="form-select border-0 bg-white border-r8" id="class2med"
-                    name="Do you have a class 2 Medical?" required>
-                    <option value="" disabled selected>Select an option</option>
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                  </select>
-                  <label for="class2med">Do you have a class 2 Medical?</label>
-                </div>
-              </div>
+
+              <!-- DGCA CPL Exams -->
               <div class="col-sm-12">
-                <label class="form-label" for="subjects">What all subjects do you want to take?</label>
+                <label class="form-label">DGCA CPL Exams:</label>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Air Navigation" id="subjectA"
-                    name="subjects[]">
-                  <label class="form-check-label" for="subjectA">Air Navigation</label>
+                  <input class="form-check-input" type="checkbox" id="subjectA" name="exams[]" value="Navigation">
+                  <label class="form-check-label" for="subjectA">Navigation</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Air Regulation" id="subjectB"
-                    name="subjects[]">
-                  <label class="form-check-label" for="subjectB">Air Regulation</label>
+                  <input class="form-check-input" type="checkbox" id="subjectB" name="exams[]" value="Meteorology">
+                  <label class="form-check-label" for="subjectB">Meteorology</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Air Meteorology" id="subjectC"
-                    name="subjects[]">
-                  <label class="form-check-label" for="subjectC">Air Meteorology</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="RTR Classes" id="subjectD" name="subjects[]">
-                  <label class="form-check-label" for="subjectD">RTR Classes</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="NIOS Classes" id="subjectE" name="subjects[]">
-                  <label class="form-check-label" for="subjectE">NIOS Classes</label>
+                  <input class="form-check-input" type="checkbox" id="subjectC" name="exams[]" value="Regulations">
+                  <label class="form-check-label" for="subjectC">Regulations</label>
                 </div>
               </div>
+
+              <!-- Date of Birth -->
+              <div class="col-sm-6">
+                <div class="form-floating">
+                  <input type="date" class="form-control border-0 bg-white border-r8" id="dob" name="dob" required>
+                  <label for="dob">Date of Birth</label>
+                </div>
+              </div>
+
+              <!-- Education -->
+              <div class="col-sm-6">
+                <div class="form-floating">
+                  <select class="form-select border-0 bg-white border-r8" id="education" name="education" required>
+                    <option value="" disabled selected>Select education</option>
+                    <option value="12th">12th</option>
+                    <option value="undergraduate">Undergraduate</option>
+                    <option value="graduate">Graduate</option>
+                  </select>
+                  <label for="education">Education</label>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
               <div class="col-12">
                 <button class="btn btn-primary w-100 py-3 border-r8" type="submit">Submit</button>
               </div>
             </div>
           </form>
+
 
         </div>
       </div>
@@ -539,9 +565,7 @@
   <!-- Footer End -->
 
 
-  <!-- Back to Top -->
-  <a href="https://wa.me/8296076136?text=Hello!%20I%20would%20like%20to%20chat%20with%20you."
-    class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-whatsapp"></i></a>
+
 
   <!-- JavaScript Libraries -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
