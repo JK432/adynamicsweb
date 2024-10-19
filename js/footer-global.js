@@ -27,8 +27,8 @@ class GlobalFooter extends HTMLElement {
                 <li><a href="../classes/dgcaground.html">DGCA Ground Classes</a></li>
                 <li><a href="../classes/RTR.html">Radio Telephony (RTR) Classes</a></li>
                 <li><a href="../classes/niosclasses.html">NIOS Prep Classes</a></li>
-                <li><a href="../individual-classes/conversion.html">CPL Conversion</a></li>
-                <li><a href="../individual-classes/cplsouth.html">SACAA CPL</a></li>
+                <li><a href="../classes/conversion.html">CPL Conversion</a></li>
+                <li><a href="../classes/cplsouth.html">SACAA CPL</a></li>
               </ul>
             </div>
           </div>
