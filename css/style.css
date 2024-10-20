@@ -735,7 +735,7 @@ nav {
 }
 
 /* Modal Styles */
-.modal {
+.modal-insta {
   display: none;
   position: fixed !important;
   z-index: 1001 !important;
@@ -749,7 +749,7 @@ nav {
   align-items: center;
 }
 
-.modal-content {
+.insta-modal-content {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -774,7 +774,7 @@ iframe {
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  .modal {
+  .modal-insta {
     width: 100% !important;
     height: calc(100% - 45px) !important;
   }
@@ -788,7 +788,7 @@ iframe {
   }
 
 
-  .modal-content {
+  .insta-modal-content {
     width: 100% !important;
     height: 100% !important;
   }
@@ -815,7 +815,7 @@ iframe {
 }
 
 @media screen and (min-width: 769) and (max-width: 1024px) {
-  .modal {
+  .modal-insta {
     width: 100% !important;
     height: calc(100% - 45px) !important;
   }
@@ -829,7 +829,7 @@ iframe {
   }
 
 
-  .modal-content {
+  .insta-modal-content {
     width: 100% !important;
     height: 100% !important;
   }

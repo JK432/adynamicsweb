@@ -72,8 +72,8 @@ class GlobalFooter extends HTMLElement {
   </button>
 
   <!-- Modal for Instagram Reel -->
-  <div id="instaModal" class="modal">
-    <div class="modal-content">
+  <div id="instaModal" class="modal modal-insta">
+    <div class="modal-content insta-modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
       <iframe src="https://www.instagram.com/reel/DBJiyZltvXW/embed" width="400" height="480" frameborder="0" allowfullscreen></iframe>
     </div>
