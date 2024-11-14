@@ -1,0 +1,529 @@
+section.section-course-head div.header-card-selector {
+  width: 32%;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: all ease-in-out 350ms;
+  max-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  filter: grayscale(1);
+}
+
+section.section-course-head div.header-card-selector::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all ease-in-out 350ms;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3294117647), rgba(255, 255, 255, 0.2156862745));
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+section.section-course-head div.header-card-selector img {
+  transition: all ease-in-out 350ms;
+  width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  filter: grayscale(1);
+}
+
+section.section-course-head div.header-card-selector:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  transform: translateY(-5px);
+}
+
+section.section-course-head div.header-card-selector:hover img {
+  filter: grayscale(1);
+  transform: scale(1.03);
+}
+
+section.section-course-head div.header-card-selector.active, section.section-course-head div.header-card-selector:hover {
+  border: 3px solid #49AAAA;
+  filter: unset;
+}
+
+section.section-course-head div.header-card-selector.active::before, section.section-course-head div.header-card-selector:hover::before {
+  background: unset;
+  box-shadow: unset;
+}
+
+section.section-course-head div.header-card-selector.active img, section.section-course-head div.header-card-selector:hover img {
+  filter: unset;
+}
+
+div.course-content div.content-section {
+  width: 100%;
+}
+
+div.course-content div.content-section h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.bg-primary-bg {
+  background-color: #49AAAA;
+}
+
+section.section-course-details {
+  min-height: 150lvh;
+  background-image: linear-gradient(to right, rgba(73, 170, 170, 0.4980392157), rgba(73, 170, 170, 0.4980392157)), url("./images/wavy-line-bg.jpg");
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-size: cover;
+  background-position: right;
+  margin-top: 3rem;
+}
+
+section.section-course-details div.course-info div.course-detail-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 15px 0px;
+}
+
+section.section-course-details div.course-info div.course-detail-item div.title {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+section.section-course-details div.course-info div.course-detail-item p {
+  text-align: center;
+  font-size: 20px;
+  margin: unset;
+}
+
+div.timeline-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.timeline-container ul.timeline {
+  list-style: none;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 0px;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+div.timeline-container .timeline:before {
+  content: " ";
+  position: absolute;
+  left: 0%;
+  top: 14%;
+  width: 3px;
+  height: 70%;
+  background-color: #eeeeee;
+}
+
+div.timeline-container .timeline>li.timeline-inverted {
+  width: 100%;
+  position: relative;
+}
+
+div.timeline-container .timeline>li.timeline-inverted>.timeline-panel {
+  width: 90%;
+  max-height: 250px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.3137254902);
+  overflow: hidden;
+  position: relative;
+}
+
+div.timeline-container .timeline>li.timeline-inverted .timeline-badge {
+  color: #fff;
+  width: 10px;
+  height: 10px;
+  font-size: 1.4em;
+  position: absolute;
+  top: 105px;
+  left: -3px;
+  background-color: #FFFFFF;
+  z-index: 10;
+  border-radius: 100%;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+div.timeline-container .timeline>li.timeline-inverted .timeline-label {
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: normal;
+  position: absolute;
+  top: 20%;
+  left: -50px;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  rotate: 180deg;
+}
+
+div.timeline-container .timeline>li.timeline-inverted.timeline-inverted>.timeline-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 6%;
+}
+
+div.timeline-container .timeline>li.timeline-inverted.timeline-inverted>.timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+div.timeline-container .timeline>li.timeline-inverted.timeline-inverted>.timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+div.timeline-container .timeline-heading {
+  width: 50%;
+  max-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.timeline-container .timeline-heading img {
+  border-radius: 15px;
+  width: 100%;
+  max-height: 250px;
+}
+
+div.timeline-container .timeline-subtitle {
+  width: 50%;
+}
+
+div.timeline-container .timeline-subtitle .timeline-title {
+  color: #FFFFFF;
+  font-weight: 500 !important;
+  text-align: center;
+  font-size: 1.6em !important;
+}
+
+div.timeline-container .timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+
+div.timeline-container .timeline-body>p,
+div.timeline-container .timeline-body>ul {
+  margin-bottom: 0;
+}
+
+div.timeline-container .timeline-body>p+p {
+  margin-top: 5px;
+}
+
+div.timeline-container .flex-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+div.timeline-container .flex-around {
+  justify-content: space-around;
+}
+
+div.timeline-container .flex-between {
+  justify-content: space-between;
+}
+
+div.timeline-container .flex-start {
+  justify-content: flex-start;
+}
+
+div.timeline-container .flex-end {
+  justify-content: flex-end;
+}
+
+div.timeline-container .flex-around {
+  justify-content: space-around;
+}
+
+div.timeline-container .flex-center {
+  justify-content: center;
+}
+
+div.timeline-container .align-items-center {
+  align-items: center;
+}
+
+div.timeline-container.regulations ul.timeline::before {
+  top: 22%;
+  height: 54%;
+}
+
+div.timeline-container.meteorology ul.timeline::before {
+  top: 22%;
+  height: 54%;
+}
+
+
+
+
+
+/* For medium devices (tablets, 768px to 1200px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  section.section-course-head div.header-card-selector {
+    width: 45%;
+    max-height: 200px;
+  }
+
+  div.timeline-container .timeline-heading {
+    width: 60%;
+  }
+
+  div.timeline-container .timeline-subtitle {
+    width: 40%;
+  }
+
+  /* Adjust font sizes */
+  div.timeline-container .timeline-subtitle .timeline-title {
+    font-size: 1.4em;
+  }
+}
+
+/* For small devices (phones, below 768px) */
+@media (max-width: 767px) {
+
+  section.section-course-head>div.container-lg>div {
+    flex-direction: column !important;
+  }
+
+
+  .form-classes {
+    width: 100% !important;
+  }
+
+  section.section-course-head>div.container>div {
+    flex-direction: column !important;
+  }
+
+  div.course-detail-item {
+    flex-direction: column !important;
+  }
+
+  div.timeline-panel {
+    flex-direction: column !important;
+    max-height: 500px !important;
+  }
+
+  .timeline:before, .timeline-badge {
+    display: none !important;
+  }
+
+  div.timeline-container .timeline>li.timeline-inverted .timeline-label {
+    top: 25%;
+    left: -13px;
+  }
+
+  section.section-course-head div.header-card-selector {
+    width: 100%;
+    max-height: 180px;
+  }
+
+  div.timeline-container .timeline-heading {
+    width: 100%;
+  }
+
+  div.timeline-container .timeline-subtitle {
+    width: 100% !important;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Adjust font sizes */
+  div.timeline-container .timeline-subtitle .timeline-title {
+    font-size: 1.2em;
+  }
+
+  /* Stack elements vertically */
+  div.timeline-container ul.timeline {
+    flex-direction: column;
+  }
+
+  /* Adjust padding and margins */
+  div.timeline-container ul.timeline {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  section.section-course-details {
+    min-height: auto;
+    margin-top: 1.5rem;
+  }
+
+  /* Adjust general spacing */
+  div.course-content div.content-section h1 {
+    font-size: 1.5em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*# sourceMappingURL=styles.css.map */
+
+
+/* Instagram Button Styles */
+.insta-button {
+  position: fixed;
+  bottom: 100px;
+  right: 25px;
+  /* Change to "left: 20px;" for left side */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.insta-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Modal Styles */
+.modal-insta {
+  display: none;
+  position: fixed !important;
+  z-index: 1001 !important;
+  left: 50% !important;
+  top: 55% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 500px !important;
+  height: auto !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.insta-modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  width: 500px !important;
+  height: auto !important;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+iframe {
+  border: none;
+  width: 100%;
+  height: 650px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .modal-insta {
+    width: 100% !important;
+    height: calc(100% - 45px) !important;
+  }
+
+
+  .insta-button {
+    bottom: 80px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+  }
+
+
+  .insta-modal-content {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .demo-class {
+    width: 90% !important;
+    height: 55% !important;
+    padding: unset !important;
+    top: 50% !important;
+  }
+
+  .btn-whtsp {
+    font-size: 24px !important;
+    padding: 1.45rem !important;
+  }
+
+
+  iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+@media screen and (min-width: 769) and (max-width: 1024px) {
+  .modal-insta {
+    width: 100% !important;
+    height: calc(100% - 45px) !important;
+  }
+
+
+  .insta-button {
+    bottom: 80px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+  }
+
+
+  .insta-modal-content {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .demo-class {
+    width: 90% !important;
+    height: 55% !important;
+    padding: unset !important;
+    top: 50% !important;
+  }
+
+  .btn-whtsp {
+    font-size: 24px !important;
+    padding: 1.45rem !important;
+  }
+
+}
