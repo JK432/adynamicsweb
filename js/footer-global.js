@@ -50,12 +50,12 @@ class GlobalFooter extends HTMLElement {
               style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
               <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
               <div class="f_social_icon">
-                <a href="https://www.facebook.com/people/ADynamics/100070159968453/" class="fab fa-facebook"
+                <a href="https://www.facebook.com/people/ADynamics/100070159968453/" target="_blank" class="fab fa-facebook"
                   title="Facebook"></a>
-                <a href="https://www.linkedin.com/company/adynamics-aviation/" class="fab fa-linkedin"
+                <a href="https://www.linkedin.com/company/adynamics-aviation/" target="_blank" class="fab fa-linkedin"
                   title="LinkedIn"></a>
-                <a href="https://www.youtube.com/@ADynamics_class/" class="fab fa-youtube" title="Youtube"></a>
-                <a href="https://www.instagram.com/adynamics_aviation/" class="fab fa-instagram" title="Instagram"></a>
+                <a href="https://www.youtube.com/@ADynamics_class/" target="_blank" class="fab fa-youtube" title="Youtube"></a>
+                <a href="https://www.instagram.com/adynamics_aviation/" target="_blank" class="fab fa-instagram" title="Instagram"></a>
               </div>
             </div>
           </div>
