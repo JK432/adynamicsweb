@@ -23,15 +23,15 @@ class GlobalHeader extends HTMLElement {
         </a>
         <div class="h-100 d-inline-flex align-items-center mx-n2">
           <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary"
-            href="https://www.facebook.com/people/ADynamics/100070159968453/"><i class="fab fa-facebook-f"
+            href="https://www.facebook.com/people/ADynamics/100070159968453/" target="_blank"><i class="fab fa-facebook-f"
               style="font-size: 20px; color: #fff"></i></a>
           <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary"
-            href="https://www.linkedin.com/company/adynamics-aviation/"><i class="fab fa-linkedin-in"
+            href="https://www.linkedin.com/company/adynamics-aviation/" target="_blank"><i class="fab fa-linkedin-in"
               style="font-size: 20px;"></i></a>
           <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary"
-            href="https://www.youtube.com/@ADynamics_class/"><i class="fab fa-youtube"
+            href="https://www.youtube.com/@ADynamics_class/" target="_blank"><i class="fab fa-youtube"
               style="font-size: 20px; color: #fff"></i></a>
-          <a class="btn btn-square btn-link rounded-0" href="https://www.instagram.com/adynamics_aviation/"><i
+          <a class="btn btn-square btn-link rounded-0" href="https://www.instagram.com/adynamics_aviation/" target="_blank"><i
               class="fab fa-instagram"></i></a>
         </div>
       </div>
