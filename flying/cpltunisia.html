@@ -1134,7 +1134,7 @@
 										</div>
 									</div>
 									<div class="col-12">
-										<button class="btn btn-primary w-100 py-3 border-r8 mt-3"
+										<button id="form-submit-btn" class="btn btn-primary w-100 py-3 border-r8 mt-3"
 											type="submit">Submit</button>
 									</div>
 								</div>
@@ -1408,6 +1408,9 @@
 		cpltunisiaForm = document.forms['cpltunisiaForm']
 
 		cpltunisiaForm.addEventListener('submit', e => {
+			const submitBtn = document.getElementById('form-submit-btn');
+			submitBtn.disabled = true;
+
 			e.preventDefault()
 			formData = new FormData(cpltunisiaForm);
 			currentDate = new Date();
@@ -1424,7 +1427,9 @@
 			formData.append('dateTime', formattedDate);
 			fetch(scriptURL, { method: 'POST', body: formData })
 				.then(response => alert("Thank you! your form is submitted successfully."))
-				.then(() => { window.location.reload(); })
+				.then(() => { window.location.reload();
+					submitBtn.disabled = false;
+				 })
 				.catch(error => console.error('Error!', error.message))
 		})
 
