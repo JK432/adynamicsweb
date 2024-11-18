@@ -382,7 +382,7 @@
                     </div>
                   </div>
                   <div class="col-12">
-                    <button class="btn btn-primary w-100 py-3 border-r8" type="submit">
+                    <button id="form-submit-btn" class="btn btn-primary w-100 py-3 border-r8 mt-3" type="submit">
                       Submit
                     </button>
                   </div>
@@ -651,6 +651,9 @@
 
     faaTrainingForm.addEventListener('submit', e => {
       e.preventDefault()
+      const submitBtn = document.getElementById('form-submit-btn');
+      submitBtn.disabled = true;
+      submitBtn.innerText = "Submitting...";
       formData = new FormData(faaTrainingForm);
       currentDate = new Date();
 
@@ -666,7 +669,10 @@
       formData.append('dateTime', formattedDate);
       fetch(scriptURL, { method: 'POST', body: formData })
         .then(response => alert("Thank you! your form is submitted successfully."))
-        .then(() => { window.location.reload(); })
+        .then(() => { window.location.reload(); 
+          submitBtn.disabled = false;
+          submitBtn.innerText = "Submit";
+        })
         .catch(error => console.error('Error!', error.message))
     })
 
