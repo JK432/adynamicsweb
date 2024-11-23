@@ -64,6 +64,7 @@ class GlobalHeader extends HTMLElement {
             </div>
             </div>
             <a href="../blog/homepageblog.html" class="nav-item nav-link">blog</a>
+            <a href="#" id="demo-trigger" class="nav-item nav-link">DEMO</a>
         </div>
         <div class="button-container">
             <button class="button-enquiry" onclick="window.location.href='../enquiry.html'">
