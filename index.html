@@ -2021,33 +2021,70 @@
       <i class="bi bi-x"></i>
     </div>
     <div class="demo-booking-container">
-      <div class="demo-booking-header">
-        <img src="./img/adynamicsLogo.png" alt="A Dynamics Logo">
-      </div>
-      <div class="demo-booking-main">
-        <div class="demo-content">
-          <img src="./img/demo-book-icon.svg" alt="Demo Booking Icon">
-          <h1>
-            Book your demo class now.
-          </h1>
-          <p>
-            Join a live interactive demo with our experienced trainers.
-          </p>
+      <div class="demo-booking-section-1 section-hidden">
+        <div class="demo-booking-header">
+          <img src="./img/adynamicsLogo.png" alt="A Dynamics Logo">
         </div>
-        <div class="demo-calender">
-          <div class="calendar-container">
-            <div class="calendar-header">
-                <button id="prevMonth">&lt;</button>
-                <h2 id="monthDisplay"></h2>
-                <button id="nextMonth">&gt;</button>
-            </div>
-            <div class="calendar-grid" id="calendarGrid"></div>
-            <div class="selected-date-display" id="selectedDateDisplay"></div>
+        <div class="demo-booking-main">
+          <div class="demo-content">
+            <img src="./img/demo-book-icon.svg" alt="Demo Booking Icon">
+            <h1>
+              Book your demo class now.
+            </h1>
+            <p>
+              Join a live interactive demo with our experienced trainers.
+            </p>
           </div>
+          <div class="demo-calender">
+            <div class="calendar-container">
+              <div class="calendar-header">
+                  <button id="prevMonth">
+                    <i class="bi bi-chevron-left"></i>
+                  </button>
+                  <h2 id="monthDisplay"></h2>
+                  <button id="nextMonth">
+                    <i class="bi bi-chevron-right"></i>
+                  </button>
+              </div>
+              <div class="calendar-grid" id="calendarGrid"></div>
+              <div class="selected-date-display" id="selectedDateDisplay"></div>
+            </div>
+          </div>
+          <button class="demo-next" id="nextDemo">
+            Next
+          </button>
         </div>
-        <button class="demo-next">
-          Next
-        </button>
+      </div>
+      <div class="demo-booking-section-2 section-visible">
+        <div class="demo-booking-main" style="gap: 50px;">
+          <div class="demo-content">
+            <img src="./img/demo-book-icon.svg" alt="Demo Booking Icon">
+            <h1>
+              Book your demo class now.
+            </h1>
+            <p>
+              Join a live interactive demo with our experienced trainers.
+            </p>
+          </div>
+          <div class="demo-booking-content">
+            <div class="demo-date">
+              <h3 id="demo-week">
+                Wednesday
+              </h3>
+              <p>
+                <span id="demo-month">December</span>&nbsp;
+                <span id="demo-day">13</span>,
+                <span id="demo-year">2024</span>
+              </p>
+            </div>
+            <button class="demo-time" id="demoTime">
+              8 : 00 PM
+            </button>
+          </div>
+          <button class="demo-back" id="backDemo">
+            Back
+          </button>
+        </div>
       </div>
     </div>
   </section>
