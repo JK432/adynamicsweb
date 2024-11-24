@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const startingDayIndex = firstDay.getDay();
       const monthLength = lastDay.getDate();
     
-      // Update month display
+      // Updating month display
       const monthNames = [
         "January",
         "February",
@@ -65,11 +65,11 @@ document.addEventListener("DOMContentLoaded", () => {
         monthNames[date.getMonth()]
       } ${date.getFullYear()}`;
     
-      // Clear existing calendar
+      // Clearing existing calendar
       const calendarGrid = document.getElementById("calendarGrid");
       calendarGrid.innerHTML = "";
     
-      // Add day headers
+      // Adding day headers
       const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
       dayNames.forEach((day) => {
         const dayHeader = document.createElement("div");
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
         calendarGrid.appendChild(dayHeader);
       });
     
-      // Add blank spaces for days before the first of the month
+      // Adding blank spaces for days before the first of the month
       for (let i = 0; i < startingDayIndex; i++) {
         const blankDay = document.createElement("div");
         blankDay.className = "calendar-day other-month";
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
         calendarGrid.appendChild(blankDay);
       }
     
-      // Add days of the month
+      // Adding days of the month
       for (let day = 1; day <= monthLength; day++) {
         const dayElement = document.createElement("div");
         dayElement.className = "calendar-day";
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    // If it's not Sunday (0) or Wednesday (3), add a disabled style
+    // If it's not Sunday (0) or Wednesday (3), adding a disabled style
     if (dayOfWeek !== 0 && dayOfWeek !== 3) {
       dayElement.style.color = "#ccc";
       dayElement.style.cursor = "not-allowed";
@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     
       // Add blank spaces for days after the last of the month
-      const totalCells = 42; // 6 rows × 7 days
+      const totalCells = 42; 
       const remainingCells = totalCells - (monthLength + startingDayIndex);
       for (let i = 1; i <= remainingCells; i++) {
         const blankDay = document.createElement("div");
@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log('Date:', demoDayNumber);
       console.log('Year:', demoYear);
     
-      // You can access the selected date from the selectedDate variable
+      // access the selected date from the selectedDate variable
       console.log("Selected date:", selectedDate);
       console.log("Selected date:", selectedDate.toLocaleDateString());
       const localSelectedDate = selectedDate.toLocaleDateString();
@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Initialize calendar
     generateCalendar(currentDate);
     
-    // Add event listeners for month navigation
+    
     document.getElementById("prevMonth").addEventListener("click", () => {
       currentDate = new Date(currentDate.getFullYear(), currentDate.getMonth() - 1);
       generateCalendar(currentDate);
