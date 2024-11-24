@@ -1735,3 +1735,28 @@ body {
   }
 }
 
+
+
+
+/* privacy policy section css */
+
+.privacy-policy-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+
+  @media(min-width:640px){
+    padding: 50px;
+  }
+
+  main{
+    width: 100%;
+
+    @media(min-width: 1400px){
+      width: 1200px;
+    }
+
+  }
+}

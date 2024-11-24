@@ -42,6 +42,7 @@ class GlobalFooter extends HTMLElement {
                 <li><a href="#" onclick="playDemoClass()">Demo video</a></li>
                 <li><a href="../about.html#contact">Contact</a></li>
                 <li><a href="../classes.html">Training</a></li>
+                <li><a href="../privacy-policy.html">Privacy Policy</a></li>
               </ul>
             </div>
           </div>
