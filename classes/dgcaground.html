@@ -73,6 +73,7 @@
 
   <!-- Template Stylesheet -->
   <link href="../css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css2/demo-booking.css">
   <link rel="stylesheet" href="../css/course-details.css" />
   <link rel="stylesheet" href="../css/hero.css" />
   <link rel="stylesheet" href="../css2/style.css" />
@@ -109,6 +110,77 @@
 
   <!-- Top bar and Header -->
   <global-header></global-header>
+
+
+
+
+  	<!-- Detail Start -->
+	<section class="hero py-5 py-lg-2 py-xl-5 py-6 imSection-bg" style="margin-top: -50px" id="demo">
+		<div class="container-xxl grid py-3 mt-xl-1">
+			<div class="row">
+				<div class="hero-text-section col-lg-6 order-lg-1 order-2 py-3 py-sm-5">
+					<div class="hero-text-wrapper text-lg-start text-center px-0 px-sm-4">
+						<!-- <strong>
+							<p class="text-xl">CPL and Type Rating Training</p>
+						</strong> -->
+						<h1 class="pt- display-6">
+							Access to top <span style="display: inline;color: #49aaaa;">instructors</span>  and learning aids
+						</h1>
+
+						<div class="d-none d-lg-flex btn-group home-demo">
+							<a href="#topics-covered" class="btn btn-primary"
+								style="border-end-end-radius: 50px; background-color: #49aaaa">Discover More</a>
+
+							<!-- <button class="flex-btn" onclick="playDemoClass()" id="demo-trigger"> -->
+                <button class="flex-btn btn-icon" style="background-color: #49aaaa" id="demo-trigger">
+                  <!-- <div class="btn-icon" style="background-color: #49aaaa">
+                    <ion-icon name="play" aria-hidden="true"></ion-icon>
+                  </div> -->
+                  <span class="span" style="color: white;font-size: 20px;">Book Demo Slot</span>
+                </button>
+						</div>
+					</div>
+				</div>
+				<div class="hero-video-section col-lg-6 order-2 py-5">
+					<img fetchpriority="high" decoding="async" width="900" height="506"
+						class="img-fluid mw-sm-100 w-md-80 w-lg-80" src="../img/thumbnail.png" srcset="
+                ../img/thumbnail.png 900w,
+                ../img/thumbnail.png 300w,
+                ../img/thumbnail.png 768w
+              " sizes="(max-width: 900px) 100vw, 900px" />
+					<a href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
+							onclick="playDemoClass()">
+							<g id="Group_205" data-name="Group 205" transform="translate(-1462 -4918)">
+								<circle id="Ellipse_12" data-name="Ellipse 12" cx="25" cy="25" r="25"
+									transform="translate(1462 4918)" fill="#fff"></circle>
+								<path id="play-svgrepo-com"
+									d="M8.286,3.407A1.5,1.5,0,0,0,6,4.684V19.316a1.5,1.5,0,0,0,2.286,1.277l11.888-7.316a1.5,1.5,0,0,0,0-2.555Z"
+									transform="translate(1475.556 4931)" fill="#49aaaa"></path>
+							</g>
+						</svg>
+					</a>
+					<div class="video-background-lg d-none d-xxl-block"></div>
+				</div>
+
+				<div class="d-lg-none btn-group home-demo order-3">
+					<a href="#topics-covered" class="btn btn-primary"
+						style="border-end-end-radius: 50px; background-color: #49aaaa">Discover More</a>
+
+					<!-- <button class="flex-btn" onclick="playDemoClass()" id="demo-trigger"> -->
+            <button class="flex-btn btn-icon" style="background-color: #49aaaa" id="demo-trigger">
+              <!-- <div class="btn-icon" style="background-color: #49aaaa">
+                <ion-icon name="play" aria-hidden="true"></ion-icon>
+              </div> -->
+              <span class="span" style="color: white;font-size: 20px;">Book Demo Slot</span>
+            </button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Detail End -->
+
+
 
 
   <section class="section-course-head pt-5">
@@ -541,6 +613,176 @@
   </section>
   <!-- Section for Appointment -->
 
+
+<!-- demo booking section -->
+
+  <section class="demo-booking-section">
+    <div class="demo-booking-section-close" id="demo-close">
+      <i class="bi bi-x"></i>
+    </div>
+    <div class="demo-booking-container">
+      <div class="demo-booking-section-1">
+        <div class="demo-booking-header">
+          <img src="../img/adynamicsLogo.png" alt="A Dynamics Logo">
+        </div>
+        <div class="demo-booking-main">
+          <div class="demo-content">
+            <img src="../img/demo-book-icon.svg" alt="Demo Booking Icon">
+            <h1>
+              Book your demo class now.
+            </h1>
+            <p>
+              Join a live interactive demo with our experienced trainers.
+            </p>
+          </div>
+          <div class="demo-calender">
+            <div class="calendar-container">
+              <div class="calendar-header">
+                  <button id="prevMonth">
+                    <i class="bi bi-chevron-left"></i>
+                  </button>
+                  <h2 id="monthDisplay"></h2>
+                  <button id="nextMonth">
+                    <i class="bi bi-chevron-right"></i>
+                  </button>
+              </div>
+              <div class="calendar-grid" id="calendarGrid"></div>
+              <div class="selected-date-display" id="selectedDateDisplay"></div>
+            </div>
+          </div>
+          <button class="demo-next" id="nextDemo">
+            Next
+          </button>
+        </div>
+      </div>
+      <div class="demo-booking-section-2">
+        <div class="demo-booking-main" style="gap: 50px;">
+          <div class="demo-content">
+            <img src="../img/demo-book-icon.svg" alt="Demo Booking Icon">
+            <h1>
+              Book your demo class now.
+            </h1>
+            <p>
+              Join a live interactive demo with our experienced trainers.
+            </p>
+          </div>
+          <div class="demo-booking-content">
+            <div class="demo-date">
+              <h3 class="demo-week">
+                Wednesday
+              </h3>
+              <p>
+                <span class="demo-month"></span>&nbsp;
+                <span class="demo-day"></span>,
+                <span class="demo-year"></span>
+              </p>
+            </div>
+            <div class="demo-time-slot">
+              <h5>Select a slot</h5>
+              <p>Duration : 30 mins</p>
+              <button class="demo-time" id="demoTime">
+                8 : 00 PM
+              </button>
+            </div>
+          </div>
+          <button class="demo-back" id="backDemoToSec1">
+            Back
+          </button>
+        </div>
+      </div>
+
+      <div class="demo-booking-section-3">
+        <div class="demo-booking-main" style="gap: 20px;">
+          <div class="demo-content">
+            <img src="../img/demo-book-icon.svg" alt="Demo Booking Icon">
+            <h1>
+              Book your demo class now.
+            </h1>
+            <p>
+              Join a live interactive demo with our experienced trainers.
+            </p>
+          </div>
+          <div class="demo-booking-content">
+            <div class="demo-date">
+              <h3 class="demo-week">
+                Wednesday
+              </h3>
+              <p>
+                <span class="demo-month">December</span>&nbsp;
+                <span class="demo-day">13</span>,&nbsp;
+                <span class="demo-year">2024</span>,&nbsp;
+                <span id="demo-time">8 : 00 PM</span>
+              </p>
+            </div>
+            <div class="demo-time-slot">
+              <h4>Enter Details</h4>
+              <div class="demo-form">
+                <div class="demo-form-item">
+                  <label for="demo-name">Name *</label>
+                  <input type="text" id="demo-name" placeholder="Enter your name" required>
+                </div>
+                <div class="demo-form-item">
+                  <label for="demo-email">Email *</label>
+                  <input type="email" id="demo-email" placeholder="Enter your email" required>
+                </div>
+                <div class="demo-form-item">
+                  <label for="demo-phone">Phone *</label>
+                  <input type="tel" id="demo-phone" placeholder="Enter your phone" required>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="demo-action-btns">
+            <button class="demo-back" id="backDemoToSec2">
+              Back
+            </button>
+            <button class="demo-book" id="demoBook">
+              Book Demo
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="demo-booking-section-4">
+        <div class="demo-booking-main" style="gap: 50px;">
+          <div class="demo-booking-status">
+            <div class="booking-status">
+              <i class="bi bi-check2-circle"></i>
+            </div>
+            <h4>Booked demo successfully</h4>
+            <p>
+              An invitation has been sent to your email address, Please check.
+            </p>
+          </div>
+          <div class="demo-final-details">
+            <div class="demo-user-name">
+              <span>Name</span>
+              <h3 id="booked-user"></h3>
+            </div>
+            <div class="demo-user-date-duration">
+              <div class="demo-user-date">
+                <span>Date</span>
+                <h3 id="user-date">12/12/2024</h3>
+                <h5>8 : 00 PM</h5>
+              </div>
+              <div class="demo-user-duration">
+                <span>Duration</span>
+                <h3>30 mins</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================================================================== -->
+
+
+
+
+
   <!-- Footer Start -->
   <global-footer></global-footer>
   <!-- Footer End -->
@@ -569,6 +811,9 @@
   <script src="../js/footer-global.js"></script>
 
   <script src="./class-js.js"></script>
+
+  <script src="../js/customCalender.js"></script>
+  <script src="../js/demo-booking.js"></script>
 
   <script>
     scriptURL = 'https://script.google.com/macros/s/AKfycbycwxQkSHyTjQ9CUaKqMmWUutWbbBT2K9PmWDOZ6bT_rV-nlXdKDJa6KPlWO2otwBqfZg/exec'
