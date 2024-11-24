@@ -2021,7 +2021,7 @@
       <i class="bi bi-x"></i>
     </div>
     <div class="demo-booking-container">
-      <div class="demo-booking-section-1 section-hidden">
+      <div class="demo-booking-section-1">
         <div class="demo-booking-header">
           <img src="./img/adynamicsLogo.png" alt="A Dynamics Logo">
         </div>
@@ -2055,7 +2055,7 @@
           </button>
         </div>
       </div>
-      <div class="demo-booking-section-2 section-visible">
+      <div class="demo-booking-section-2">
         <div class="demo-booking-main" style="gap: 50px;">
           <div class="demo-content">
             <img src="./img/demo-book-icon.svg" alt="Demo Booking Icon">
@@ -2068,22 +2068,109 @@
           </div>
           <div class="demo-booking-content">
             <div class="demo-date">
-              <h3 id="demo-week">
+              <h3 class="demo-week">
                 Wednesday
               </h3>
               <p>
-                <span id="demo-month">December</span>&nbsp;
-                <span id="demo-day">13</span>,
-                <span id="demo-year">2024</span>
+                <span class="demo-month"></span>&nbsp;
+                <span class="demo-day"></span>,
+                <span class="demo-year"></span>
               </p>
             </div>
-            <button class="demo-time" id="demoTime">
-              8 : 00 PM
-            </button>
+            <div class="demo-time-slot">
+              <h5>Select a slot</h5>
+              <p>Duration : 30 mins</p>
+              <button class="demo-time" id="demoTime">
+                8 : 00 PM
+              </button>
+            </div>
           </div>
-          <button class="demo-back" id="backDemo">
+          <button class="demo-back" id="backDemoToSec1">
             Back
           </button>
+        </div>
+      </div>
+
+      <div class="demo-booking-section-3">
+        <div class="demo-booking-main" style="gap: 20px;">
+          <div class="demo-content">
+            <img src="./img/demo-book-icon.svg" alt="Demo Booking Icon">
+            <h1>
+              Book your demo class now.
+            </h1>
+            <p>
+              Join a live interactive demo with our experienced trainers.
+            </p>
+          </div>
+          <div class="demo-booking-content">
+            <div class="demo-date">
+              <h3 class="demo-week">
+                Wednesday
+              </h3>
+              <p>
+                <span class="demo-month">December</span>&nbsp;
+                <span class="demo-day">13</span>,&nbsp;
+                <span class="demo-year">2024</span>,&nbsp;
+                <span id="demo-time">8 : 00 PM</span>
+              </p>
+            </div>
+            <div class="demo-time-slot">
+              <h4>Enter Details</h4>
+              <div class="demo-form">
+                <div class="demo-form-item">
+                  <label for="demo-name">Name *</label>
+                  <input type="text" id="demo-name" placeholder="Enter your name" required>
+                </div>
+                <div class="demo-form-item">
+                  <label for="demo-email">Email *</label>
+                  <input type="email" id="demo-email" placeholder="Enter your email" required>
+                </div>
+                <div class="demo-form-item">
+                  <label for="demo-phone">Phone *</label>
+                  <input type="tel" id="demo-phone" placeholder="Enter your phone" required>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="demo-action-btns">
+            <button class="demo-back" id="backDemoToSec2">
+              Back
+            </button>
+            <button class="demo-book" id="demoBook">
+              Book Demo
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="demo-booking-section-4">
+        <div class="demo-booking-main" style="gap: 50px;">
+          <div class="demo-booking-status">
+            <div class="booking-status">
+              <i class="bi bi-check2-circle"></i>
+            </div>
+            <h4>Booked demo successfully</h4>
+            <p>
+              An invitation has been sent to your email address, Please check.
+            </p>
+          </div>
+          <div class="demo-final-details">
+            <div class="demo-user-name">
+              <span>Name</span>
+              <h3 id="booked-user"></h3>
+            </div>
+            <div class="demo-user-date-duration">
+              <div class="demo-user-date">
+                <span>Date</span>
+                <h3 id="user-date">12/12/2024</h3>
+                <h5>8 : 00 PM</h5>
+              </div>
+              <div class="demo-user-duration">
+                <span>Duration</span>
+                <h3>30 mins</h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

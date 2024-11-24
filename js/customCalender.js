@@ -1,5 +1,39 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+    let demoMonth
+    let demoDay
+    let demoYear
+    let demoDayNumber
+
+
+
+        // date getting functionality========================================================
+
+        const monthDisplay = document.querySelectorAll(".demo-month");
+        const dayDisplay = document.querySelectorAll(".demo-day");
+        const yearDisplay = document.querySelectorAll(".demo-year");
+        const weekDisplay = document.querySelectorAll(".demo-week");
+    
+        const getDemoDate = () => {
+
+            monthDisplay.forEach((month) => {
+                month.textContent = demoMonth;
+            })
+            dayDisplay.forEach((day) => {
+                day.textContent = demoDayNumber;
+            })
+            yearDisplay.forEach((year) => {
+                year.textContent = demoYear;
+            })
+            weekDisplay.forEach((week) => {
+                week.textContent = demoDay;
+            })
+        }
+
+
+        // ==================================================================================
+
+
 
     // calender functionality =======================================================================
 
@@ -62,6 +96,20 @@ document.addEventListener("DOMContentLoaded", () => {
         const dayElement = document.createElement("div");
         dayElement.className = "calendar-day";
         dayElement.textContent = day;
+
+         // Create a date object for this day to check its day of week
+    const thisDate = new Date(date.getFullYear(), date.getMonth(), day);
+    const dayOfWeek = thisDate.getDay();
+
+
+
+    // If it's not Sunday (0) or Wednesday (3), add a disabled style
+    if (dayOfWeek !== 0 && dayOfWeek !== 3) {
+      dayElement.style.color = "#ccc";
+      dayElement.style.cursor = "not-allowed";
+  }
+
+
     
         // Check if this is today
         const today = new Date();
@@ -83,10 +131,13 @@ document.addEventListener("DOMContentLoaded", () => {
           dayElement.classList.add("selected");
         }
     
-        dayElement.addEventListener("click", () => {
-          const newDate = new Date(date.getFullYear(), date.getMonth(), day);
-          selectDate(newDate);
-        });
+       dayElement.addEventListener("click", () => {
+        const newDate = new Date(date.getFullYear(), date.getMonth(), day);
+        // Only allow selection if it's Wednesday or Sunday
+        if (newDate.getDay() === 0 || newDate.getDay() === 3) {
+            selectDate(newDate);
+        }
+    });
     
         calendarGrid.appendChild(dayElement);
       }
@@ -118,17 +169,24 @@ document.addEventListener("DOMContentLoaded", () => {
       const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
                      'August', 'September', 'October', 'November', 'December'];
       
-      const fullDayName = days[date.getDay()];
-      const fullMonthName = months[date.getMonth()];
-      const dayNumber = date.getDate();
+      demoDay = days[date.getDay()];
+      demoMonth = months[date.getMonth()];
+      demoDayNumber = date.getDate();
+      demoYear = date.getFullYear();
   
-      console.log('Day:', fullDayName);
-      console.log('Month:', fullMonthName);
-      console.log('Date:', dayNumber);
+      console.log('Day:', demoDay);
+      console.log('Month:', demoMonth);
+      console.log('Date:', demoDayNumber);
+      console.log('Year:', demoYear);
     
       // You can access the selected date from the selectedDate variable
       console.log("Selected date:", selectedDate);
       console.log("Selected date:", selectedDate.toLocaleDateString());
+      const localSelectedDate = selectedDate.toLocaleDateString();
+      const bookedDate = document.querySelector("#user-date");
+      bookedDate.textContent = localSelectedDate;
+
+      getDemoDate()
     }
     
     // Initialize calendar
@@ -146,9 +204,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     //===================================================================================
-
-
-    // date getting functionality========================================================
 
 
 })
