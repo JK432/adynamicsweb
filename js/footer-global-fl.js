@@ -69,7 +69,7 @@ class GlobalFooter extends HTMLElement {
 
   <!-- Button for Instagram Reel -->
   <button class="insta-button" onclick="openModal()">
-   <img src="../assets/img/Instagram_icon.png" alt="Instagram Reel" class="insta-icon">
+   <img src="assets/img/Instagram_icon.png" alt="Instagram Reel" class="insta-icon">
   </button>
 
   <!-- Modal for Instagram Reel -->
