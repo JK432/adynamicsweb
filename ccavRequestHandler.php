@@ -35,7 +35,6 @@
 <?php
 echo "<input type=hidden name=encRequest value=$encrypted_data>";
 echo "<input type=hidden name=access_code value=$access_code>";
-echo "<input type=hidden name=test value=$merchant_data>";
 ?>
 </form>
 </center>
