@@ -153,17 +153,10 @@ if (userName.value) {
     const postData = {
         "merchant_id": "3651020",
         "language": "EN",
-        "amount": "1",
+        "amount": "10",
         "currency": "INR",
         "redirect_url": "https://www.adynamics.in/",
         "cancel_url": "https://www.adynamics.in/",
-        "billing_name": "jayakrishnan",
-        "billing_address": "123 Main Street",
-        "billing_state": "Kerala",
-        "billing_zip": "695551",
-        "billing_country": "India",
-        "billing_tel": "9778064240",
-        "billing_email": "jk04032002@gmail.com",
         "order_id": "9778064240"
     };
 
