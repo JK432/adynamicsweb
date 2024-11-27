@@ -30,9 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 200);
   });
 
-
-
-
   const demoBookingContainer1 = demoBookingSection.querySelector(
     ".demo-booking-section-1"
   );
@@ -50,7 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const toSec2Btn2 = demoBookingContainer3.querySelector("#backDemoToSec2");
   const toSec1Btn = demoBookingContainer2.querySelector("#backDemoToSec1");
   const submitDemoBooking = demoBookingContainer3.querySelector("#demoBook");
-  
 
   toSec2Btn.addEventListener("click", () => {
     const demoWeekDay = document.querySelectorAll(".demo-week");
@@ -61,14 +57,14 @@ document.addEventListener("DOMContentLoaded", () => {
         weekDay.textContent === "Wednesday" ||
         weekDay.textContent === "Sunday"
       ) {
-        isValidDay = true
+        isValidDay = true;
         demoBookingContainer1.style.visibility = "hidden";
         demoBookingContainer2.style.visibility = "visible";
         demoBookingContainer3.style.visibility = "hidden";
         demoBookingContainer4.style.visibility = "hidden";
       }
     });
-    if (isValidDay===false) {
+    if (isValidDay === false) {
       alert("Demo class only available on Wednesday and Sunday");
     }
   });
@@ -84,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
     demoBookingContainer1.style.visibility = "visible";
     demoBookingContainer2.style.visibility = "hidden";
     demoBookingContainer3.style.visibility = "hidden";
-    demoBookingContainer4.style.visibility= "hidden";
+    demoBookingContainer4.style.visibility = "hidden";
   });
 
   toSec2Btn2.addEventListener("click", () => {
@@ -98,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const bookedUser = document.querySelector("#booked-user");
     const userName = document.querySelector("#demo-name");
 
-    if(!userName.value){
+    if (!userName.value) {
       alert("Please enter the required details");
       return;
     }
@@ -149,39 +145,39 @@ document.addEventListener("DOMContentLoaded", () => {
     //     // Send the POST request with data
     //     xhr.send(JSON.stringify(postData));
     // }
-if (userName.value) {
-    const postData = {
-        "merchant_id": "3651020",
-        "language": "EN",
-        "amount": "10",
-        "currency": "INR",
-        "redirect_url": "https://www.adynamics.in/",
-        "cancel_url": "https://www.adynamics.in/",
-        "order_id": "9778064240"
-    };
+    if (userName.value) {
+      const postData = {
+        merchant_id: "3651020",
+        language: "EN",
+        amount: "10",
+        currency: "INR",
+        redirect_url: "https://www.adynamics.in/",
+        cancel_url: "https://www.adynamics.in/",
+        order_id: "9778064240",
+      };
 
-    // Create a hidden form
-    const form = document.createElement('form');
-    form.method = 'POST';
-    form.action = 'ccavRequestHandler.php';
-    form.style.display = 'none';
+      // Create a hidden form
+      const form = document.createElement("form");
+      form.method = "POST";
+      form.action = "ccavRequestHandler.php";
+      form.style.display = "none";
 
-    // Add form fields for each key-value pair in postData
-    for (const key in postData) {
+      // Add form fields for each key-value pair in postData
+      for (const key in postData) {
         if (postData.hasOwnProperty(key)) {
-            const input = document.createElement('input');
-            input.type = 'hidden';
-            input.name = key;
-            input.value = postData[key];
-            form.appendChild(input);
+          const input = document.createElement("input");
+          input.type = "hidden";
+          input.name = key;
+          input.value = postData[key];
+          form.appendChild(input);
         }
+      }
+
+      // Append the form to the body
+      document.body.appendChild(form);
+
+      // Submit the form
+      form.submit();
     }
-
-    // Append the form to the body
-    document.body.appendChild(form);
-
-    // Submit the form
-    form.submit();
-}
-  })
+  });
 });
