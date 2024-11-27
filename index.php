@@ -129,8 +129,8 @@
   </script>
 
   <!-- Template Stylesheet -->
-  <link href="./css/style.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./css2/style.css" />
+  <link href="./css/style.css?<?php echo filemtime('./css/style.css'); ?>" rel="stylesheet" />
+ <link rel="stylesheet" href="./css2/style.css?<?php echo filemtime('./css2/style.css'); ?>" />
   <link rel="stylesheet" href="./scss/follower.scss" />
   <link rel="stylesheet" href="./scss/bootstrap/scss/_carousel.scss" />
   <link rel="stylesheet" href="./check.css" />
@@ -2209,7 +2209,7 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
   <!-- Template Javascript -->
-  <script src="js/main.js"></script>
+  <script src="js/main.js?<?php echo filemtime('js/main.js'); ?>"></script>
   <script src="assets/js/util.js"></script>
   <!-- util functions included in the CodyHouse framework -->
   <script src="assets/js/swipe-content.js"></script>
@@ -2218,11 +2218,11 @@
   <!-- <script src="assets/js/follower.js"></script> -->
 
   <!-- Import Header and Footer -->
-  <script src="js/header-global-fl.js"></script>
-  <script src="js/footer-global-fl.js"></script>
+  <script src="js/header-global-fl.js?<?php echo filemtime('./js/header-global-fl.js'); ?>"></script>
+  <script src="js/footer-global-fl.js?<?php echo filemtime('./js/footer-global-fl.js'); ?>"></script>
 
   <!-- Demo Booking Section js-->
-   <script src="./js/demo-booking.js"></script>
+   <script src="./js/demo-booking.js?<?php echo filemtime('./js/demo-booking.js'); ?>"></script>
    <script src="./js/customCalender.js"></script>
 
   <script>
