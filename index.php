@@ -361,7 +361,7 @@
         for aviation success.
       </p>
       <div class="btn-group home-demo">
-        <a href="./index.html#roadmap" class="btn btn-primary"
+        <a href="./index.php#roadmap" class="btn btn-primary"
           style="border-end-end-radius: 50px; background-color: #49aaaa">Discover More</a>
 
         <!-- <button class="flex-btn" onclick="playDemoClass()" id="demo-trigger"> -->

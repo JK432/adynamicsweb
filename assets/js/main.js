@@ -301,7 +301,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     document.addEventListener("DOMContentLoaded", function() {
-        const link = document.querySelector('a[href="./index.html#roadmap"]');
+        const link = document.querySelector('a[href="./index.php#roadmap"]');
         
         link.addEventListener('click', function(event) {
             event.preventDefault(); // Prevent the default anchor link behavior

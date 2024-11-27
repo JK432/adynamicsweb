@@ -104,47 +104,6 @@ document.addEventListener("DOMContentLoaded", () => {
     demoBookingContainer4.style.visibility = "visible";
 
     bookedUser.textContent = userName.value;
-    //  if(userName.value){
-    //     const postData = {
-    //             "merchant_id": "3651020",
-    //             "language": "EN",
-    //             "amount": "1",
-    //             "currency": "INR",
-    //             "redirect_url": "https://www.adynamics.in/",
-    //             "cancel_url": "https://www.adynamics.in/",
-    //             "billing_name": "jayakrishnan",
-    //             "billing_address": "123 Main Street",
-    //             "billing_state": "Kerala",
-    //             "billing_zip": "695551",
-    //             "billing_country": "India",
-    //             "billing_tel": "9778064240",
-    //             "billing_email": "jk04032002@gmail.com",
-    //             "order_id":"9778064240"
-    //         };
-
-    //     // Create a new XMLHttpRequest
-    //     const xhr = new XMLHttpRequest();
-
-    //     // Open a connection
-    //     xhr.open('POST', 'ccavRequestHandler.php', true);
-
-    //     // Set the request header for JSON data
-    //     xhr.setRequestHeader('Content-Type', 'application/json');
-
-    //     // Handle the response
-    //     xhr.onreadystatechange = function () {
-    //       if (xhr.readyState === 4) { // When the request is done
-    //         if (xhr.status === 200) { // If the request was successful
-    //           console.log('Response:', xhr.responseText);
-    //         } else {
-    //           console.error('Error:', xhr.statusText);
-    //         }
-    //       }
-    //     };
-
-    //     // Send the POST request with data
-    //     xhr.send(JSON.stringify(postData));
-    // }
     if (userName.value) {
       const postData = {
         merchant_id: "3651020",
