@@ -722,7 +722,7 @@
                               animation-delay: 0.3s;
                               animation-name: fadeInLeft;
                             ">
-                          <a href="./classes/dgcaground.html">
+                          <a href="./classes/dgcaground.php">
                             <div class="timeline-text">
                               <h6>AIR NAVIGATION</h6>
                               <p>
@@ -737,7 +737,7 @@
                               animation-delay: 0.3s;
                               animation-name: fadeInLeft;
                             ">
-                          <a href="./classes/dgcaground.html">
+                          <a href="./classes/dgcaground.php">
                             <div class="timeline-text">
                               <h6>METEROLOGY</h6>
                               <p>
@@ -753,7 +753,7 @@
                               animation-delay: 0.3s;
                               animation-name: fadeInLeft;
                             ">
-                          <a href="./classes/dgcaground.html">
+                          <a href="./classes/dgcaground.php">
                             <div class="timeline-text">
                               <h6>AIR REGULATIONS</h6>
                               <p>
@@ -769,7 +769,7 @@
                               animation-delay: 0.3s;
                               animation-name: fadeInLeft;
                             ">
-                          <a href="./classes/dgcaground.html">
+                          <a href="./classes/dgcaground.php">
                             <div class="timeline-text">
                               <h6>TECHNICAL GENERAL</h6>
                               <p>
@@ -1490,7 +1490,7 @@
             <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
               <img class="img-fluid border-r10" src="./img/DgcaCpl3.png" alt="" />
               <div class="courses-overlay">
-                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="./classes/dgcaground.html">Read
+                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="./classes/dgcaground.php">Read
                   More</a>
               </div>
             </div>
@@ -1694,7 +1694,7 @@
             Class at ADynamics!
           </p>
           <button class="demo-class-joinBtn btn mb-5 fs-6 px-4 py-3 border-r8"
-            onclick="window.location.href='./classes/dgcaground.html#dgcaEnquiry'">
+            onclick="window.location.href='./classes/dgcaground.php#dgcaEnquiry'">
             Join Our Demo class
           </button>
         </div>

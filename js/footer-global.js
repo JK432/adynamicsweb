@@ -24,7 +24,7 @@ class GlobalFooter extends HTMLElement {
               <h3 class="f_600 t_color f_size_18">Courses</h3>
               <ul class="list-unstyled f_list" style="font-size: 1rem;margin-block:1rem;">
                 <li><a href="../classes/pretyping.html">A320 Pre Type Rating Classes</a></li>
-                <li><a href="../classes/dgcaground.html">DGCA Ground Classes</a></li>
+                <li><a href="../classes/dgcaground.php">DGCA Ground Classes</a></li>
                 <li><a href="../classes/RTR.html">Radio Telephony (RTR) Classes</a></li>
                 <li><a href="../classes/niosclasses.html">NIOS Prep Classes</a></li>
                 <li><a href="../classes/conversion.html">CPL Conversion</a></li>

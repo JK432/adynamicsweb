@@ -72,15 +72,15 @@
   <link href="../css/bootstrap.min.css" rel="stylesheet" />
 
   <!-- Template Stylesheet -->
-  <link href="../css/style.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../css2/demo-booking.css">
-  <link rel="stylesheet" href="../css/course-details.css" />
+  <link href="../css/style.css" rel="stylesheet?<?php echo filemtime('../css/style.css'); ?>" />
+  <link rel="stylesheet" href="../css2/demo-booking.css?<?php echo filemtime('../css2/demo-booking.css'); ?>">
+  <link rel="stylesheet" href="../css/course-details.css?<?php echo filemtime('../css/course-details.css'); ?>" />
   <link rel="stylesheet" href="../css/hero.css" />
-  <link rel="stylesheet" href="../css2/style.css" />
+  <link rel="stylesheet" href="../css2/style.css?<?php echo filemtime('../css2/style.css'); ?>" />
   <link rel="stylesheet" href="../check.css" />
 
   <!-- Custom styles only for the classes details pages -->
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./styles.css?<?php echo filemtime('./styles.css'); ?>" />
 
   <style>
     @media screen and (max-width: 768px) {
@@ -803,17 +803,17 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-  <script src="../js/main.js"></script>
-  <script src="../assets/js/main.js"></script>
+  <script src="../js/main.js?<?php echo filemtime('../js/main.js'); ?>"></script>
+  <script src="../assets/js/main.js?<?php echo filemtime('../assets/js/main.js'); ?>"></script>
 
   <!-- Import Header and Footer -->
-  <script src="../js/header-global.js"></script>
-  <script src="../js/footer-global.js"></script>
+  <script src="../js/header-global.js?<?php echo filemtime('../js/header-global.js'); ?>"></script>
+  <script src="../js/footer-global.js?<?php echo filemtime('../js/footer-global.js'); ?>"></script>
 
-  <script src="./class-js.js"></script>
+  <script src="./class-js.js?<?php echo filemtime('./class-js.js'); ?>"></script>
 
-  <script src="../js/customCalender.js"></script>
-  <script src="../js/demo-booking.js"></script>
+  <script src="../js/customCalender.js?<?php echo filemtime('../js/customCalender.js'); ?>"></script>
+  <script src="../js/demo-booking.js"?<?php echo filemtime('../js/demo-booking.js'); ?>></script>
 
   <script>
     scriptURL = 'https://841ef5d6-d95a-4a12-878f-de12e62c0cdc.neodove.com/integration/custom/9ff3680a-3a81-469b-a973-21f306d15f8d/leads'
