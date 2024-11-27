@@ -859,6 +859,43 @@
             };
 
   </script>
+  <?php
+
+  include 'responsehandler.php';
+
+
+  if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['encResp'])) {
+    $encResponse = $_POST['encResp'];
+
+
+    $result = processEncResponse($encResponse);
+
+
+
+    switch (strtolower($result)) {
+      case 'success':
+        echo "<script>";
+        echo "console.log(" . "'success'" . ");";
+        echo "</script>";
+        break;
+      case 'aborted':
+        echo "<script>";
+        echo "console.log(" . "'aborted'" . ");";
+        echo "</script>";
+        break;
+      case 'failure':
+        echo "<script>";
+        echo "console.log(" . "'failure'" . ");";
+        echo "</script>";
+        break;
+      default:
+        echo "<script>";
+        echo "console.log(" . "'illegal'" . ");";
+        echo "</script>";
+        break;
+    }
+  }
+  ?>
 
 </body>
 
