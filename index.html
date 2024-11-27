@@ -2221,6 +2221,22 @@
    <script src="./js/customCalender.js"></script>
 
   <script>
+       function getQueryParam(param) {
+          const urlParams = new URLSearchParams(window.location.search);
+          return urlParams.get(param);
+        }
+
+        window.onload = function () {
+          
+          const shouldTrigger = getQueryParam('trigger');
+
+          if (shouldTrigger === 'true') { // Condition: trigger is "true"
+            const button = document.getElementById('demo-trigger');
+            if (button) {
+              button.click();
+            }
+          }
+        };
   </script>
 
 </body>

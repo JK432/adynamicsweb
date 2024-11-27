@@ -838,7 +838,25 @@
         .then(response => alert("Thank you! your form is submitted successfully."))
         .then(() => { window.location.reload(); })
         .catch(error => console.error('Error!', error.message))
-    })
+    });
+
+
+           function getQueryParam(param) {
+              const urlParams = new URLSearchParams(window.location.search);
+              return urlParams.get(param);
+            }
+
+            window.onload = function () {
+
+              const shouldTrigger = getQueryParam('trigger');
+
+              if (shouldTrigger === 'true') { // Condition: trigger is "true"
+                const button = document.getElementById('demo-trigger');
+                if (button) {
+                  button.click();
+                }
+              }
+            };
 
   </script>
 
