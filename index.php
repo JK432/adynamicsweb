@@ -2244,27 +2244,40 @@
         };
   </script>
 
-    <?php
-    // Check if the request method is POST
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-      // Get all POST data
-      $postData = $_POST;
-
-      echo "<script>";
-      echo "console.log(" . json_encode($postData) . ");";
-      echo "</script>";
-    } else {
-      echo "<script>";
-      echo "console.log(" . "'No request found'" . ");";
-      echo "</script>";
-    }
-    ?>
     
-    <?php
-    echo "<script  type='text/javascript' >";
-    echo "console.log(" . "'No request found'" . ");";
-    echo "</script>";
-    ?>
+    // Check if the request method is POST
+<?php
+// Include the file where the function is defined
+include 'responsehandler.php';
+
+// Example: Calling the function
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['encResp'])) {
+    $encResponse = $_POST['encResp']; // Get the encrypted response from the POST data
+
+    // Call the function
+    $result = processEncResponse($encResponse);
+
+    // Output or use the result
+  switch (strtolower($order_status)) {
+    case 'success':
+      echo "<script>";
+      echo "console.log(" . "'success'" . ");";
+      echo "</script>";
+    case 'aborted':
+      echo "<script>";
+      echo "console.log(" . "'aborted'" . ");";
+      echo "</script>";
+    case 'failure':
+      echo "<script>";
+      echo "console.log(" . "'failure'" . ");";
+      echo "</script>";
+    default:
+      echo "<script>";
+      echo "console.log(" . "'illegal'" . ");";
+      echo "</script>";
+  }
+}
+?>
 
 
 
