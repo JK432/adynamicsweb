@@ -13,7 +13,7 @@ class GlobalFooter extends HTMLElement {
               style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
               <h3 class="f-title f_600 t_color f_size_18">Contact</h3>
               <p><i class="fa fa-map-marker-alt me-2"></i>Bengaluru, Karnataka </p>
-              <a href="tel:+91-8296076136" target="_blank"><i class="fa-solid fa-phone me-2"></i>+91-8296076136 </a>
+              <a href="tel:+91-8050076136" target="_blank"><i class="fa-solid fa-phone me-2"></i>+91-8050076136 </a>
               <p><a href="mailto:himanshu@adynamics.in"><i class="fa-solid fa-envelope me-2"></i>info@adynamics.com</a>
               </p>
             </div>
@@ -84,7 +84,7 @@ class GlobalFooter extends HTMLElement {
   <button
   style="position: fixed; width: 50px; height: 54px; background-color: #FFFFFF !important; border: 1px solid #ddd !important; z-index: 1000 !important; padding: 5px; right: 23px !important; bottom: 30px !important; border: none; color: green; font-size: 28px; border-radius: 100%; display: flex; align-items: center; justify-content: center; line-height: unset;"
   >
-  <a href="https://wa.me/8296076136?text=Hello!%20I%20would%20like%20to%20chat%20with%20you." target="_blank" title="Connect Whatsapp"
+  <a href="https://wa.me/8050076136?text=Hello!%20I%20would%20like%20to%20chat%20with%20you." target="_blank" title="Connect Whatsapp"
     class="btn-whtsp"><i class="bi bi-whatsapp"></i>
     </a>
   </button>

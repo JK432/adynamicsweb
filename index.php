@@ -119,7 +119,7 @@
         ],
         "contactPoint": {
           "@type": "ContactPoint",
-          "telephone": "+91-8296076136",
+          "telephone": "+91-8050076136",
           "contactType": "Customer Service"
         }
       }
@@ -299,7 +299,12 @@
       }
     }
   </style>
+
+
 </head>
+
+
+
 
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -2238,6 +2243,30 @@
           }
         };
   </script>
+
+    <?php
+    // Check if the request method is POST
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+      // Get all POST data
+      $postData = $_POST;
+
+      echo "<script>";
+      echo "console.log(" . json_encode($postData) . ");";
+      echo "</script>";
+    } else {
+      echo "<script>";
+      echo "console.log(" . "'No request found'" . ");";
+      echo "</script>";
+    }
+    ?>
+    
+    <?php
+    echo "<script  type='text/javascript' >";
+    echo "console.log(" . "'No request found'" . ");";
+    echo "</script>";
+    ?>
+
+
 
 </body>
 
