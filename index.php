@@ -2244,8 +2244,6 @@
         };
   </script>
 
-    
-    // Check if the request method is POST
 <?php
 
 include 'responsehandler.php';

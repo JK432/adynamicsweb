@@ -104,39 +104,70 @@ document.addEventListener("DOMContentLoaded", () => {
     demoBookingContainer4.style.visibility = "visible";
 
     bookedUser.textContent = userName.value;
-    if (userName.value) {
-      const postData = {
-        merchant_id: "3651020",
-        language: "EN",
-        amount: "10",
-        currency: "INR",
-        redirect_url: "https://www.adynamics.in/",
-        cancel_url: "https://www.adynamics.in/",
-        order_id: "9778064240",
-      };
 
-      // Create a hidden form
-      const form = document.createElement("form");
-      form.method = "POST";
-      form.action = "ccavRequestHandler.php";
-      form.style.display = "none";
+  const bookDemoBtn = document.querySelector("#demoBook")
+  bookDemoBtn.addEventListener("click", function() {
+    const userName = document.getElementById("demo-name").value;
+    const userEmail = document.getElementById("demo-email").value;
+    const userPhone = document.getElementById("demo-phone").value;
+    const selectedDate = localDate;
 
-      // Add form fields for each key-value pair in postData
-      for (const key in postData) {
-        if (postData.hasOwnProperty(key)) {
-          const input = document.createElement("input");
-          input.type = "hidden";
-          input.name = key;
-          input.value = postData[key];
-          form.appendChild(input);
-        }
-      }
-
-      // Append the form to the body
-      document.body.appendChild(form);
-
-      // Submit the form
-      form.submit();
+    if( !userName && !userEmail && !userPhone && !selectedDate ) {
+      alert("Please fill in all fields");
+      return;
     }
+
+    // send data to google sheets
+
+    scriptURL = 'https://script.google.com/macros/s/AKfycbyPMxgvHAWuF8yrbBkMJP0T5UsDz0dqtlzMMcK-gORibCNYmwtcKMKDFaLpVQU3ybfZRw/exec'
+      const timestamp = Date.now();
+      const formData = new FormData();
+			formData.append('name', userName);
+			formData.append('email', userEmail);
+      formData.append("phone", userPhone);
+      formData.append("date", selectedDate);
+      formData.append("order_id",`${userPhone}${timestamp}`)
+
+      fetch(scriptURL, { method: 'POST', body: formData, mode: "no-cors" })
+				.then(response => {
+              
+                    const postData = {
+                      merchant_id: "3651020",
+                      language: "EN",
+                      amount: "10",
+                      currency: "INR",
+                      redirect_url: "https://www.adynamics.in/",
+                      cancel_url: "https://www.adynamics.in/",
+                      order_id: `${userPhone}${timestamp}`,
+                    };
+
+                    // Create a hidden form
+                    const form = document.createElement("form");
+                    form.method = "POST";
+                    form.action = "ccavRequestHandler.php";
+                    form.style.display = "none";
+
+                    // Add form fields for each key-value pair in postData
+                    for (const key in postData) {
+                      if (postData.hasOwnProperty(key)) {
+                        const input = document.createElement("input");
+                        input.type = "hidden";
+                        input.name = key;
+                        input.value = postData[key];
+                        form.appendChild(input);
+                      }
+                    }
+
+                    // Append the form to the body
+                    document.body.appendChild(form);
+
+                    // Submit the form
+                    form.submit();
+    
+          console.log("demo-submit respomse : ", response)}
+        )
+				.catch(error => console.error('Error!', error.message))
+  })
+
   });
 });

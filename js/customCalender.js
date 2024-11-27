@@ -210,32 +210,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // handle form data to google sheets
 
-  const bookDemoBtn = document.querySelector("#demoBook")
-  bookDemoBtn.addEventListener("click", function() {
-    const userName = document.getElementById("demo-name").value;
-    const userEmail = document.getElementById("demo-email").value;
-    const userPhone = document.getElementById("demo-phone").value;
-    const selectedDate = localDate;
 
-    if( !userName && !userEmail && !userPhone && !selectedDate ) {
-      alert("Please fill in all fields");
-      return;
-    }
-
-    // send data to google sheets
-
-    scriptURL = 'https://script.google.com/macros/s/AKfycbyPMxgvHAWuF8yrbBkMJP0T5UsDz0dqtlzMMcK-gORibCNYmwtcKMKDFaLpVQU3ybfZRw/exec'
-
-      const formData = new FormData();
-			formData.append('name', userName);
-			formData.append('email', userEmail);
-      formData.append("phone", userPhone);
-      formData.append("date", selectedDate);
-      fetch(scriptURL, { method: 'POST', body: formData, mode: "no-cors" })
-				.then(response => console.log("demo-submit respomse : ", response)
-        )
-				.catch(error => console.error('Error!', error.message))
-  })
 
 })
 
