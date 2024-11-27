@@ -2247,18 +2247,18 @@
     
     // Check if the request method is POST
 <?php
-// Include the file where the function is defined
+
 include 'responsehandler.php';
 
-// Example: Calling the function
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['encResp'])) {
-    $encResponse = $_POST['encResp']; // Get the encrypted response from the POST data
 
-    // Call the function
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['encResp'])) {
+    $encResponse = $_POST['encResp']; 
+
+    
     $result = processEncResponse($encResponse);
 
 
-    // Output or use the result
+    
   switch (strtolower($result)) {
     case 'success':
       echo "<script>";
