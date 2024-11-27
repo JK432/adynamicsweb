@@ -72,9 +72,9 @@
   <link href="../css/bootstrap.min.css" rel="stylesheet" />
 
   <!-- Template Stylesheet -->
-  <link href="../css/style.css" rel="stylesheet?<?php echo filemtime('../css/style.css'); ?>" />
-  <link rel="stylesheet" href="../css2/demo-booking.css?<?php echo filemtime('../css2/demo-booking.css'); ?>">
-  <link rel="stylesheet" href="../css/course-details.css?<?php echo filemtime('../css/course-details.css'); ?>" />
+  <link href="../css/style.css?<?php echo filemtime('../css/style.css'); ?>" rel="stylesheet" />
+  <link rel="stylesheet" href="../css2/demo-booking.css">
+  <link rel="stylesheet" href="../css/course-details.css" />
   <link rel="stylesheet" href="../css/hero.css" />
   <link rel="stylesheet" href="../css2/style.css?<?php echo filemtime('../css2/style.css'); ?>" />
   <link rel="stylesheet" href="../check.css" />
@@ -691,10 +691,11 @@
         </div>
       </div>
 
+
       <div class="demo-booking-section-3">
         <div class="demo-booking-main" style="gap: 20px;">
           <div class="demo-content">
-            <img src="../img/demo-book-icon.svg" alt="Demo Booking Icon">
+            <img src="./img/demo-book-icon.svg" alt="Demo Booking Icon">
             <h1>
               Book your demo class now.
             </h1>
@@ -708,10 +709,10 @@
                 Wednesday
               </h3>
               <p>
-                <span class="demo-month">December</span>&nbsp;
-                <span class="demo-day">13</span>,&nbsp;
-                <span class="demo-year">2024</span>,&nbsp;
-                <span id="demo-time">8 : 00 PM</span>
+                <span class="demo-month" id="demo-month-id">December</span>&nbsp;
+                <span class="demo-day"  id="demo-day-id">13</span>,&nbsp;
+                <span class="demo-year"  id="demo-year-id">2024</span>,&nbsp;
+                <span id="demo-time" >8 : 00 PM</span>
               </p>
             </div>
             <div class="demo-time-slot">
@@ -744,35 +745,34 @@
       </div>
 
       <div class="demo-booking-section-4">
-        <div class="demo-booking-main" style="gap: 50px;">
+        <div class="demo-booking-main">
           <div class="demo-booking-status">
             <div class="booking-status">
-              <i class="bi bi-check2-circle"></i>
+              <i class="bi bi-check2-circle success-status"></i>
+              <i class="bi bi-x-circle cancel-status"></i>
+              <i class="bi bi-exclamation-triangle abort-status"></i>
+              <i class="bi bi-x-octagon illegel-status"></i>
             </div>
-            <h4>Booked demo successfully</h4>
-            <p>
+            <h4 class="success-status">Booked demo successfully</h4>
+            <h4 class="abort-status">Booking aborted</h4>
+            <h4 class="cancel-status">Booking canceled</h4>
+            <h4 class="illegel-status">Booking failed</h4>
+            <p class="success-status">
               An invitation has been sent to your email address, Please check.
             </p>
-          </div>
-          <div class="demo-final-details">
-            <div class="demo-user-name">
-              <span>Name</span>
-              <h3 id="booked-user"></h3>
-            </div>
-            <div class="demo-user-date-duration">
-              <div class="demo-user-date">
-                <span>Date</span>
-                <h3 id="user-date">12/12/2024</h3>
-                <h5>8 : 00 PM</h5>
-              </div>
-              <div class="demo-user-duration">
-                <span>Duration</span>
-                <h3>30 mins</h3>
-              </div>
-            </div>
+            <p class="abort-status">
+              Your demo booking has been aborted.
+            </p>
+            <p class="cancel-status">
+              Your demo booking has been canceled.
+            </p>
+            <p class="illegel-status">
+             Demo booking failed, Something went wrong
+            </p>
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -793,10 +793,10 @@
   <!-- JavaScript Libraries -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/waypoints/waypoints.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="../lib/wow/wow.min.js"></script>
+  <script src="../lib/easing/easing.min.js"></script>
+  <script src="../lib/waypoints/waypoints.min.js"></script>
+  <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
 
   <!-- Template Javascript -->
 
@@ -813,7 +813,7 @@
   <script src="./class-js.js?<?php echo filemtime('./class-js.js'); ?>"></script>
 
   <script src="../js/customCalender.js?<?php echo filemtime('../js/customCalender.js'); ?>"></script>
-  <script src="../js/demo-booking.js"?<?php echo filemtime('../js/demo-booking.js'); ?>></script>
+  <script src="../js/demo-booking.js?<?php echo filemtime('../js/demo-booking.js'); ?>"></script>
 
   <script>
     scriptURL = 'https://841ef5d6-d95a-4a12-878f-de12e62c0cdc.neodove.com/integration/custom/9ff3680a-3a81-469b-a973-21f306d15f8d/leads'
@@ -861,7 +861,7 @@
   </script>
   <?php
 
-  include 'responsehandler.php';
+  include '../responsehandler.php';
 
 
   if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['encResp'])) {

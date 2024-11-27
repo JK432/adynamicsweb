@@ -53,16 +53,13 @@ document.addEventListener("DOMContentLoaded", () => {
     let isValidDay = false;
 
     demoWeekDay.forEach((weekDay) => {
-      if (
-        weekDay.textContent === "Wednesday" ||
-        weekDay.textContent === "Sunday"
-      ) {
+     
         isValidDay = true;
         demoBookingContainer1.style.visibility = "hidden";
         demoBookingContainer2.style.visibility = "visible";
         demoBookingContainer3.style.visibility = "hidden";
         demoBookingContainer4.style.visibility = "hidden";
-      }
+
     });
     if (isValidDay === false) {
       alert("Demo class only available on Wednesday and Sunday");
@@ -91,26 +88,21 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   submitDemoBooking.addEventListener("click", () => {
-    const bookedUser = document.querySelector("#booked-user");
-    const userName = document.querySelector("#demo-name");
 
-    if (!userName.value) {
-      alert("Please enter the required details");
-      return;
-    }
-    demoBookingContainer1.style.visibility = "hidden";
-    demoBookingContainer2.style.visibility = "hidden";
-    demoBookingContainer3.style.visibility = "hidden";
-    demoBookingContainer4.style.visibility = "visible";
 
-    bookedUser.textContent = userName.value;
+    
 
-  const bookDemoBtn = document.querySelector("#demoBook")
-  bookDemoBtn.addEventListener("click", function() {
+
     const userName = document.getElementById("demo-name").value;
     const userEmail = document.getElementById("demo-email").value;
     const userPhone = document.getElementById("demo-phone").value;
-    const selectedDate = localDate;
+    const month = document.getElementById("demo-month-id").textContent.trim();
+    const day = document.getElementById("demo-day-id").textContent.trim();
+    const year = document.getElementById("demo-year-id").textContent.trim();
+    const monthNumber = new Date(`${month} 1, ${year}`).getMonth() + 1; 
+    const formattedDate = `${year}-${String(monthNumber).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+
+    const selectedDate = formattedDate;
 
     if( !userName && !userEmail && !userPhone && !selectedDate ) {
       alert("Please fill in all fields");
@@ -165,9 +157,51 @@ document.addEventListener("DOMContentLoaded", () => {
                     form.submit();
     
           console.log("demo-submit respomse : ", response)}
-        )
-				.catch(error => console.error('Error!', error.message))
-  })
+        ).then(()=>{
+              demoBookingContainer1.style.visibility = "hidden";
+              demoBookingContainer2.style.visibility = "hidden";
+              demoBookingContainer3.style.visibility = "hidden";
+              demoBookingContainer4.style.visibility = "visible";
+        })
+				.catch(error => {console.error('Error!', error.message);statusResponse('success');})
+ 
 
   });
+    
+  // statusResponse('success');
+
+
+  function statusResponse(status){
+    console.log("status response working with status : ",status);
+    const bookingStatus = demoBookingContainer4.querySelector(".demo-booking-status");
+    
+    if(status){
+      demoBookingContainer1.style.visibility = "hidden";
+      demoBookingContainer2.style.visibility = "hidden";
+      demoBookingContainer3.style.visibility = "hidden";
+      demoBookingContainer4.style.visibility = "visible";
+    }else{
+      demoBookingContainer1.style.visibility = "visible";
+      return
+    }
+
+    if (status === "success") {
+      console.log("success");
+      
+      bookingStatus.classList.add("success");
+    }else if(status==="abort"){
+      console.log("abort");
+      bookingStatus.classList.add("abort");
+    }else if(status==="cancel"){
+      console.log("cancel");
+      
+      bookingStatus.classList.add("cancel");
+    }else if(status==="illegel"){
+      console.log("illegel");
+      bookingStatus.classList.add("illegel");
+    }
+  }
+
+
+
 });

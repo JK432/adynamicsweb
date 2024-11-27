@@ -13,7 +13,6 @@
   
   
   <!-- Google tag (gtag.js) -->
-  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16756585547"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -2114,10 +2113,10 @@
                 Wednesday
               </h3>
               <p>
-                <span class="demo-month">December</span>&nbsp;
-                <span class="demo-day">13</span>,&nbsp;
-                <span class="demo-year">2024</span>,&nbsp;
-                <span id="demo-time">8 : 00 PM</span>
+                <span class="demo-month" id="demo-month-id">December</span>&nbsp;
+                <span class="demo-day"  id="demo-day-id">13</span>,&nbsp;
+                <span class="demo-year"  id="demo-year-id">2024</span>,&nbsp;
+                <span id="demo-time" >8 : 00 PM</span>
               </p>
             </div>
             <div class="demo-time-slot">
@@ -2150,35 +2149,35 @@
       </div>
 
       <div class="demo-booking-section-4">
-        <div class="demo-booking-main" style="gap: 50px;">
+        <div class="demo-booking-main">
           <div class="demo-booking-status">
             <div class="booking-status">
-              <i class="bi bi-check2-circle"></i>
+              <i class="bi bi-check2-circle success-status"></i>
+              <i class="bi bi-x-circle cancel-status"></i>
+              <i class="bi bi-exclamation-triangle abort-status"></i>
+              <i class="bi bi-x-octagon illegel-status"></i>
             </div>
-            <h4>Booked demo successfully</h4>
-            <p>
+            <h4 class="success-status">Booked demo successfully</h4>
+            <h4 class="abort-status">Booking aborted</h4>
+            <h4 class="cancel-status">Booking canceled</h4>
+            <h4 class="illegel-status">Booking failed</h4>
+            <p class="success-status">
               An invitation has been sent to your email address, Please check.
             </p>
-          </div>
-          <div class="demo-final-details">
-            <div class="demo-user-name">
-              <span>Name</span>
-              <h3 id="booked-user"></h3>
-            </div>
-            <div class="demo-user-date-duration">
-              <div class="demo-user-date">
-                <span>Date</span>
-                <h3 id="user-date">12/12/2024</h3>
-                <h5>8 : 00 PM</h5>
-              </div>
-              <div class="demo-user-duration">
-                <span>Duration</span>
-                <h3>30 mins</h3>
-              </div>
-            </div>
+            <p class="abort-status">
+              Your demo booking has been aborted.
+            </p>
+            <p class="cancel-status">
+              Your demo booking has been canceled.
+            </p>
+            <p class="illegel-status">
+              Demo booking failed, Something went wrong.
+            </p>
           </div>
         </div>
       </div>
+
+
     </div>
   </section>
 
@@ -2223,7 +2222,7 @@
 
   <!-- Demo Booking Section js-->
    <script src="./js/demo-booking.js?<?php echo filemtime('./js/demo-booking.js'); ?>"></script>
-   <script src="./js/customCalender.js"></script>
+   <script src="./js/customCalender.js?<?php echo filemtime('./js/customCalender.js'); ?>"></script>
 
   <script>
        function getQueryParam(param) {
@@ -2260,22 +2259,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['encResp'])) {
   switch (strtolower($result)) {
     case 'success':
       echo "<script>";
-      echo "console.log(" . "'success'" . ");";
+      echo "statusResponse(" . "'success'" . ");";
       echo "</script>";
       break;
     case 'aborted':
       echo "<script>";
-      echo "console.log(" . "'aborted'" . ");";
+      echo "statusResponse(" . "'abort'" . ");";
       echo "</script>";
       break;
     case 'failure':
       echo "<script>";
-      echo "console.log(" . "'failure'" . ");";
+      echo "statusResponse(" . "'failure'" . ");";
       echo "</script>";
       break;
     default:
       echo "<script>";
-      echo "console.log(" . "'illegal'" . ");";
+      echo "statusResponse(" . "'illegel'" . ");";
       echo "</script>";
       break;
   }

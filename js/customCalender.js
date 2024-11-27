@@ -185,8 +185,8 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log("Selected date:", selectedDate.toLocaleDateString());
       const localSelectedDate = selectedDate.toLocaleDateString();
       localDate = localSelectedDate
-      const bookedDate = document.querySelector("#user-date");
-      bookedDate.textContent = localSelectedDate;
+      // const bookedDate = document.querySelector("#user-date");
+      // bookedDate.textContent = localSelectedDate;
 
       getDemoDate()
     }
