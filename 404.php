@@ -76,7 +76,7 @@
   <link href="./css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Template Stylesheet -->
-  <link href="./css/style.css" rel="stylesheet">
+  <link href="/css/style.css?<?php echo filemtime('/css/style.css'); ?>" rel="stylesheet">
 </head>
 
 <body>
@@ -153,7 +153,7 @@
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
   <!-- Template Javascript -->
-  <script src="js/main.js"></script>
+  <script src="js/main.js?<?php echo filemtime('js/main.js'); ?>"></script>
 </body>
 
 </html>

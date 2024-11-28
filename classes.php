@@ -72,10 +72,10 @@
   <link href="./css/bootstrap.min.css" rel="stylesheet" />
 
   <!-- Template Stylesheet -->
-  <link href="./css/style.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./check.css">
-  <link rel="stylesheet" href="./css/course-details.css" />
-  <link rel="stylesheet" href="./css2/style.css" />
+     <link href="./css/style.css?<?php echo filemtime('./css/style.css'); ?>" rel="stylesheet" />
+    <link rel="stylesheet" href="./css2/style.css?<?php echo filemtime('./css2/style.css'); ?>">
+    <link rel="stylesheet" href="./check.css?<?php echo filemtime('./check.css'); ?>">
+    <link rel="stylesheet" href="./css/course-details.css?<?php echo filemtime('./css/course-details.css'); ?>" />
 </head>
 
 <body>
@@ -139,21 +139,21 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <div class="navbar-nav ms-auto p-4 p-lg-0">
         <a href="./index.php" class="nav-item nav-link">Home</a>
-        <a href="./about.html" class="nav-item nav-link ">About</a>
-        <a href="./flying.html" class="nav-item nav-link">Flying</a>
+        <a href="./about.php" class="nav-item nav-link ">About</a>
+        <a href="./flying.php" class="nav-item nav-link">Flying</a>
         <div class="dropdown">
-          <a href="./classes.html" class="nav-item nav-link nav-dropdown active">Classes</a>
+          <a href="./classes.php" class="nav-item nav-link nav-dropdown active">Classes</a>
           <div class="dropdown-menu">
-            <a href="./classes/pretyping.html">A320 Pre Type Rating Classes</a>
+            <a href="./classes/pretyping.php">A320 Pre Type Rating Classes</a>
             <a href="./classes/dgcaground.php">DGCA Ground Classes</a>
-            <a href="./classes/RTR.html">Radio Telephony (RTR) Classes</a>
-            <a href="./classes/niosclasses.html">NIOS Prep Classes</a>
+            <a href="./classes/RTR.php">Radio Telephony (RTR) Classes</a>
+            <a href="./classes/niosclasses.php">NIOS Prep Classes</a>
           </div>
         </div>
         <a href="./blog/homepageblog.html" class="nav-item nav-link">blog</a>
       </div>
       <div class="button-container">
-        <button class="button-enquiry" onclick="window.location.href='./enquiry.html'">
+        <button class="button-enquiry" onclick="window.location.href='./enquiry.php'">
           <svg id="svgContainer" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56"
             version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="start">
@@ -197,7 +197,7 @@
             <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
               <img class="img-fluid border-r10" src="./img/cource1.png" alt="" />
               <div class="courses-overlay">
-                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="./classes/pretyping.html">Read More</a>
+                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="./classes/pretyping.php">Read More</a>
               </div>
             </div>
           </div>
@@ -250,7 +250,7 @@
             <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
               <img class="img-fluid border-r10" src="./img/rtrclasses.png" alt="" />
               <div class="courses-overlay">
-                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="./classes/RTR.html">Read
+                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="./classes/RTR.php">Read
                   More</a>
               </div>
             </div>
@@ -278,7 +278,7 @@
             <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
               <img class="img-fluid border-r10" src="./img/nios-prepclasses.png" alt="" />
               <div class="courses-overlay">
-                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="./classes/niosclasses.html">Read
+                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="./classes/niosclasses.php">Read
                   More</a>
               </div>
             </div>
@@ -308,12 +308,12 @@
               style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
               <h3 class="f_600 t_color f_size_18">Courses</h3>
               <ul class="list-unstyled f_list" style="font-size: 1rem;margin-block:1rem;">
-                <li><a href="./classes/pretyping.html">A320 Pre Type Rating Classes</a></li>
+                <li><a href="./classes/pretyping.php">A320 Pre Type Rating Classes</a></li>
                 <li><a href="./classes/dgcaground.php">DGCA Ground Classes</a></li>
-                <li><a href="./classes/RTR.html">Radio Telephony (RTR) Classes</a></li>
-                <li><a href="./classes/niosclasses.html">NIOS Prep Classes</a></li>
-                <li><a href="./classes/conversion.html">CPL Conversion</a></li>
-                <li><a href="./classes/cplsouth.html">SACAA CPL</a></li>
+                <li><a href="./classes/RTR.php">Radio Telephony (RTR) Classes</a></li>
+                <li><a href="./classes/niosclasses.php">NIOS Prep Classes</a></li>
+                <li><a href="./classes/conversion.php">CPL Conversion</a></li>
+                <li><a href="./classes/cplsouth.php">SACAA CPL</a></li>
               </ul>
             </div>
           </div>
@@ -322,12 +322,12 @@
               style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
               <h3 class="f_600 t_color f_size_18">Help</h3>
               <ul class="list-unstyled f_list" style="font-size: 1rem;margin-block:1rem;">
-                <li><a href="./about.html">About us</a></li>
+                <li><a href="./about.php">About us</a></li>
                 <li><a href="./index.php#testi">Testimonial</a></li>
                 <!-- <li><a href="#teamm">Team</a></li> -->
                 <li><a href="#" onclick="playDemoClass()">Demo video</a></li>
-                <li><a href="./about.html#contact">Contact</a></li>
-                <li><a href="./classes.html">Training</a></li>
+                <li><a href="./about.php#contact">Contact</a></li>
+                <li><a href="./classes.php">Training</a></li>
               </ul>
             </div>
           </div>
@@ -364,8 +364,8 @@
   <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
 
   <!-- Template Javascript -->
-  <script src="./js/main.js"></script>
-  <script src="./assets/js/main.js"></script>
+  <script src="./js/main.js?<?php echo filemtime('./js/main.js'); ?>"></script>
+  <script src="./assets/js/main.js?<?php echo filemtime('./assets/js/main.js'); ?>"></script>
 </body>
 
 </html>

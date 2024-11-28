@@ -40,10 +40,12 @@
   <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=197457063420380&ev=PageView&noscript=1" />
   </noscript>
-  <!-- Google tag (gtag.js) -->
  
+ 
+
+
   <meta charset="utf-8" />
-  <title>B737 Type Rating | ADynamics</title>
+  <title>DGCA CPL Conversion | ADynamics</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <meta content="" name="keywords" />
   <meta content="" name="description" />
@@ -70,17 +72,19 @@
 
   <!-- Customized Bootstrap Stylesheet -->
   <link href="../css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../css2/style.css" />
-  <!-- Template Stylesheet -->
-  <link href="../css/style.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../css2/style.css" />
-  <link rel="stylesheet" href="../css/course-details.css" />
-  <link rel="stylesheet" href="../check.css" />
-  <link rel="stylesheet" href="../css/hero.css" />
+ <!-- Template Stylesheet -->
+  <link href="../css/style.css?<?php echo filemtime('../css/style.css'); ?>" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/course-details.css?<?php echo filemtime('../css/course-details.css'); ?>" />
+  <link rel="stylesheet" href="../css/hero.css?<?php echo filemtime('../css/hero.css'); ?>" />
+  <link rel="stylesheet" href="../css2/style.css?<?php echo filemtime('../css2/style.css'); ?>" />
+  <link rel="stylesheet" href="../check.css?<?php echo filemtime('../check.css'); ?>" />
+
+ 
+ 
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFNNX2Q3"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
@@ -95,22 +99,19 @@
     </button>
   </div>
 
-
   <global-header></global-header>
 
-
   <!-- Detail Start -->
-  <section class="hero py-2 py-xl-5 py-6 imSection-bg" style="margin-top: -50px" id="demo">
+  <section class="hero py-2 py-xl-5 py-6 imSection-bg" id="demo" style="margin-top: -50px">
     <div class="container-xxl grid py-3 mt-xl-1">
       <div class="row">
         <div class="hero-text-section col-lg-6 order-lg-1 order-2 py-3 py-sm-5">
           <div class="hero-text-wrapper text-lg-start text-center px-0 px-sm-4">
             <strong>
-              <p class="text-xl">WELCOME TO ADYNAMICS</p>
+              <p class="text-xl">Foreign License Conversion</p>
             </strong>
             <h1 class="pt- display-6">
-              Embark on your pilot journey with B737 Type Rating Training in
-              Moorooco
+              Quick and Affordable Conversion to DGCA CPL
             </h1>
 
             <div class="btn-group home-demo">
@@ -170,120 +171,45 @@
               <div class="flex-shrink-0 btn-square bg-primary me-3 border-r8">
                 <i class="fa fa-check text-white"></i>
               </div>
-              <h5 class="mb-0">SACAA CPL</h5>
+              <h5 class="mb-0">conversion flying</h5>
             </div>
 
-            <div class="accordion" id="accordion">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    <b>Private Pilot License (PPL)</b>
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                  data-bs-parent="#accordion">
-                  <div class="accordion-body">
-                    <ul>
-                      <li>45hrs Dual Flying ​</li>
-                      <li>15hrs Solo</li>
-                      <li>5hrs Simulator</li>
-                      <li>Ground Schooling</li>
-                      <li>20hrs Briefing/ De-briefing</li>
-                    </ul>
+            <ol class="list-group list-group-light list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-start" style="border: none">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">
+                    Receny Requirements: (In the last 6 months)
                   </div>
+                  <ul>
+                    <li>15hrs PIC​ ​</li>
+                    <li>5hrs Instrument Time</li>
+                    <li>5hrs Night PIC</li>
+                  </ul>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <b>Night Rating (NR)</b>
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                  data-bs-parent="#accordion">
-                  <div class="accordion-body">
-                    <ul>
-                      <li>10hrs Dual Flying ​</li>
-                      <li>Ground Schooling</li>
-                      <li>5hrs Briefing/ De-briefing</li>
-                    </ul>
-                  </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start" style="border: none">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Checks (Single Engine):</div>
+                  <ul>
+                    <li>120NM Cross Country​</li>
+                    <li>250NM Cross Country</li>
+                    <li>GFT Day</li>
+                    <li>GFT Night</li>
+                    <li>IR Check</li>
+                  </ul>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    <b>Time Building</b>
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                  data-bs-parent="#accordion">
-                  <div class="accordion-body">
-                    <ul>
-                      <li>4hrs Dual Flying</li>
-                      <li>85hrs Solo</li>
-                    </ul>
-                  </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start" style="border: none">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Checks (Multi Engine): ​ ​​</div>
+                  <ul>
+                    <li>GFT Day</li>
+                    <li>GFT Night</li>
+                    <li>IR Check</li>
+                  </ul>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    <b>​Instrument Rating (IR) & Multi Engine Prep</b>
-                  </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                  data-bs-parent="#accordion">
-                  <div class="accordion-body">
-                    <ul>
-                      <li>15hrs Dual Single Engine Flying ​</li>
-                      <li>11.5hrs Dual Multi Engine Flying ​</li>
-                      <li>15hrs Simulator</li>
-                      <li>Ground Schooling</li>
-                      <li>5hrs Briefing/ De-briefing</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFive">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    <b>Single Engine Add on (SEA CPL)</b>
-                  </button>
-                </h2>
-                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                  data-bs-parent="#accordion">
-                  <div class="accordion-body">
-                    <ul>
-                      <li>3hrs Dual Flying ​</li>
-                      <li>5hrs Briefing/ De-briefing</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSix">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    <b>Commercial Pilot License Multi Engine (CPL ME)</b>
-                  </button>
-                </h2>
-                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                  data-bs-parent="#accordion">
-                  <div class="accordion-body">
-                    <ul>
-                      <li>3.5hrs Dual Multi Engine Flying ​ ​</li>
-                      <li>1hrs Simulator</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+              </li>
+            </ol>
           </div>
           <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s" style="
                 visibility: visible;
@@ -294,22 +220,22 @@
               <div class="flex-shrink-0 btn-square bg-primary me-3 border-r8">
                 <i class="fa fa-check text-white"></i>
               </div>
-              <h5 class="mb-0">Prerequisite for Program:</h5>
+              <h5 class="mb-0">prerequisite for flying:</h5>
             </div>
             <ol class="list-group list-group-light list-group-numbered">
               <li class="list-group-item d-flex justify-content-between align-items-start" style="border: none">
                 <div class="ms-2 me-auto">
-                  <div class="fw-bold">12th Standard</div>
+                  <div class="fw-bold">Foregin CPL License</div>
                 </div>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-start" style="border: none">
                 <div class="ms-2 me-auto">
-                  <div class="fw-bold">18 years Age</div>
+                  <div class="fw-bold">DGCA FRTOL</div>
                 </div>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-start" style="border: none">
                 <div class="ms-2 me-auto">
-                  <div class="fw-bold">Current SACAA Class 1 Medical</div>
+                  <div class="fw-bold">Current DGCA Class 1 Medical</div>
                 </div>
               </li>
             </ol>
@@ -323,7 +249,8 @@
             <div class="imPart-bg p-3 border-r10">
               <h6 class="text-primary text-uppercase mb-2">Apply Now</h6>
               <h5 class="mb-4">Make An Appointment now</h5>
-              <form id="cplMoroccoForm" name="cplMoroccoForm" onsubmit="Sendmail(); reset();">
+
+              <form id="conversionForm" name="conversionForm" onsubmit="Sendmail(); reset();">
                 <div class="row g-3">
                   <div class="col-sm-6">
                     <div class="form-floating">
@@ -355,42 +282,44 @@
                   </div>
                   <div class="col-sm-6">
                     <div class="form-floating">
-                      <input type="date" class="form-control border-0 bg-white border-r8" id="dob" name="dob"
-                        placeholder="Date of Birth" required />
-                      <label for="dob">Date of Birth</label>
+                      <input type="date" class="form-control border-0 bg-white border-r8" id="dol"
+                        name="Date of Last flight" required />
+                      <label for="dol">Date of Last flight</label>
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-floating">
                       <input type="text" class="form-control border-0 bg-white border-r8" id="stream" name="stream"
-                        placeholder="e.g. Science, Humanities" required />
-                      <label for="stream">12th Standard Stream</label>
+                        placeholder="e.g.FAA ,SACAA, TC" required />
+                      <label for="stream">Name of Civil Aviation of Foreign License</label>
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-floating">
-                      <select class="form-select border-0 bg-white border-r8" id="CountryChoice"
-                        name="Choice of country for CPL training?" required>
+                      <select class="form-select border-0 bg-white border-r8" id="ConversionChoice"
+                        name="What type of conversion are you looking for?" required>
                         <option value="" disabled selected>Select an option</option>
-                        <option value="USA">USA</option>
-                        <option value="South Africa">South Africa</option>
-                        <option value="India">India</option>
-                        <option value="others">Others</option>
+                        <option value="Single Engine">Single Engine</option>
+                        <option value="Multi Engine">Multi Engine</option>
+                        <option value="Both">Both</option>
                       </select>
-                      <label for="CountryChoice">Choice of country for CPL training?</label>
+                      <label for="ConversionChoice">What type of conversion are you looking for?</label>
                     </div>
                   </div>
                   <div class="col-sm-12">
                     <label class="form-label" for="stages">What stage of training are you in?</label>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="Cleared 12th Standard Exams" id="stageA"
-                        name="stages[]">
-                      <label class="form-check-label" for="stageA">Cleared 12th Standard Exams</label>
+                      <input class="form-check-input" type="checkbox" value="RTR Issued" id="stageA" name="stages[]">
+                      <label class="form-check-label" for="stageA">RTR Issued</label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="Have a Computer Number" id="stageB"
+                      <input class="form-check-input" type="checkbox" value="DGCA Class 1 Medical Valid" id="stageB"
                         name="stages[]">
-                      <label class="form-check-label" for="stageB">Have a Computer Number</label>
+                      <label class="form-check-label" for="stageB">DGCA Class 1 Medical Valid</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="FRTOL Issued" id="stageC" name="stages[]">
+                      <label class="form-check-label" for="stageC">FRTOL Issued</label>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" value="CPL Exams Cleared(Nav, Met & Regs)"
@@ -398,18 +327,17 @@
                       <label class="form-check-label" for="stageC">CPL Exams Cleared(Nav, Met & Regs)</label>
                     </div>
                   </div>
+                  <div class="col-12">
+                    <button id="form-submit-btn" class="btn btn-primary w-100 py-3 mt-3 border-r8" type="submit">
+                      Submit
+                    </button>
+                  </div>
                 </div>
-                <div class="col-12">
-                  <button id="form-submit-btn" class="btn btn-primary w-100 py-3 mt-3 border-r8" type="submit">
-                    Submit
-                  </button>
-                </div>
+              </form>
             </div>
-            </form>
           </div>
         </div>
       </div>
-    </div>
     </div>
   </section>
   <!-- topics section  -->
@@ -439,7 +367,7 @@
             <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
               <img class="img-fluid border-r10" src="../img/cource1.png" alt="" />
               <div class="courses-overlay">
-                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/pretyping.html">Read
+                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/pretyping.php">Read
                   More</a>
               </div>
             </div>
@@ -492,7 +420,7 @@
             <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
               <img class="img-fluid border-r10" src="../img/rtrclasses.png" alt="" />
               <div class="courses-overlay">
-                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/RTR.html">Read
+                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/RTR.php">Read
                   More</a>
               </div>
             </div>
@@ -518,7 +446,7 @@
             <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
               <img class="img-fluid border-r10" src="../img/nios-prepclasses.png" alt="" />
               <div class="courses-overlay">
-                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/niosclasses.html">Read
+                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/niosclasses.php">Read
                   More</a>
               </div>
             </div>
@@ -551,7 +479,7 @@
               <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
                 <img class="img-fluid border-r10 w-100 h-100" src="../img/cource1.png" alt="" />
                 <div class="courses-overlay">
-                  <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/pretyping.html">Read
+                  <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/pretyping.php">Read
                     More</a>
                 </div>
               </div>
@@ -603,7 +531,7 @@
               <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
                 <img class="img-fluid border-r10 w-100 h-100" src="../img/rtrclasses.png" alt="" />
                 <div class="courses-overlay">
-                  <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/RTR.html">Read
+                  <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/RTR.php">Read
                     More</a>
                 </div>
               </div>
@@ -629,7 +557,7 @@
               <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
                 <img class="img-fluid border-r10 w-100 h-100" src="../img/nios-prepclasses.png" alt="" />
                 <div class="courses-overlay">
-                  <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/niosclasses.html">Read
+                  <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/niosclasses.php">Read
                     More</a>
                 </div>
               </div>
@@ -642,11 +570,7 @@
   </section>
   <!-- related-courses end -->
 
-
   <global-footer></global-footer>
-
-  <!-- Back to Top -->
-
 
   <!-- JavaScript Libraries -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -656,37 +580,41 @@
   <script src="../lib/waypoints/waypoints.min.js"></script>
   <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
 
+  <!-- Template Javascript -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-  <!-- Template Javascript -->
-  <script src="../js/main.js"></script>
-  <script src="../assets/js/main.js"></script>
-  <!-- Import Header and Footer -->
-  <script src="../js/header-global.js"></script>
-  <script src="../js/footer-global.js"></script>
+    <script src="../js/main.js?<?php echo filemtime('../js/main.js'); ?>"></script>
+    <script src="../assets/js/main.js?<?php echo filemtime('../assets/js/main.js'); ?>"></script>
+    
+    <!-- Import Header and Footer -->
+    <script src="../js/header-global.js?<?php echo filemtime('../js/header-global.js'); ?>"></script>
+    <script src="../js/footer-global.js?<?php echo filemtime('../js/footer-global.js'); ?>"></script>
 
   <script>
     scriptURL = 'https://script.google.com/macros/s/AKfycbycwxQkSHyTjQ9CUaKqMmWUutWbbBT2K9PmWDOZ6bT_rV-nlXdKDJa6KPlWO2otwBqfZg/exec'
 
-    cplMoroccoForm = document.forms['cplMoroccoForm']
 
-    cplMoroccoForm.addEventListener('submit', e => {
+    const conversionForm = document.forms['conversionForm']
+
+    conversionForm.addEventListener('submit', e => {
       e.preventDefault()
       const submitBtn = document.getElementById('form-submit-btn');
       submitBtn.disabled = true;
       submitBtn.innerText = "Submitting...";
-      formData = new FormData(cplMoroccoForm);
-      currentDate = new Date();
 
-      formattedDate = currentDate.getFullYear() + '-' +
+
+      formData = new FormData(conversionForm);
+      const currentDate = new Date();
+
+      const formattedDate = currentDate.getFullYear() + '-' +
         String(currentDate.getMonth() + 1).padStart(2, '0') + '-' +
         String(currentDate.getDate()).padStart(2, '0') + ' ' +
         String(currentDate.getHours()).padStart(2, '0') + ':' +
         String(currentDate.getMinutes()).padStart(2, '0') + ':' +
         String(currentDate.getSeconds()).padStart(2, '0');
 
-      formName = 'CPL Morocco Form';
+      const formName = 'Foreign License Conversion Form';
       formData.append('formName', formName);
       formData.append('dateTime', formattedDate);
       fetch(scriptURL, { method: 'POST', body: formData })
@@ -697,7 +625,6 @@
          })
         .catch(error => console.error('Error!', error.message))
     })
-
   </script>
 </body>
 

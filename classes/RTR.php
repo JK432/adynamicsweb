@@ -12,13 +12,13 @@
   
   <!-- Google Tag Manager -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16756585547"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'AW-16756585547');
-  </script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16756585547');
+</script>
   <!-- End Google Tag Manager -->
 
   <!-- Meta Pixel Code -->
@@ -40,12 +40,10 @@
   <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=197457063420380&ev=PageView&noscript=1" />
   </noscript>
-  <!-- Google tag (gtag.js) -->
-  
-
+ 
 
   <meta charset="utf-8" />
-  <title>NIOS Prep Classes | ADynamics</title>
+  <title>Radio Telephony (RTR) Classes | ADynamics</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <meta content="" name="keywords" />
   <meta content="" name="description" />
@@ -74,18 +72,23 @@
   <link href="../css/bootstrap.min.css" rel="stylesheet" />
 
   <!-- Template Stylesheet -->
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="../css/course-details.css" />
-  <link rel="stylesheet" href="../css/hero.css">
-  <link rel="stylesheet" href="../check.css">
-  <link rel="stylesheet" href="../css2/style.css">
+  <link href="../css/style.css?<?php echo filemtime('../css/style.css'); ?>" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/course-details.css?<?php echo filemtime('../css/course-details.css'); ?>" />
+  <link rel="stylesheet" href="../css/hero.css?<?php echo filemtime('../css/hero.css'); ?>">
+  <link rel="stylesheet" href="../css2/style.css?<?php echo filemtime('../css2/style.css'); ?>">
+  <link rel="stylesheet" href="../check.css?<?php echo filemtime('../check.css'); ?>">
 
-  <!-- Custom styles only for the classes details pages -->
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./styles.css?<?php echo filemtime('./styles.css'); ?>">
+
 
   <style>
     div.timeline-container ul.timeline::before {
-      display: none !important;
+      top: 30% !important;
+      height: 36% !important;
+    }
+
+    .timeline>li.timeline-inverted .timeline-label {
+      top: 28% !important;
     }
 
     section.section-course-details {
@@ -100,6 +103,7 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFNNX2Q3"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+
   <div class="demo-class">
     <iframe src="https://www.youtube.com/embed/lKr-EdxFhnM?si=rVfbLDS_tgJVAEvE" id="player" title="YouTube video player"
       frameborder="0"
@@ -109,30 +113,24 @@
   </div>
 
 
+
+
   <!-- Top bar and Header -->
   <global-header></global-header>
 
-
   <section class="section-course-head pt-5">
     <div class="container-lg pt-5 mt-2">
-      <div class="d-flex align-items-center justify-content-center gap-5">
+      <div class="d-flex align-items-center justify-content-center gap-2">
         <!-- card 1 -->
-        <div class="header-card-selector active" data-content="navigation">
-          <img src="./images/physics-study.jpg" alt="Navigation" title="" />
-        </div>
-        <!-- card 2 -->
-        <div class="header-card-selector" data-content="regulations">
-          <img src="./images/mathematics.jpg" alt="Regulations" title="" />
+        <div class="header-card-selector active">
+          <img src="./images/rtr_classes.jpeg" alt="Navigation" title="" />
         </div>
       </div>
 
       <!-- Dynamic Content Sections -->
       <div class="course-content pt-3 mt-5 text-center">
         <div id="navigation-content" class="content-section active">
-          <h1 class="fw-bold text-center" style="font-size: 36px; color: #49AAAA;">Physics</h1>
-        </div>
-        <div id="regulations-content" class="content-section" style="display: none;">
-          <h1 class="fw-bold text-center" style="font-size: 36px; color: #49AAAA;">Mathematics</h1>
+          <h1 class="fw-bold text-center" style="font-size: 36px; color: #49AAAA;">RTR Classes</h1>
         </div>
       </div>
     </div>
@@ -140,218 +138,124 @@
 
   <!-- Section to show the selected course details -->
   <section class="section-course-details bg-primary-bg">
-    <div class="container timeline-container course-detail-element navigation" data-content="navigation">
+    <div class="course-details-head bg-primary-bg">
+      <div class="container-lg">
+        <div class="course-info">
+          <div class="course-detail-item">
+            <div>
+              <div class="title">DURATION</div>
+              <p>1 Month</p>
+            </div>
+            <div>
+              <div class="title">TIMINGS</div>
+              <p>7PM - 9PM</p>
+            </div>
+            <div>
+              <div class="title">ASSESSMENTS</div>
+              <p>4</p>
+            </div>
+            <div>
+              <div class="title">MOCK EXAMS</div>
+              <p>10</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container timeline-container">
       <ul class="timeline">
         <li class="timeline-inverted">
+          <div>
+            <div class="timeline-badge"></div>
+            <div class="timeline-label">Part&nbsp;1</div>
+          </div>
           <div class="timeline-panel">
             <div class="timeline-heading">
-              <img src="./images/nios_classes_2.jpeg" alt="" width="100%" height="auto">
+              <img src="./images/rtr_clases.jpeg" alt="" width="100%" height="auto">
             </div>
-            <div class="timeline-subtitle" style="width: 60%; padding-left: 1rem;">
-              <h4 style="color: #FFFFFF !important; font-size: 1.25em !important; text-align: left !important;">
-                1. Mechanics</h4>
-              <div class="timeline-title"
-                style="font-weight: normal !important; text-align: left !important; font-size: 1em !important;">
-                Study of motion, forces, energy, and matter. Topics include kinematics, laws of motion, work, energy,
-                and rotational motion.
-              </div>
+            <div class="timeline-subtitle" style="width: 60%; cursor: pointer;" data-bs-toggle="modal"
+              data-bs-target="#detailsModal1">
+              <h4 class="timeline-title"
+                style="padding: 0.8rem 1.5rem; background-color: #49AAAA; border: 1px solid #49AAAA; width: max-content; margin: auto; border-radius: 15px;">
+                View Details</h4>
             </div>
           </div>
         </li>
         <li class="timeline-inverted">
-          <div class="timeline-panel">
-
-            <div class="timeline-heading">
-              <img src="./images/nios_clases_3.jpeg" alt="" width="100%" height="auto">
-            </div>
-            <div class="timeline-subtitle" style="width: 60%; padding-left: 1rem;">
-              <h4 style="color: #FFFFFF !important; font-size: 1.25em !important; text-align: left !important;">
-                2. Thermodynamics</h4>
-              <div class="timeline-title"
-                style="font-weight: normal !important; text-align: left !important; font-size: 1em !important;">
-                Understanding heat, temperature, laws of thermodynamics, and heat transfer mechanisms
-              </div>
-            </div>
+          <div>
+            <div class="timeline-badge"></div>
+            <div class="timeline-label">Part&nbsp;2</div>
           </div>
-        </li>
-        <li class="timeline-inverted">
           <div class="timeline-panel">
-
             <div class="timeline-heading">
-              <img src="./images/nios_classes4.jpeg" alt="" width="100%" height="auto">
+              <img src="./images/rtrcclases3 - Copy.jpeg" alt="" width="100%" height="auto">
             </div>
-            <div class="timeline-subtitle" style="width: 60%; padding-left: 1rem;">
-              <h4 style="color: #FFFFFF !important; font-size: 1.25em !important; text-align: left !important;">
-                3. Electromagnetism</h4>
-              <div class="timeline-title"
-                style="font-weight: normal !important; text-align: left !important; font-size: 1em !important;">
-                Covers electric charges, fields, circuits, magnetic fields, and electromagnetic waves.
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="timeline-inverted">
-          <div class="timeline-panel">
-
-            <div class="timeline-heading">
-              <img src="./images/nios_classes_5.jpeg" alt="" width="100%" height="auto">
-            </div>
-            <div class="timeline-subtitle" style="width: 60%; padding-left: 1rem;">
-              <h4 style="color: #FFFFFF !important; font-size: 1.25em !important; text-align: left !important;">4.
-                Optics
-              </h4>
-              <div class="timeline-title"
-                style="font-weight: normal !important; text-align: left !important; font-size: 1em !important;">
-                Study of light, reflection, refraction, lenses, and optical instruments.
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="timeline-inverted">
-          <div class="timeline-panel">
-
-            <div class="timeline-heading">
-              <img src="./images/nios_classes6.jpeg" alt="" width="100%" height="auto">
-            </div>
-            <div class="timeline-subtitle" style="width: 60%; padding-left: 1rem;">
-              <h4 style="color: #FFFFFF !important; font-size: 1.25em !important; text-align: left !important;">5.
-                Modern
-                Physics</h4>
-              <div class="timeline-title"
-                style="font-weight: normal !important; text-align: left !important; font-size: 1em !important;">
-                Focuses on quantum mechanics, atomic physics, nuclear physics, and particle physics.
-              </div>
+            <div class="timeline-subtitle" style="width: 60%; cursor: pointer;" data-bs-toggle="modal"
+              data-bs-target="#detailsModal2">
+              <h4 class="timeline-title"
+                style="padding: 0.8rem 1.5rem; background-color: #49AAAA; border: 1px solid #49AAAA; width: max-content; margin: auto; border-radius: 15px;">
+                View Details</h4>
             </div>
           </div>
         </li>
       </ul>
     </div>
 
-
-    <div class="container timeline-container course-detail-element regulations" data-content="regulations">
-      <ul class="timeline">
-        <li class="timeline-inverted">
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <img src="./images/nios_classes7.jpeg" alt="" width="100%" height="auto">
-            </div>
-            <div class="timeline-subtitle" style="width: 60%; padding-left: 1rem;">
-              <h4 style="color: #FFFFFF !important; font-size: 1.25em !important; text-align: left !important;">1. Sets
-                and
-                Functions</h4>
-              <div class="timeline-title"
-                style="font-weight: normal !important; text-align: left !important; font-size: 1em !important;">
-                Understanding sets, relations, functions, and mathematical reasoning.
-              </div>
-            </div>
+    <!-- Modal Structure for Part 1 -->
+    <div class="modal fade" id="detailsModal1" tabindex="-1" aria-labelledby="detailsModalLabel1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="detailsModalLabel1">Part-1 Radio Telephony Procedure</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-        </li>
-        <li class="timeline-inverted">
-          <div class="timeline-panel">
-
-            <div class="timeline-heading">
-              <img src="./images/niosc_classes8.jpeg" alt="" width="100%" height="auto">
-            </div>
-            <div class="timeline-subtitle" style="width: 60%; padding-left: 1rem;">
-              <h4 style="color: #FFFFFF !important; font-size: 1.25em !important; text-align: left !important;">2.
-                Algebra
-              </h4>
-              <div class="timeline-title"
-                style="font-weight: normal !important; text-align: left !important; font-size: 1em !important;">
-                In-depth study of complex numbers, quadratic equations, matrices, and determinants.
-              </div>
-            </div>
+          <div class="modal-body">
+            1. Basics of Radio Telephony: Understanding the fundamental principles of radio communication in aviation
+            <br />
+            2. Standard Phraseology: Mastering the standard phrases and terminologies used in aviation communication to
+            ensure clear and concise communication <br />
+            3. Communication Procedures: Learning the procedures for communicating with Air Traffic Control (ATC),
+            including departure, enroute, and arrival communications <br />
+            4. Emergency Communication: Training on how to handle emergency situations and the correct procedures for
+            communicating during such events <br />
+            5. Practical Simulations: Hands-on practice through simulations to apply theoretical knowledge in realistic
+            scenarios <br />
           </div>
-        </li>
-        <li class="timeline-inverted">
-          <div class="timeline-panel">
-
-            <div class="timeline-heading">
-              <img src="./images/nios_classes9.jpeg" alt="" width="100%" height="auto">
-            </div>
-            <div class="timeline-subtitle" style="width: 60%; padding-left: 1rem;">
-              <h4 style="color: #FFFFFF !important; font-size: 1.25em !important; text-align: left !important;">3.
-                Calculus
-              </h4>
-              <div class="timeline-title"
-                style="font-weight: normal !important; text-align: left !important; font-size: 1em !important;">
-                Covers limits, continuity, differentiation, integration, and differential equations.
-              </div>
-            </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           </div>
-        </li>
-        <li class="timeline-inverted">
-          <div class="timeline-panel">
-
-            <div class="timeline-heading">
-              <img src="./images/nios.jpeg" alt="" width="100%" height="auto">
-            </div>
-            <div class="timeline-subtitle" style="width: 60%; padding-left: 1rem;">
-              <h4 style="color: #FFFFFF !important; font-size: 1.25em !important; text-align: left !important;">
-                4. Statistics and Probability</h4>
-              <div class="timeline-title"
-                style="font-weight: normal !important; text-align: left !important; font-size: 1em !important;">
-                Analyzing data, probability distributions, and inferential statistics.
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="timeline-inverted">
-          <div class="timeline-panel">
-
-            <div class="timeline-heading">
-              <img src="./images/nios_1.jpeg" alt="" width="100%" height="auto">
-            </div>
-            <div class="timeline-subtitle" style="width: 60%; padding-left: 1rem;">
-              <h4 style="color: #FFFFFF !important; font-size: 1.25em !important; text-align: left !important;">
-                5. Coordinate Geometry</h4>
-              <div class="timeline-title"
-                style="font-weight: normal !important; text-align: left !important; font-size: 1em !important;">
-                Study of lines, conic sections, three-dimensional geometry, and vector algebra.
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="timeline-inverted">
-          <div class="timeline-panel">
-
-            <div class="timeline-heading">
-              <img src="./images/nios2.jpeg" alt="" width="100%" height="auto">
-            </div>
-            <div class="timeline-subtitle" style="width: 60%; padding-left: 1rem;">
-              <h4 style="color: #FFFFFF !important; font-size: 1.25em !important; text-align: left !important;">
-                6. Mathematical Reasoning and Mathematical Induction</h4>
-              <div class="timeline-title"
-                style="font-weight: normal !important; text-align: left !important; font-size: 1em !important;">
-                Developing logical and inductive reasoning skills in mathematics.
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="timeline-inverted">
-          <div class="timeline-panel">
-
-            <div class="timeline-heading">
-              <img src="./images/nios5.jpeg" alt="" width="100%" height="auto">
-            </div>
-            <div class="timeline-subtitle" style="width: 60%; padding-left: 1rem;">
-              <h4 style="color: #FFFFFF !important; font-size: 1.25em !important; text-align: left !important;">7.
-                Linear
-                Programming and Probability</h4>
-              <div class="timeline-title"
-                style="font-weight: normal !important; text-align: left !important; font-size: 1em !important;">
-                Practical applications in optimizing solutions and understanding random events.
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
 
+    <!-- Modal Structure for Part 2 -->
+    <div class="modal fade" id="detailsModal2" tabindex="-1" aria-labelledby="detailsModalLabel2" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="detailsModalLabel2">Part-2 Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            1. Aviation Communication Equipment: Detailed study of the various communication devices used in aviation,
+            their functions, and maintenance <br />
+            2. Regulatory Framework: Understanding the national and international regulations governing aviation
+            communication, including the roles of DGCA and WPC <br />
+            3. Frequency Management: Knowledge of frequency allocation and management in aviation <br />
+            4. Signal Propagation: Basics of how radio signals propagate and the factors affecting signal strength and
+            clarity <br />
+            5. Technical Procedures: In-depth study of technical procedures related to aviation communication, including
+            troubleshooting common issues <br />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-
-  <!-- Section for Appointment -->
   <section class="section-appointment-common">
     <div class="container my-5">
       <div class="form-classes col-12 wow fadeInUp col-lg-6" id="dgcaEnquiry" data-wow-delay="0.5s" style="
@@ -362,7 +266,7 @@
         <div class="imPart-bg p-3 border-r10">
           <h6 class="text-primary text-uppercase mb-2">Apply Now</h6>
           <h5 class="mb-4">Make An Appointment now</h5>
-          <form id="niosclassesForm" name="niosclassesForm" onsubmit="Sendmail();reset();">
+          <form  id="rtrForm" name="rtrForm" onsubmit=" Sendmail();reset();">
             <div class="row g-3">
               <div class="col-sm-6">
                 <div class="form-floating">
@@ -445,16 +349,18 @@
               </div>
             </div>
           </form>
-
         </div>
       </div>
     </div>
   </section>
-  <!-- Section for Appointment -->
-
   <!-- Footer Start -->
   <global-footer></global-footer>
   <!-- Footer End -->
+
+
+
+
+ 
 
 
 
@@ -467,26 +373,28 @@
   <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
 
   <!-- Template Javascript -->
+
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-  <script src="../js/main.js"></script>
-  <script src="../assets/js/main.js"></script>
+
+  <script src="../js/main.js?<?php echo filemtime('../js/main.js'); ?>"></script>
+  <script src="../assets/js/main.js?<?php echo filemtime('../assets/js/main.js'); ?>"></script>
 
   <!-- Import Header and Footer -->
-  <script src="../js/header-global.js"></script>
-  <script src="../js/footer-global.js"></script>
+  <script src="../js/header-global.js?<?php echo filemtime('../js/header-global.js'); ?>"></script>
+  <script src="../js/footer-global.js?<?php echo filemtime('../js/footer-global.js'); ?>"></script>
 
-  <script src="./class-js.js"></script>
+  <script src="./class-js.js?<?php echo filemtime('./class-js.js'); ?>"></script>
 
   <script>
     scriptURL = 'https://script.google.com/macros/s/AKfycbycwxQkSHyTjQ9CUaKqMmWUutWbbBT2K9PmWDOZ6bT_rV-nlXdKDJa6KPlWO2otwBqfZg/exec'
 
-    niosclassesForm = document.forms['niosclassesForm']
+    rtrForm = document.forms['rtrForm']
 
-    niosclassesForm.addEventListener('submit', e => {
+    rtrForm.addEventListener('submit', e => {
       e.preventDefault()
-      formData = new FormData(niosclassesForm);
+      formData = new FormData(rtrForm);
       currentDate = new Date();
 
       formattedDate = currentDate.getFullYear() + '-' +
@@ -496,11 +404,11 @@
         String(currentDate.getMinutes()).padStart(2, '0') + ':' +
         String(currentDate.getSeconds()).padStart(2, '0');
 
-      formName = 'NIOS classes Form';
+      formName = 'RTR Form';
       formData.append('formName', formName);
       formData.append('dateTime', formattedDate);
       fetch(scriptURL, { method: 'POST', body: formData })
-        .then(response => alert("Thank you! your form is submitted successfully."))
+        // .then(response => alert("Thank you! your form is submitted successfully."))
         .then(() => { window.location.reload(); })
         .catch(error => console.error('Error!', error.message))
     })

@@ -78,8 +78,8 @@
     content="ADynamics is an online training platform offering DGCA CPL & A320 Pre-Type Rating classes. Their comprehensive program covers all necessary topics and skills required for aspiring pilots, ensuring they are well-prepared for their aviation careers." />
   <meta name="twitter:image" content="https://www.adynamics.in/img/about-colloborate%20.png" />
 
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="./css2/demo-booking.css">
+  <link rel="stylesheet" href="assets/css/style.css?<?php echo filemtime('assets/css/style.css'); ?>" />
+  <link rel="stylesheet" href="./css2/demo-booking.css?<?php echo filemtime('./css2/demo-booking.css'); ?>">
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png" />
@@ -784,7 +784,7 @@
                               animation-delay: 0.3s;
                               animation-name: fadeInLeft;
                             ">
-                          <a href="./classes/RTR.html">
+                          <a href="./classes/RTR.php">
                             <div class="timeline-text">
                               <h6>RTR-A</h6>
                               <p>
@@ -1115,7 +1115,7 @@
                           animation-delay: 0.3s;
                           animation-name: fadeInLeft;
                         ">
-                      <a href="./classes/conversion.html">
+                      <a href="./classes/conversion.php">
                         <div class="timeline-text hover-header">
                           <h5 class="fw-bold">Foreign License Conversion:</h5>
                           <p class="text-muted mb-2 fw-bold"></p>
@@ -1227,7 +1227,7 @@
                           animation-delay: 0.3s;
                           animation-name: fadeInLeft;
                         ">
-                      <a href="./classes/pretyping.html">
+                      <a href="./classes/pretyping.php">
                         <div class="timeline-text hover-header">
                           <h5 class="fw-bold">Pre-Type Rating Classes:</h5>
                           <p class="text-muted mb-2 fw-bold"></p>
@@ -1515,7 +1515,7 @@
             <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
               <img class="img-fluid border-r10" src="./img/rtrclasses.png" alt="" />
               <div class="courses-overlay">
-                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="./classes/RTR.html">Read More</a>
+                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="./classes/RTR.php">Read More</a>
               </div>
             </div>
           </div>
@@ -1540,7 +1540,7 @@
             <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
               <img class="img-fluid border-r10" src="./img/nios-prepclasses.png" alt="" />
               <div class="courses-overlay">
-                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="./classes/niosclasses.html">Read
+                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="./classes/niosclasses.php">Read
                   More</a>
               </div>
             </div>
@@ -1568,7 +1568,7 @@
             <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
               <img class="img-fluid border-r10" src="./img/pilot-picture2.png" alt="" />
               <div class="courses-overlay">
-                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="./classes/pretyping.html">Read More</a>
+                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="./classes/pretyping.php">Read More</a>
               </div>
             </div>
           </div>
@@ -1595,7 +1595,7 @@
             <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
               <img class="img-fluid border-r10" src="./img/cource1.png" alt="" />
               <div class="courses-overlay">
-                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="./classes/pretyping.html">Read More</a>
+                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="./classes/pretyping.php">Read More</a>
               </div>
             </div>
           </div>
@@ -2167,15 +2167,24 @@
             <p class="abort-status">
               Your demo booking has been aborted.
             </p>
+            <p class="abort-status">
+              <a href="https://wa.me/8050076136?text=Hello!%20I%20would%20like%20to%20chat%20with%20you.">Contact Us</a> OR <a href="https://www.adynamics.in?trigger=true">Try Again</a>.
+            </p>
             <p class="cancel-status">
               Your demo booking has been canceled.
+            </p>
+            <p class="cancel-status">
+              <a href="https://wa.me/8050076136?text=Hello!%20I%20would%20like%20to%20chat%20with%20you.">Contact Us</a> OR <a href="https://www.adynamics.in?trigger=true">Try Again</a>.
             </p>
             <p class="illegel-status">
               Demo booking failed, Something went wrong.
             </p>
+            <p class="illegel-status">
+              <a href="https://wa.me/8050076136?text=Hello!%20I%20would%20like%20to%20chat%20with%20you.">Contact Us</a> OR <a href="https://www.adynamics.in?trigger=true">Try Again</a>.
+            </p>
           </div>
         </div>
-      </div>
+      </div> 
 
 
     </div>
@@ -2209,11 +2218,11 @@
 
   <!-- Template Javascript -->
   <script src="js/main.js?<?php echo filemtime('js/main.js'); ?>"></script>
-  <script src="assets/js/util.js"></script>
+  <script src="assets/js/util.js?<?php echo filemtime('assets/js/util.js'); ?>"></script>
   <!-- util functions included in the CodyHouse framework -->
-  <script src="assets/js/swipe-content.js"></script>
+  <script src="assets/js/swipe-content.js?<?php echo filemtime('assets/js/swipe-content.js'); ?>"></script>
   <!-- A Vanilla JavaScript plugin to detect touch interactions -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js?<?php echo filemtime('assets/js/main.js'); ?>"></script>
   <!-- <script src="assets/js/follower.js"></script> -->
 
   <!-- Import Header and Footer -->
@@ -2244,6 +2253,65 @@
   </script>
 
 <?php
+echo "
+<script>
+  function statusResponse(status){
+    const demoBookingSection = document.querySelector(
+    'section.demo-booking-section'
+  );
+    console.log('status response working with status : ', status);
+
+
+      const demoBookingContainer1 = demoBookingSection.querySelector(
+    '.demo-booking-section-1'
+  );
+  const demoBookingContainer2 = demoBookingSection.querySelector(
+    '.demo-booking-section-2'
+  );
+  const demoBookingContainer3 = demoBookingSection.querySelector(
+    '.demo-booking-section-3'
+  );
+  const demoBookingContainer4 = demoBookingSection.querySelector(
+    '.demo-booking-section-4'
+  );
+      const bookingStatus = demoBookingContainer4.querySelector('.demo-booking-status');
+      const button = document.getElementById('demo-trigger');
+    if(status){
+      demoBookingContainer1.style.visibility = 'hidden';
+      demoBookingContainer2.style.visibility = 'hidden';
+      demoBookingContainer3.style.visibility = 'hidden';
+      demoBookingContainer4.style.visibility = 'visible';
+    }else{
+      demoBookingContainer1.style.visibility = 'visible';
+      return;
+    }
+
+    if (status === 'success') {
+      console.log('success');
+      bookingStatus.classList.add('success');
+       button.click();
+    }else if(status==='abort'){
+      console.log('abort');
+      bookingStatus.classList.add('abort');
+       button.click();
+    }else if(status==='cancel'){
+      console.log('cancel');
+      bookingStatus.classList.add('cancel');
+       button.click();
+    }else if(status==='illegel'){
+      console.log('illegel');
+      bookingStatus.classList.add('illegel');
+       button.click();
+    }
+
+
+  }
+</script>
+";
+?>
+
+
+<?php
 
 include 'responsehandler.php';
 
@@ -2258,30 +2326,60 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['encResp'])) {
     
   switch (strtolower($result)) {
     case 'success':
-      echo "<script>";
-      echo "statusResponse(" . "'success'" . ");";
-      echo "</script>";
+      echo "
+      <script>
+      window.onload = function () {
+          statusResponse(" . "'success'" . ");
+           const button = document.getElementById('demo-trigger');
+            if (button) {
+              button.click();
+            }
+        };
+      </script>
+      ";
       break;
     case 'aborted':
-      echo "<script>";
-      echo "statusResponse(" . "'abort'" . ");";
-      echo "</script>";
+      echo "
+      <script>
+      window.onload = function () {
+          statusResponse(" . "'abort'" . ");
+           const button = document.getElementById('demo-trigger');
+            if (button) {
+              button.click();
+            }
+        };
+      </script>
+      ";
       break;
     case 'failure':
-      echo "<script>";
-      echo "statusResponse(" . "'failure'" . ");";
-      echo "</script>";
+      echo "
+      <script>
+      window.onload = function () {
+          statusResponse(" . "'failure'" . ");
+           const button = document.getElementById('demo-trigger');
+            if (button) {
+              button.click();
+            }
+        };
+      </script>
+      ";
       break;
     default:
-      echo "<script>";
-      echo "statusResponse(" . "'illegel'" . ");";
-      echo "</script>";
+      echo "
+      <script>
+      window.onload = function () {
+          statusResponse(" . "'illegel'" . ");
+           const button = document.getElementById('demo-trigger');
+            if (button) {
+              button.click();
+            }
+        };
+      </script>
+      ";
       break;
   }
 }
 ?>
-
-
 
 </body>
 

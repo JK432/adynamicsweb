@@ -73,13 +73,13 @@
   <link href="../css/bootstrap.min.css" rel="stylesheet" />
 
   <!-- Template Stylesheet -->
-  <link href="../css/style.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/course-details.css" />
-  <link rel="stylesheet" href="../css/hero.css">
-  <link rel="stylesheet" href="../css2/style.css">
-  <link rel="stylesheet" href="../check.css">
+  <link href="../css/style.css?<?php echo filemtime('../css/style.css'); ?>" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/course-details.css?<?php echo filemtime('../css/course-details.css'); ?>" />
+  <link rel="stylesheet" href="../css/hero.css?<?php echo filemtime('../css/hero.css'); ?>">
+  <link rel="stylesheet" href="../css2/style.css?<?php echo filemtime('../css2/style.css'); ?>">
+  <link rel="stylesheet" href="../check.css?<?php echo filemtime('../check.css'); ?>">
 
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles.css?<?php echo filemtime('./styles.css'); ?>">
 
 
   <style>
@@ -342,17 +342,17 @@
   <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
 
   <!-- Import Header and Footer -->
-  <script src="../js/header-global.js"></script>
-  <script src="../js/footer-global.js"></script>
+  <script src="../js/header-global.js?<?php echo filemtime('../js/header-global.js'); ?>"></script>
+  <script src="../js/footer-global.js?<?php echo filemtime('../js/footer-global.js'); ?>"></script>
 
-  <script src="./class-js.js"></script>
+  <script src="./class-js.js?<?php echo filemtime('./class-js.js'); ?>"></script>
 
   <!-- Template Javascript -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-  <script src="../js/main.js"></script>
-  <script src="../assets/js/main.js"></script>
+  <script src="../js/main.js?<?php echo filemtime('../js/main.js'); ?>"></script>
+  <script src="../assets/js/main.js?<?php echo filemtime('../assets/js/main.js'); ?>"></script>
   <script>
     scriptURL = 'https://script.google.com/macros/s/AKfycbycwxQkSHyTjQ9CUaKqMmWUutWbbBT2K9PmWDOZ6bT_rV-nlXdKDJa6KPlWO2otwBqfZg/exec'
 

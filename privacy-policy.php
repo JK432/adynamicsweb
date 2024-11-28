@@ -82,8 +82,8 @@
         content="ADynamics is an online training platform offering DGCA CPL & A320 Pre-Type Rating classes. Their comprehensive program covers all necessary topics and skills required for aspiring pilots, ensuring they are well-prepared for their aviation careers." />
     <meta name="twitter:image" content="https://www.adynamics.in/img/about-colloborate%20.png" />
 
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="./css2/demo-booking.css">
+    <link rel="stylesheet" href="assets/css/style.css?<?php echo filemtime('assets/css/style.css'); ?>" />
+    <link rel="stylesheet" href="./css2/demo-booking.css?<?php echo filemtime('./css2/demo-booking.css'); ?>">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png" />
@@ -133,11 +133,11 @@
     </script>
 
     <!-- Template Stylesheet -->
-    <link href="./css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css2/style.css" />
+    <link href="./css/style.css?<?php echo filemtime('./css/style.css'); ?>" rel="stylesheet" />
+    <link rel="stylesheet" href="./css2/style.css?<?php echo filemtime('./css2/style.css'); ?>" />
     <link rel="stylesheet" href="./scss/follower.scss" />
     <link rel="stylesheet" href="./scss/bootstrap/scss/_carousel.scss" />
-    <link rel="stylesheet" href="./check.css" />
+    <link rel="stylesheet" href="./check.css?<?php echo filemtime('./check.css'); ?>" />
 
     <style>
         .list {
@@ -626,21 +626,21 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-    <script src="assets/js/util.js"></script>
+    <script src="js/main.js?<?php echo filemtime('js/main.js'); ?>"></script>
+    <script src="assets/js/util.js?<?php echo filemtime('assets/js/util.js'); ?>"></script>
     <!-- util functions included in the CodyHouse framework -->
-    <script src="assets/js/swipe-content.js"></script>
+    <script src="assets/js/swipe-content.js?<?php echo filemtime('assets/js/swipe-content.js'); ?>"></script>
     <!-- A Vanilla JavaScript plugin to detect touch interactions -->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js?<?php echo filemtime('assets/js/main.js'); ?>"></script>
     <!-- <script src="assets/js/follower.js"></script> -->
 
     <!-- Import Header and Footer -->
-<script src="js/header-global-fl.js"></script>
-<script src="js/footer-global-fl.js"></script>
+<script src="js/header-global-fl.js?<?php echo filemtime('js/header-global-fl.js'); ?>"></script>
+<script src="js/footer-global-fl.js?<?php echo filemtime('js/footer-global-fl.js'); ?>"></script>
 
     <!-- Demo Booking Section js-->
-    <script src="./js/demo-booking.js"></script>
-    <script src="./js/customCalender.js"></script>
+    <script src="./js/demo-booking.js?<?php echo filemtime('./js/demo-booking.js'); ?>"></script>
+    <script src="./js/customCalender.js?<?php echo filemtime('./js/customCalender.js'); ?>"></script>
 
 </body>
 

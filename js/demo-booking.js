@@ -89,7 +89,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   submitDemoBooking.addEventListener("click", () => {
 
-
+    	submitDemoBooking.disabled = true;
+			submitDemoBooking.innerText = "Loading...";
     
 
 
@@ -118,25 +119,23 @@ document.addEventListener("DOMContentLoaded", () => {
 			formData.append('email', userEmail);
       formData.append("phone", userPhone);
       formData.append("date", selectedDate);
-      formData.append("order_id",`${userPhone}${timestamp}`)
+      formData.append("order_id",`${userPhone}_${timestamp}`)
 
       fetch(scriptURL, { method: 'POST', body: formData, mode: "no-cors" })
-				.then(response => {
-              
-                    const postData = {
+      const postData = {
                       merchant_id: "3651020",
                       language: "EN",
                       amount: "10",
                       currency: "INR",
                       redirect_url: "https://www.adynamics.in/",
                       cancel_url: "https://www.adynamics.in/",
-                      order_id: `${userPhone}${timestamp}`,
+                      order_id: `${userPhone}_${timestamp}`,
                     };
 
                     // Create a hidden form
                     const form = document.createElement("form");
                     form.method = "POST";
-                    form.action = "ccavRequestHandler.php";
+                    form.action = "/ccavRequestHandler.php";
                     form.style.display = "none";
 
                     // Add form fields for each key-value pair in postData
@@ -155,15 +154,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     // Submit the form
                     form.submit();
+                    submitDemoBooking.disabled = false;
+			              submitDemoBooking.innerText = "Book Demo";
     
-          console.log("demo-submit respomse : ", response)}
-        ).then(()=>{
-              demoBookingContainer1.style.visibility = "hidden";
-              demoBookingContainer2.style.visibility = "hidden";
-              demoBookingContainer3.style.visibility = "hidden";
-              demoBookingContainer4.style.visibility = "visible";
+          console.log("demo-submit respomse : ", response).then(()=>{
+              // demoBookingContainer1.style.visibility = "hidden";
+              // demoBookingContainer2.style.visibility = "hidden";
+              // demoBookingContainer3.style.visibility = "hidden";
+              // demoBookingContainer4.style.visibility = "visible";
         })
-				.catch(error => {console.error('Error!', error.message);statusResponse('success');})
+				.catch(error => {console.error('Error!', error.message);})
  
 
   });
@@ -171,36 +171,36 @@ document.addEventListener("DOMContentLoaded", () => {
   // statusResponse('success');
 
 
-  function statusResponse(status){
-    console.log("status response working with status : ",status);
-    const bookingStatus = demoBookingContainer4.querySelector(".demo-booking-status");
+  // function statusResponse(status){
+  //   console.log("status response working with status : ",status);
+  //   const bookingStatus = demoBookingContainer4.querySelector(".demo-booking-status");
     
-    if(status){
-      demoBookingContainer1.style.visibility = "hidden";
-      demoBookingContainer2.style.visibility = "hidden";
-      demoBookingContainer3.style.visibility = "hidden";
-      demoBookingContainer4.style.visibility = "visible";
-    }else{
-      demoBookingContainer1.style.visibility = "visible";
-      return
-    }
+  //   if(status){
+  //     demoBookingContainer1.style.visibility = "hidden";
+  //     demoBookingContainer2.style.visibility = "hidden";
+  //     demoBookingContainer3.style.visibility = "hidden";
+  //     demoBookingContainer4.style.visibility = "visible";
+  //   }else{
+  //     demoBookingContainer1.style.visibility = "visible";
+  //     return
+  //   }
 
-    if (status === "success") {
-      console.log("success");
+  //   if (status === "success") {
+  //     console.log("success");
       
-      bookingStatus.classList.add("success");
-    }else if(status==="abort"){
-      console.log("abort");
-      bookingStatus.classList.add("abort");
-    }else if(status==="cancel"){
-      console.log("cancel");
+  //     bookingStatus.classList.add("success");
+  //   }else if(status==="abort"){
+  //     console.log("abort");
+  //     bookingStatus.classList.add("abort");
+  //   }else if(status==="cancel"){
+  //     console.log("cancel");
       
-      bookingStatus.classList.add("cancel");
-    }else if(status==="illegel"){
-      console.log("illegel");
-      bookingStatus.classList.add("illegel");
-    }
-  }
+  //     bookingStatus.classList.add("cancel");
+  //   }else if(status==="illegel"){
+  //     console.log("illegel");
+  //     bookingStatus.classList.add("illegel");
+  //   }
+  // }
 
 
 

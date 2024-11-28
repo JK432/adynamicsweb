@@ -40,11 +40,10 @@
   <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=197457063420380&ev=PageView&noscript=1" />
   </noscript>
-
-  
-
+  <!-- Google tag (gtag.js) -->
+ 
   <meta charset="utf-8" />
-  <title>FAA CPL Training | ADynamics</title>
+  <title>B737 Type Rating | ADynamics</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <meta content="" name="keywords" />
   <meta content="" name="description" />
@@ -69,23 +68,21 @@
   <link href="../lib/animate/animate.min.css" rel="stylesheet" />
   <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
-  <!-- Libraries Stylesheet -->
-  <link href="../lib/animate/animate.min.css" rel="stylesheet" />
-  <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-
   <!-- Customized Bootstrap Stylesheet -->
   <link href="../css/bootstrap.min.css" rel="stylesheet" />
-
+  
   <!-- Template Stylesheet -->
-  <link href="../css/style.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/course-details.css" />
-  <link rel="stylesheet" href="../css/hero.css" />
-  <link rel="stylesheet" href="../css2/style.css" />
-  <link rel="stylesheet" href="../check.css" />
+  <link href="../css/style.css?<?php echo filemtime('../css/style.css'); ?>" rel="stylesheet" />
+  <link rel="stylesheet" href="../css2/style.css?<?php echo filemtime('../css2/style.css'); ?>" />
+  <link rel="stylesheet" href="../css/course-details.css?<?php echo filemtime('../css/course-details.css'); ?>" />
+  <link rel="stylesheet" href="../check.css?<?php echo filemtime('../check.css'); ?>" />
+  <link rel="stylesheet" href="../css/hero.css?<?php echo filemtime('../css/hero.css'); ?>" />
+  
+
 </head>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
+  <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFNNX2Q3"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
@@ -101,9 +98,7 @@
   </div>
 
 
-
   <global-header></global-header>
-
 
 
   <!-- Detail Start -->
@@ -113,17 +108,18 @@
         <div class="hero-text-section col-lg-6 order-lg-1 order-2 py-3 py-sm-5">
           <div class="hero-text-wrapper text-lg-start text-center px-0 px-sm-4">
             <strong>
-              <p class="text-xl">FAA CPL Training</p>
+              <p class="text-xl">WELCOME TO ADYNAMICS</p>
             </strong>
             <h1 class="pt- display-6">
-              Earn a Lifetime Valid License in Just 7 Months
+              Embark on your pilot journey with B737 Type Rating Training in
+              Moorooco
             </h1>
 
             <div class="btn-group home-demo">
               <a href="#topics-covered" class="btn btn-primary"
                 style="border-end-end-radius: 50px; background-color: #49aaaa">Discover More</a>
 
-              <button class="flex-btn flex-re">
+              <button class="flex-btn" onclick="playDemoClass()">
                 <div class="btn-icon" style="background-color: #49aaaa">
                   <ion-icon name="play" aria-hidden="true"></ion-icon>
                 </div>
@@ -141,7 +137,8 @@
                 ../img/thumbnail.png 768w
               " sizes="(max-width: 900px) 100vw, 900px" />
           <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
+              onclick="playDemoClass()">
               <g id="Group_205" data-name="Group 205" transform="translate(-1462 -4918)">
                 <circle id="Ellipse_12" data-name="Ellipse 12" cx="25" cy="25" r="25" transform="translate(1462 4918)"
                   fill="#fff"></circle>
@@ -175,7 +172,7 @@
               <div class="flex-shrink-0 btn-square bg-primary me-3 border-r8">
                 <i class="fa fa-check text-white"></i>
               </div>
-              <h5 class="mb-0">FAA CPL</h5>
+              <h5 class="mb-0">SACAA CPL</h5>
             </div>
 
             <div class="accordion" id="accordion">
@@ -190,10 +187,11 @@
                   data-bs-parent="#accordion">
                   <div class="accordion-body">
                     <ul>
-                      <li>50hrs Dual Flying ​</li>
-                      <li>10hrs Solo</li>
+                      <li>45hrs Dual Flying ​</li>
+                      <li>15hrs Solo</li>
+                      <li>5hrs Simulator</li>
                       <li>Ground Schooling</li>
-                      <li>17hrs Briefing/ De-briefing</li>
+                      <li>20hrs Briefing/ De-briefing</li>
                     </ul>
                   </div>
                 </div>
@@ -202,16 +200,16 @@
                 <h2 class="accordion-header" id="headingTwo">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <b>Instrument Rating (IR)</b>
+                    <b>Night Rating (NR)</b>
                   </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                   data-bs-parent="#accordion">
                   <div class="accordion-body">
                     <ul>
-                      <li>40hrs Dual Flying</li>
+                      <li>10hrs Dual Flying ​</li>
                       <li>Ground Schooling</li>
-                      <li>14hrs Briefing/ De-briefin</li>
+                      <li>5hrs Briefing/ De-briefing</li>
                     </ul>
                   </div>
                 </div>
@@ -227,7 +225,8 @@
                   data-bs-parent="#accordion">
                   <div class="accordion-body">
                     <ul>
-                      <li>131 hrs Solo</li>
+                      <li>4hrs Dual Flying</li>
+                      <li>85hrs Solo</li>
                     </ul>
                   </div>
                 </div>
@@ -236,14 +235,16 @@
                 <h2 class="accordion-header" id="headingFour">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    <b>Multi Engine Commercial License (MEA CPL)</b>
+                    <b>​Instrument Rating (IR) & Multi Engine Prep</b>
                   </button>
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                   data-bs-parent="#accordion">
                   <div class="accordion-body">
                     <ul>
-                      <li>20hrs Dual Flying</li>
+                      <li>15hrs Dual Single Engine Flying ​</li>
+                      <li>11.5hrs Dual Multi Engine Flying ​</li>
+                      <li>15hrs Simulator</li>
                       <li>Ground Schooling</li>
                       <li>5hrs Briefing/ De-briefing</li>
                     </ul>
@@ -267,6 +268,23 @@
                   </div>
                 </div>
               </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <b>Commercial Pilot License Multi Engine (CPL ME)</b>
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                  data-bs-parent="#accordion">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>3.5hrs Dual Multi Engine Flying ​ ​</li>
+                      <li>1hrs Simulator</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s" style="
@@ -278,7 +296,7 @@
               <div class="flex-shrink-0 btn-square bg-primary me-3 border-r8">
                 <i class="fa fa-check text-white"></i>
               </div>
-              <h5 class="mb-0">prerequisite for Program:</h5>
+              <h5 class="mb-0">Prerequisite for Program:</h5>
             </div>
             <ol class="list-group list-group-light list-group-numbered">
               <li class="list-group-item d-flex justify-content-between align-items-start" style="border: none">
@@ -293,11 +311,12 @@
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-start" style="border: none">
                 <div class="ms-2 me-auto">
-                  <div class="fw-bold">Current FAA Class 1 Medical</div>
+                  <div class="fw-bold">Current SACAA Class 1 Medical</div>
                 </div>
               </li>
             </ol>
           </div>
+
           <div class="form-classes col-12 wow fadeInUp col-lg-6" data-wow-delay="0.5s" style="
                 visibility: visible;
                 animation-delay: 0.5s;
@@ -306,7 +325,7 @@
             <div class="imPart-bg p-3 border-r10">
               <h6 class="text-primary text-uppercase mb-2">Apply Now</h6>
               <h5 class="mb-4">Make An Appointment now</h5>
-              <form id="faaTrainingForm" name="faaTrainingForm" onsubmit=" Sendmail();reset();">
+              <form id="cplMoroccoForm" name="cplMoroccoForm" onsubmit="Sendmail(); reset();">
                 <div class="row g-3">
                   <div class="col-sm-6">
                     <div class="form-floating">
@@ -324,8 +343,8 @@
                   </div>
                   <div class="col-sm-6">
                     <div class="form-floating">
-                      <input type="email" class="form-control border-0 bg-white border-r8" id="email"
-                        placeholder="Email" name="email" required />
+                      <input type="email" class="form-control border-0 bg-white border-r8" id="email" name="email"
+                        placeholder="Email" required />
                       <label for="email">Email</label>
                     </div>
                   </div>
@@ -381,21 +400,23 @@
                       <label class="form-check-label" for="stageC">CPL Exams Cleared(Nav, Met & Regs)</label>
                     </div>
                   </div>
-                  <div class="col-12">
-                    <button id="form-submit-btn" class="btn btn-primary w-100 py-3 border-r8 mt-3" type="submit">
-                      Submit
-                    </button>
-                  </div>
                 </div>
-              </form>
+                <div class="col-12">
+                  <button id="form-submit-btn" class="btn btn-primary w-100 py-3 mt-3 border-r8" type="submit">
+                    Submit
+                  </button>
+                </div>
             </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
+    </div>
   </section>
   <!-- topics section  -->
 
+  <!-- related-courses start-->
   <section class="py-6 pt-1">
     <div class="container-sm">
       <h2 class="mb-5 text-center">Related Courses</h2>
@@ -420,7 +441,7 @@
             <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
               <img class="img-fluid border-r10" src="../img/cource1.png" alt="" />
               <div class="courses-overlay">
-                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/pretyping.html">Read
+                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/pretyping.php">Read
                   More</a>
               </div>
             </div>
@@ -473,7 +494,7 @@
             <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
               <img class="img-fluid border-r10" src="../img/rtrclasses.png" alt="" />
               <div class="courses-overlay">
-                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/RTR.html">Read
+                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/RTR.php">Read
                   More</a>
               </div>
             </div>
@@ -499,7 +520,7 @@
             <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
               <img class="img-fluid border-r10" src="../img/nios-prepclasses.png" alt="" />
               <div class="courses-overlay">
-                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/niosclasses.html">Read
+                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/niosclasses.php">Read
                   More</a>
               </div>
             </div>
@@ -532,7 +553,7 @@
               <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
                 <img class="img-fluid border-r10 w-100 h-100" src="../img/cource1.png" alt="" />
                 <div class="courses-overlay">
-                  <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/pretyping.html">Read
+                  <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/pretyping.php">Read
                     More</a>
                 </div>
               </div>
@@ -584,7 +605,7 @@
               <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
                 <img class="img-fluid border-r10 w-100 h-100" src="../img/rtrclasses.png" alt="" />
                 <div class="courses-overlay">
-                  <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/RTR.html">Read
+                  <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/RTR.php">Read
                     More</a>
                 </div>
               </div>
@@ -610,7 +631,7 @@
               <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
                 <img class="img-fluid border-r10 w-100 h-100" src="../img/nios-prepclasses.png" alt="" />
                 <div class="courses-overlay">
-                  <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/niosclasses.html">Read
+                  <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/niosclasses.php">Read
                     More</a>
                 </div>
               </div>
@@ -626,6 +647,8 @@
 
   <global-footer></global-footer>
 
+  <!-- Back to Top -->
+
 
   <!-- JavaScript Libraries -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -635,26 +658,28 @@
   <script src="../lib/waypoints/waypoints.min.js"></script>
   <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
 
-  <!-- Template Javascript -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-  <script src="../js/main.js"></script>
-  <script src="../assets/js/main.js"></script>
+  <!-- Template Javascript -->
+  <script src="../js/main.js?<?php echo filemtime('../js/main.js'); ?>"></script>
+  <script src="../assets/js/main.js?<?php echo filemtime('../assets/js/main.js'); ?>"></script>
+  
   <!-- Import Header and Footer -->
-  <script src="../js/header-global.js"></script>
-  <script src="../js/footer-global.js"></script>
+  <script src="../js/header-global.js?<?php echo filemtime('../js/header-global.js'); ?>"></script>
+  <script src="../js/footer-global.js?<?php echo filemtime('../js/footer-global.js'); ?>"></script>
+
   <script>
     scriptURL = 'https://script.google.com/macros/s/AKfycbycwxQkSHyTjQ9CUaKqMmWUutWbbBT2K9PmWDOZ6bT_rV-nlXdKDJa6KPlWO2otwBqfZg/exec'
 
-    faaTrainingForm = document.forms['faaTrainingForm']
+    cplMoroccoForm = document.forms['cplMoroccoForm']
 
-    faaTrainingForm.addEventListener('submit', e => {
+    cplMoroccoForm.addEventListener('submit', e => {
       e.preventDefault()
       const submitBtn = document.getElementById('form-submit-btn');
       submitBtn.disabled = true;
       submitBtn.innerText = "Submitting...";
-      formData = new FormData(faaTrainingForm);
+      formData = new FormData(cplMoroccoForm);
       currentDate = new Date();
 
       formattedDate = currentDate.getFullYear() + '-' +
@@ -664,15 +689,15 @@
         String(currentDate.getMinutes()).padStart(2, '0') + ':' +
         String(currentDate.getSeconds()).padStart(2, '0');
 
-      formName = 'FAA Training Form';
+      formName = 'CPL Morocco Form';
       formData.append('formName', formName);
       formData.append('dateTime', formattedDate);
       fetch(scriptURL, { method: 'POST', body: formData })
         .then(response => alert("Thank you! your form is submitted successfully."))
-        .then(() => { window.location.reload(); 
+        .then(() => { window.location.reload();
           submitBtn.disabled = false;
           submitBtn.innerText = "Submit";
-        })
+         })
         .catch(error => console.error('Error!', error.message))
     })
 

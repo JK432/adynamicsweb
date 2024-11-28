@@ -84,11 +84,11 @@
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
-    <link href="./css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./check.css">
-    <link rel="stylesheet" href="./css/course-details.css" />
-    <link rel="stylesheet" href="./css/globe.css">
-    <link rel="stylesheet" href="./css2/style.css">
+    <link href="./css/style.css?<?php echo filemtime('./css/style.css'); ?>" rel="stylesheet" />
+    <link rel="stylesheet" href="./check.css?<?php echo filemtime('./check.css'); ?>">
+    <link rel="stylesheet" href="./css/course-details.css?<?php echo filemtime('./css/course-details.css'); ?>" />
+    <link rel="stylesheet" href="./css/globe.css?<?php echo filemtime('./css/globe.css'); ?>">
+    <link rel="stylesheet" href="./css2/style.css?<?php echo filemtime('./css2/style.css'); ?>">
 </head>
 
 <body>
@@ -830,7 +830,7 @@
                         <img class="img-fluid border-r10" src="./img/DgcaCpl2.png" alt="" />
                         <div class="courses-overlay">
                             <a class="btn btn-outline-primary border-2 courses-btn-bg"
-                                href="./flying/conversion.html">Read More</a>
+                                href="./flying/conversion.php">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -862,7 +862,7 @@
                             <img class="img-fluid border-r10" src="./img/flying_cpltraing.png" alt="" />
                             <div class="courses-overlay">
                                 <a class="btn btn-outline-primary border-2 courses-btn-bg"
-                                    href="./flying/cplflorida.html">Read More</a>
+                                    href="./flying/cplflorida.php">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -892,7 +892,7 @@
                             <img class="img-fluid border-r10" src="./img/flying_cpltraing.png" alt="" />
                             <div class="courses-overlay">
                                 <a class="btn btn-outline-primary border-2 courses-btn-bg"
-                                    href="./flying/cplcalifornia.html">Read More</a>
+                                    href="./flying/cplcalifornia.php">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -925,7 +925,7 @@
                         <img class="img-fluid border-r10" src="./img/flying_southafrica.png" alt="" />
                         <div class="courses-overlay">
                             <a class="btn btn-outline-primary border-2 courses-btn-bg"
-                                href="./flying/cplsouth.html">Read More</a>
+                                href="./flying/cplsouth.php">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -956,7 +956,7 @@
                         <img class="img-fluid border-r10" src="./img/engineer-working-with-airplane.jpg" alt="" />
                         <div class="courses-overlay">
                             <a class="btn btn-outline-primary border-2 courses-btn-bg"
-                                href="./flying/cplmorocco.html">Read More</a>
+                                href="./flying/cplmorocco.php">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -988,7 +988,7 @@
                         <img class="img-fluid border-r10" src="./img/interior.jpg" alt="" />
                         <div class="courses-overlay">
                             <a class="btn btn-outline-primary border-2 courses-btn-bg"
-                                href="./flying/cplargentina.html">Read More</a>
+                                href="./flying/cplargentina.php">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -1020,7 +1020,7 @@
                             <img class="img-fluid border-r10" src="./img/cource1.png" alt="" />
                             <div class="courses-overlay">
                                 <a class="btn btn-outline-primary border-2 courses-btn-bg"
-                                    href="./flying/cpltunisia.html">Read More</a>
+                                    href="./flying/cpltunisia.php">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -1049,7 +1049,7 @@
                             <img class="img-fluid border-r10" src="./img/cource1.png" alt="" />
                             <div class="courses-overlay">
                                 <a class="btn btn-outline-primary border-2 courses-btn-bg"
-                                    href="./flying/cpltunisia.html">Read More</a>
+                                    href="./flying/cpltunisia.php">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -1081,7 +1081,7 @@
                         best starting point for your English learning journey.
                     </p>
                     <div class="courses-overlay">
-                        <a class="btn btn-primary border-2 courses-btn-bg" href="./flying/conversion.html">Read
+                        <a class="btn btn-primary border-2 courses-btn-bg" href="./flying/conversion.php">Read
                             More</a>
                     </div>
                 </div>
@@ -1117,9 +1117,9 @@
 
 
     <!-- Template Javascript -->
-    <script src="./js/main.js"></script>
-    <script src="./assets/js/main.js"></script>
-    <script src="./js/globe.js"></script>
+    <script src="./js/main.js?<?php echo filemtime('./js/main.js'); ?>"></script>
+    <script src="./assets/js/main.js?<?php echo filemtime('./assets/js/main.js'); ?>"></script>
+    <script src="./js/globe.js?<?php echo filemtime('./js/globe.js'); ?>"></script>
 
     <script type="importmap">{
         "imports": {
@@ -1132,8 +1132,8 @@
 
 
     <!-- Import Header and Footer -->
-<script src="js/header-global-fl.js"></script>
-<script src="js/footer-global-fl.js"></script>
+<script src="js/header-global-fl.js?<?php echo filemtime('js/header-global-fl.js'); ?>"></script>
+<script src="js/footer-global-fl.js?<?php echo filemtime('js/footer-global-fl.js'); ?>"></script>
 </body>
 
 </html>

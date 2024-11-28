@@ -23,12 +23,12 @@ class GlobalFooter extends HTMLElement {
               style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
               <h3 class="f_600 t_color f_size_18">Courses</h3>
               <ul class="list-unstyled f_list" style="font-size: 1rem;margin-block:1rem;">
-                <li><a href="../classes/pretyping.html">A320 Pre Type Rating Classes</a></li>
+                <li><a href="../classes/pretyping.php">A320 Pre Type Rating Classes</a></li>
                 <li><a href="../classes/dgcaground.php">DGCA Ground Classes</a></li>
-                <li><a href="../classes/RTR.html">Radio Telephony (RTR) Classes</a></li>
-                <li><a href="../classes/niosclasses.html">NIOS Prep Classes</a></li>
-                <li><a href="../classes/conversion.html">CPL Conversion</a></li>
-                <li><a href="../classes/cplsouth.html">SACAA CPL</a></li>
+                <li><a href="../classes/RTR.php">Radio Telephony (RTR) Classes</a></li>
+                <li><a href="../classes/niosclasses.php">NIOS Prep Classes</a></li>
+                <li><a href="../classes/conversion.php">CPL Conversion</a></li>
+                <li><a href="../classes/cplsouth.php">SACAA CPL</a></li>
               </ul>
             </div>
           </div>
@@ -37,12 +37,12 @@ class GlobalFooter extends HTMLElement {
               style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
               <h3 class="f_600 t_color f_size_18">Help</h3>
               <ul class="list-unstyled f_list" style="font-size: 1rem;margin-block:1rem;">
-                <li><a href="../about.html">About us</a></li>
+                <li><a href="../about.php">About us</a></li>
                 <li><a href="#testi">Testimonial</a></li>
                 <li><a href="#" onclick="playDemoClass()">Demo video</a></li>
-                <li><a href="../about.html#contact">Contact</a></li>
-                <li><a href="../classes.html">Training</a></li>
-                <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="../about.php#contact">Contact</a></li>
+                <li><a href="../classes.php">Training</a></li>
+                <li><a href="../privacy-policy.php">Privacy Policy</a></li>
               </ul>
             </div>
           </div>

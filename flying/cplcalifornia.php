@@ -79,15 +79,15 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="../css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../css2/style.css" />
+    
     <!-- Template Stylesheet -->
-    <link rel="stylesheet" href="../css2/cplflorida.css">
-    <link href="../css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../css2/style.css" />
-    <link rel="stylesheet" href="../css/course-details.css" />
-    <link rel="stylesheet" href="../check.css" />
-    <link rel="stylesheet" href="../css/hero.css" />
-    <link rel="stylesheet" href="../css2/cpltunisia.css">
+    <link rel="stylesheet" href="../css2/cplflorida.css?<?php echo filemtime('../css2/cplflorida.css'); ?>">
+    <link href="../css/style.css?<?php echo filemtime('../css/style.css'); ?>" rel="stylesheet" />
+    <link rel="stylesheet" href="../css2/style.css?<?php echo filemtime('../css2/style.css'); ?>" />
+    <link rel="stylesheet" href="../css/course-details.css?<?php echo filemtime('../css/course-details.css'); ?>" />
+    <link rel="stylesheet" href="../check.css?<?php echo filemtime('../check.css'); ?>" />
+    <link rel="stylesheet" href="../css/hero.css?<?php echo filemtime('../css/hero.css'); ?>" />
+    <link rel="stylesheet" href="../css2/cpltunisia.css?<?php echo filemtime('../css2/cpltunisia.css'); ?>">
 
     <style>
         .tunisia-globe-content{
@@ -1133,7 +1133,7 @@
 							<img class="img-fluid border-r10" src="../img/cource1.png" alt="" />
 							<div class="courses-overlay">
 								<a class="btn btn-outline-primary border-2 courses-btn-bg"
-									href="../classes/pretyping.html">Read More</a>
+									href="../classes/pretyping.php">Read More</a>
 							</div>
 						</div>
 					</div>
@@ -1186,7 +1186,7 @@
 							<img class="img-fluid border-r10" src="../img/rtrclasses.png" alt="" />
 							<div class="courses-overlay">
 								<a class="btn btn-outline-primary border-2 courses-btn-bg"
-									href="../classes/RTR.html">Read
+									href="../classes/RTR.php">Read
 									More</a>
 							</div>
 						</div>
@@ -1213,7 +1213,7 @@
 							<img class="img-fluid border-r10" src="../img/nios-prepclasses.png" alt="" />
 							<div class="courses-overlay">
 								<a class="btn btn-outline-primary border-2 courses-btn-bg"
-									href="../classes/niosclasses.html">Read More</a>
+									href="../classes/niosclasses.php">Read More</a>
 							</div>
 						</div>
 					</div>
@@ -1246,7 +1246,7 @@
 							<img class="img-fluid border-r10 w-100 h-100" src="../img/cource1.png" alt="" />
 							<div class="courses-overlay">
 								<a class="btn btn-outline-primary border-2 courses-btn-bg"
-									href="../classes/pretyping.html">Read More</a>
+									href="../classes/pretyping.php">Read More</a>
 							</div>
 						</div>
 					</div>
@@ -1298,7 +1298,7 @@
 							<img class="img-fluid border-r10 w-100 h-100" src="../img/rtrclasses.png" alt="" />
 							<div class="courses-overlay">
 								<a class="btn btn-outline-primary border-2 courses-btn-bg"
-									href="../classes/RTR.html">Read
+									href="../classes/RTR.php">Read
 									More</a>
 							</div>
 						</div>
@@ -1325,7 +1325,7 @@
 							<img class="img-fluid border-r10 w-100 h-100" src="../img/nios-prepclasses.png" alt="" />
 							<div class="courses-overlay">
 								<a class="btn btn-outline-primary border-2 courses-btn-bg"
-									href="../classes/niosclasses.html">Read More</a>
+									href="../classes/niosclasses.php">Read More</a>
 							</div>
 						</div>
 					</div>
@@ -1356,12 +1356,13 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="../js/main.js"></script>
-    <script src="../assets/js/main.js"></script>
-    <!-- Import Header and Footer -->
-    <script src="../js/header-global.js"></script>
-    <script src="../js/footer-global.js"></script>
+  <!-- Template Javascript -->
+    <script src="../js/main.js?<?php echo filemtime('../js/main.js'); ?>"></script>
+<script src="../assets/js/main.js?<?php echo filemtime('../assets/js/main.js'); ?>"></script>
+
+<!-- Import Header and Footer -->
+<script src="../js/header-global.js?<?php echo filemtime('../js/header-global.js'); ?>"></script>
+<script src="../js/footer-global.js?<?php echo filemtime('../js/footer-global.js'); ?>"></script>
     <script>
         scriptURL = 'https://script.google.com/macros/s/AKfycbycwxQkSHyTjQ9CUaKqMmWUutWbbBT2K9PmWDOZ6bT_rV-nlXdKDJa6KPlWO2otwBqfZg/exec'
 
@@ -1422,7 +1423,7 @@
     </script>
 
 
-    <script src="../js/cpltunisia.js"></script>
+    <script src="../js/cpltunisia.js?<?php echo filemtime('../js/cpltunisia.js'); ?>"></script>
 </body>
 
 </html>

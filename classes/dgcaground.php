@@ -73,11 +73,11 @@
 
   <!-- Template Stylesheet -->
   <link href="../css/style.css?<?php echo filemtime('../css/style.css'); ?>" rel="stylesheet" />
-  <link rel="stylesheet" href="../css2/demo-booking.css">
-  <link rel="stylesheet" href="../css/course-details.css" />
-  <link rel="stylesheet" href="../css/hero.css" />
+  <link rel="stylesheet" href="../css2/demo-booking.css?<?php echo filemtime('../css2/demo-booking.css'); ?>">
+  <link rel="stylesheet" href="../css/course-details.css?<?php echo filemtime('../css/course-details.css'); ?>" />
+  <link rel="stylesheet" href="../css/hero.css?<?php echo filemtime('../css/hero.css'); ?>" />
   <link rel="stylesheet" href="../css2/style.css?<?php echo filemtime('../css2/style.css'); ?>" />
-  <link rel="stylesheet" href="../check.css" />
+  <link rel="stylesheet" href="../check.css?<?php echo filemtime('../check.css'); ?>" />
 
   <!-- Custom styles only for the classes details pages -->
   <link rel="stylesheet" href="./styles.css?<?php echo filemtime('./styles.css'); ?>" />
@@ -695,7 +695,7 @@
       <div class="demo-booking-section-3">
         <div class="demo-booking-main" style="gap: 20px;">
           <div class="demo-content">
-            <img src="./img/demo-book-icon.svg" alt="Demo Booking Icon">
+            <img src="../img/demo-book-icon.svg" alt="Demo Booking Icon">
             <h1>
               Book your demo class now.
             </h1>
@@ -763,15 +763,25 @@
             <p class="abort-status">
               Your demo booking has been aborted.
             </p>
+            <p class="abort-status">
+              <a href="https://wa.me/8050076136?text=Hello!%20I%20would%20like%20to%20chat%20with%20you.">Contact Us</a> OR <a href="https://www.adynamics.in?trigger=true">Try Again</a>.
+            </p>
             <p class="cancel-status">
               Your demo booking has been canceled.
             </p>
+            <p class="cancel-status">
+              <a href="https://wa.me/8050076136?text=Hello!%20I%20would%20like%20to%20chat%20with%20you.">Contact Us</a> OR <a href="https://www.adynamics.in?trigger=true">Try Again</a>.
+            </p>
             <p class="illegel-status">
-             Demo booking failed, Something went wrong
+              Demo booking failed, Something went wrong.
+            </p>
+            <p class="illegel-status">
+              <a href="https://wa.me/8050076136?text=Hello!%20I%20would%20like%20to%20chat%20with%20you.">Contact Us</a> OR <a href="https://www.adynamics.in?trigger=true">Try Again</a>.
             </p>
           </div>
         </div>
-      </div>
+      </div> 
+
 
     </div>
   </section>
@@ -859,6 +869,65 @@
             };
 
   </script>
+
+<?php
+echo "
+<script>
+  function statusResponse(status){
+    const demoBookingSection = document.querySelector(
+    'section.demo-booking-section'
+  );
+    console.log('status response working with status : ', status);
+
+
+      const demoBookingContainer1 = demoBookingSection.querySelector(
+    '.demo-booking-section-1'
+  );
+  const demoBookingContainer2 = demoBookingSection.querySelector(
+    '.demo-booking-section-2'
+  );
+  const demoBookingContainer3 = demoBookingSection.querySelector(
+    '.demo-booking-section-3'
+  );
+  const demoBookingContainer4 = demoBookingSection.querySelector(
+    '.demo-booking-section-4'
+  );
+      const bookingStatus = demoBookingContainer4.querySelector('.demo-booking-status');
+      const button = document.getElementById('demo-trigger');
+    if(status){
+      demoBookingContainer1.style.visibility = 'hidden';
+      demoBookingContainer2.style.visibility = 'hidden';
+      demoBookingContainer3.style.visibility = 'hidden';
+      demoBookingContainer4.style.visibility = 'visible';
+    }else{
+      demoBookingContainer1.style.visibility = 'visible';
+      return;
+    }
+
+    if (status === 'success') {
+      console.log('success');
+      bookingStatus.classList.add('success');
+       button.click();
+    }else if(status==='abort'){
+      console.log('abort');
+      bookingStatus.classList.add('abort');
+       button.click();
+    }else if(status==='cancel'){
+      console.log('cancel');
+      bookingStatus.classList.add('cancel');
+       button.click();
+    }else if(status==='illegel'){
+      console.log('illegel');
+      bookingStatus.classList.add('illegel');
+       button.click();
+    }
+
+
+  }
+</script>
+";
+?>
+
   <?php
 
   include '../responsehandler.php';
@@ -874,24 +943,56 @@
 
     switch (strtolower($result)) {
       case 'success':
-        echo "<script>";
-        echo "console.log(" . "'success'" . ");";
-        echo "</script>";
+        echo "
+      <script>
+      window.onload = function () {
+          statusResponse(" . "'success'" . ");
+           const button = document.getElementById('demo-trigger');
+            if (button) {
+              button.click();
+            }
+        };
+      </script>
+      ";
         break;
       case 'aborted':
-        echo "<script>";
-        echo "console.log(" . "'aborted'" . ");";
-        echo "</script>";
+        echo "
+      <script>
+      window.onload = function () {
+          statusResponse(" . "'abort'" . ");
+           const button = document.getElementById('demo-trigger');
+            if (button) {
+              button.click();
+            }
+        };
+      </script>
+      ";
         break;
       case 'failure':
-        echo "<script>";
-        echo "console.log(" . "'failure'" . ");";
-        echo "</script>";
+        echo "
+      <script>
+      window.onload = function () {
+          statusResponse(" . "'failure'" . ");
+           const button = document.getElementById('demo-trigger');
+            if (button) {
+              button.click();
+            }
+        };
+      </script>
+      ";
         break;
       default:
-        echo "<script>";
-        echo "console.log(" . "'illegal'" . ");";
-        echo "</script>";
+        echo "
+      <script>
+      window.onload = function () {
+          statusResponse(" . "'illegel'" . ");
+           const button = document.getElementById('demo-trigger');
+            if (button) {
+              button.click();
+            }
+        };
+      </script>
+      ";
         break;
     }
   }

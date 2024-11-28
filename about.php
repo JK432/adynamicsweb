@@ -75,12 +75,12 @@
   <link href="./css/bootstrap.min.css" rel="stylesheet" />
 
   <!-- Template Stylesheet -->
-  <link href="./css/style.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./css2/style.css">
-  <link rel="stylesheet" href="./check.css">
-  <link rel="stylesheet" href="./css/course-details.css" />
-  <link rel="stylesheet" href="./css/about-coolop.css">
-  <link rel="stylesheet" href="./css/contact-form.css">
+  <link href="./css/style.css?<?php echo filemtime('./css/style.css'); ?>" rel="stylesheet" />
+  <link rel="stylesheet" href="./css2/style.css?<?php echo filemtime('./css2/style.css'); ?>">
+  <link rel="stylesheet" href="./check.css?<?php echo filemtime('./check.css'); ?>">
+  <link rel="stylesheet" href="./css/course-details.css?<?php echo filemtime('./css/course-details.css'); ?>" />
+  <link rel="stylesheet" href="./css/about-coolop.css?<?php echo filemtime('./css/about-coolop.css'); ?>">
+  <link rel="stylesheet" href="./css/contact-form.css?<?php echo filemtime('./css/contact-form.css'); ?>">
 
 </head>
 
@@ -122,7 +122,7 @@
             </p>
 
             <div class="py-4 px-2 d-flex justify-content-center justify-content-xl-start">
-              <a class="btn btn-block hero-btn-course-details border-r10 py-3 px-5" href="./enquiry.html">Enroll Now</a>
+              <a class="btn btn-block hero-btn-course-details border-r10 py-3 px-5" href="./enquiry.php">Enroll Now</a>
             </div>
           </div>
         </div>
@@ -304,15 +304,15 @@
   <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
 
   <!-- Template Javascript -->
-  <script src="./js/main.js"></script>
-  <script src="./assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
-  <script src="./assets/js/swipe-content.js"></script>
+  <script src="./js/main.js?<?php echo filemtime('./js/main.js'); ?>"></script>
+  <script src="./assets/js/util.js?<?php echo filemtime('./assets/js/util.js'); ?>"></script> <!-- util functions included in the CodyHouse framework -->
+  <script src="./assets/js/swipe-content.js?<?php echo filemtime('./assets/js/swipe-content.js'); ?>"></script>
   <!-- A Vanilla JavaScript plugin to detect touch interactions -->
-  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/main.js?<?php echo filemtime('./assets/js/main.js'); ?>"></script>
   <!-- <script src="./assets/js/follower.js"></script> -->
 
   <!-- Import Header and Footer -->
-  <script src="js/header-global-fl.js"></script>
-  <script src="js/footer-global-fl.js"></script>
+  <script src="js/header-global-fl.js?<?php echo filemtime('js/header-global-fl.js'); ?>"></script>
+  <script src="js/footer-global-fl.js?<?php echo filemtime('js/footer-global-fl.js'); ?>"></script>
 
 </body>

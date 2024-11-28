@@ -74,10 +74,10 @@
   <link href="./css/bootstrap.min.css" rel="stylesheet" />
 
   <!-- Template Stylesheet -->
-  <link href="./css/style.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./check.css" />
-  <link rel="stylesheet" href="./css/enquiry.css" />
-  <link rel="stylesheet" href="./css2/style.css" />
+  <link href="./css/style.css?<?php echo filemtime('./css/style.css'); ?>" rel="stylesheet" />
+  <link rel="stylesheet" href="./check.css?<?php echo filemtime('./check.css'); ?>" />
+  <link rel="stylesheet" href="./css/enquiry.css?<?php echo filemtime('./css/enquiry.css'); ?>" />
+  <link rel="stylesheet" href="./css2/style.css?<?php echo filemtime('./css2/style.css'); ?>" />
 </head>
 
 <body>
@@ -157,8 +157,8 @@
   <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
 
   <!-- Template Javascript -->
-  <script src="./js/main.js"></script>
-  <script src="./assets/js/main.js"></script>
+  <script src="./js/main.js?<?php echo filemtime('./js/main.js'); ?>"></script>
+  <script src="./assets/js/main.js?<?php echo filemtime('./assets/js/main.js'); ?>"></script>
   <script>
     scriptURL = 'https://841ef5d6-d95a-4a12-878f-de12e62c0cdc.neodove.com/integration/custom/6d5d8342-f65d-4a0a-a750-a0f8e8af5dad/leads'
 
@@ -188,8 +188,8 @@
   </script>
 
   <!-- Import Header and Footer -->
-  <script src="js/header-global-fl.js"></script>
-  <script src="js/footer-global-fl.js"></script>
+  <script src="js/header-global-fl.js?<?php echo filemtime('js/header-global-fl.js'); ?>"></script>
+  <script src="js/footer-global-fl.js?<?php echo filemtime('js/footer-global-fl.js'); ?>"></script>
 
 </body>
 

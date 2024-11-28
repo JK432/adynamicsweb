@@ -2,14 +2,10 @@
 <html lang="en">
 
 <head>
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PFNNX2Q3');</script>
-  <!-- End Google Tag Manager -->
-  
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFNNX2Q3"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <!-- Google Tag Manager -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16756585547"></script>
 <script>
@@ -40,15 +36,13 @@
   <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=197457063420380&ev=PageView&noscript=1" />
   </noscript>
-  
+ 
  
 
 
   <meta charset="utf-8" />
-  <title>ANAC CPL Training | ADynamics</title>
+  <title>SACAA CPL Training | ADynamics</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta content="" name="keywords" />
-  <meta content="" name="description" />
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
@@ -72,17 +66,18 @@
 
   <!-- Customized Bootstrap Stylesheet -->
   <link href="../css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../css2/style.css" />
+
   <!-- Template Stylesheet -->
-  <link href="../css/style.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../css2/style.css" />
-  <link rel="stylesheet" href="../css/course-details.css" />
-  <link rel="stylesheet" href="../check.css" />
-  <link rel="stylesheet" href="../css/hero.css" />
+  <link href="../css/style.css?<?php echo filemtime('../css/style.css'); ?>" rel="stylesheet" />
+  <link rel="stylesheet" href="../css2/style.css?<?php echo filemtime('../css2/style.css'); ?>" />
+  <link rel="stylesheet" href="../css/course-details.css?<?php echo filemtime('../css/course-details.css'); ?>" />
+  <link rel="stylesheet" href="../check.css?<?php echo filemtime('../check.css'); ?>" />
+  <link rel="stylesheet" href="../css/hero.css?<?php echo filemtime('../css/hero.css'); ?>" />
+
 </head>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
+  <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFNNX2Q3"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
@@ -97,6 +92,7 @@
     </button>
   </div>
 
+
   <global-header></global-header>
 
 
@@ -110,7 +106,8 @@
               <p class="text-xl">WELCOME TO ADYNAMICS</p>
             </strong>
             <h1 class="pt- display-6">
-              Embark on your pilot journey with ANAC CPL Training in Argentina
+              Embark on your pilot journey with SACAA CPL Training in South
+              Africa
             </h1>
 
             <div class="btn-group home-demo">
@@ -315,91 +312,98 @@
             </ol>
           </div>
 
-          <div class="form-classes imPart-bg p-3 border-r10">
-            <h6 class="text-primary text-uppercase mb-2">Apply Now</h6>
-            <h5 class="mb-4">Make An Appointment now</h5>
-            <form id="cplArgentinaForm" name="cplArgentinaForm" onsubmit="Sendmail(); reset();">
-              <div class="row g-3">
-                <div class="col-sm-6">
-                  <div class="form-floating">
-                    <input type="text" class="form-control border-0 bg-white border-r8" id="fname" name="fname"
-                      placeholder="First Name" required />
-                    <label for="fname">First Name</label>
+          <div class="form-classes col-12 wow fadeInUp col-lg-6" data-wow-delay="0.5s" style="
+                visibility: visible;
+                animation-delay: 0.5s;
+                animation-name: fadeInUp;
+              ">
+
+            <div class="imPart-bg p-3 border-r10">
+              <h6 class="text-primary text-uppercase mb-2">Apply Now</h6>
+              <h5 class="mb-4">Make An Appointment now</h5>
+              <form id="cplsouthForm" name="cplsouthForm" onsubmit="Sendmail(); reset();">
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input type="text" class="form-control border-0 bg-white border-r8" id="fname" name="fname"
+                        placeholder="First Name" required />
+                      <label for="fname">First Name</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input type="text" class="form-control border-0 bg-white border-r8" id="lname" name="lname"
+                        placeholder="Last Name" required />
+                      <label for="lname">Last Name</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input type="email" class="form-control border-0 bg-white border-r8" id="email" name="email"
+                        placeholder="Email" required />
+                      <label for="email">Email</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input type="tel" class="form-control border-0 bg-white border-r8" id="phno" name="phone"
+                        placeholder="Phone No" required />
+                      <label for="phno">Phone No</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input type="date" class="form-control border-0 bg-white border-r8" id="dob" name="dob"
+                        placeholder="Date of Birth" required />
+                      <label for="dob">Date of Birth</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input type="text" class="form-control border-0 bg-white border-r8" id="stream" name="stream"
+                        placeholder="e.g. Science, Humanities" required />
+                      <label for="stream">12th Standard Stream</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <select class="form-select border-0 bg-white border-r8" id="CountryChoice"
+                        name="Choice of country for CPL training?" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="USA">USA</option>
+                        <option value="South Africa">South Africa</option>
+                        <option value="India">India</option>
+                        <option value="others">Others</option>
+                      </select>
+                      <label for="CountryChoice">Choice of country for CPL training?</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <label class="form-label" for="stages">What stage of training are you in?</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Cleared 12th Standard Exams" id="stageA"
+                        name="stages[]">
+                      <label class="form-check-label" for="stageA">Cleared 12th Standard Exams</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Have a Computer Number" id="stageB"
+                        name="stages[]">
+                      <label class="form-check-label" for="stageB">Have a Computer Number</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="CPL Exams Cleared(Nav, Met & Regs)"
+                        id="stageC" name="stages[]">
+                      <label class="form-check-label" for="stageC">CPL Exams Cleared(Nav, Met & Regs)</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button id="form-submit-btn" class="btn btn-primary w-100 py-3 border-r8" type="submit">
+                      Submit
+                    </button>
                   </div>
                 </div>
-                <div class="col-sm-6">
-                  <div class="form-floating">
-                    <input type="text" class="form-control border-0 bg-white border-r8" id="lname" name="lname"
-                      placeholder="Last Name" required />
-                    <label for="lname">Last Name</label>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-floating">
-                    <input type="email" class="form-control border-0 bg-white border-r8" id="email" name="email"
-                      placeholder="Email" required />
-                    <label for="email">Email</label>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-floating">
-                    <input type="tel" class="form-control border-0 bg-white border-r8" id="phno" name="phone"
-                      placeholder="Phone No" required />
-                    <label for="phno">Phone No</label>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-floating">
-                    <input type="date" class="form-control border-0 bg-white border-r8" id="dob" name="dob"
-                      placeholder="Date of Birth" required />
-                    <label for="dob">Date of Birth</label>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-floating">
-                    <input type="text" class="form-control border-0 bg-white border-r8" id="stream" name="stream"
-                      placeholder="e.g. Science, Humanities" required />
-                    <label for="stream">12th Standard Stream</label>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-floating">
-                    <select class="form-select border-0 bg-white border-r8" id="CountryChoice"
-                      name="Choice of country for CPL training?" required>
-                      <option value="" disabled selected>Select an option</option>
-                      <option value="USA">USA</option>
-                      <option value="South Africa">South Africa</option>
-                      <option value="India">India</option>
-                      <option value="others">Others</option>
-                    </select>
-                    <label for="CountryChoice">Choice of country for CPL training?</label>
-                  </div>
-                </div>
-                <div class="col-sm-12">
-                  <label class="form-label" for="stages">What stage of training are you in?</label>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="Cleared 12th Standard Exams" id="stageA"
-                      name="stages[]">
-                    <label class="form-check-label" for="stageA">Cleared 12th Standard Exams</label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="Have a Computer Number" id="stageB"
-                      name="stages[]">
-                    <label class="form-check-label" for="stageB">Have a Computer Number</label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="CPL Exams Cleared(Nav, Met & Regs)"
-                      id="stageC" name="stages[]">
-                    <label class="form-check-label" for="stageC">CPL Exams Cleared(Nav, Met & Regs)</label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <button id="form-submit-btn" class="btn btn-primary w-100 py-3 mt-3 border-r8" type="submit">
-                    Submit
-                  </button>
-                </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -432,7 +436,7 @@
             <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
               <img class="img-fluid border-r10" src="../img/cource1.png" alt="" />
               <div class="courses-overlay">
-                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/pretyping.html">Read
+                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/pretyping.php">Read
                   More</a>
               </div>
             </div>
@@ -485,7 +489,7 @@
             <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
               <img class="img-fluid border-r10" src="../img/rtrclasses.png" alt="" />
               <div class="courses-overlay">
-                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/RTR.html">Read
+                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/RTR.php">Read
                   More</a>
               </div>
             </div>
@@ -511,7 +515,7 @@
             <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
               <img class="img-fluid border-r10" src="../img/nios-prepclasses.png" alt="" />
               <div class="courses-overlay">
-                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/niosclasses.html">Read
+                <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/niosclasses.php">Read
                   More</a>
               </div>
             </div>
@@ -544,7 +548,7 @@
               <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
                 <img class="img-fluid border-r10 w-100 h-100" src="../img/cource1.png" alt="" />
                 <div class="courses-overlay">
-                  <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/pretyping.html">Read
+                  <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/pretyping.php">Read
                     More</a>
                 </div>
               </div>
@@ -596,7 +600,7 @@
               <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
                 <img class="img-fluid border-r10 w-100 h-100" src="../img/rtrclasses.png" alt="" />
                 <div class="courses-overlay">
-                  <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/RTR.html">Read
+                  <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/RTR.php">Read
                     More</a>
                 </div>
               </div>
@@ -622,7 +626,7 @@
               <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
                 <img class="img-fluid border-r10 w-100 h-100" src="../img/nios-prepclasses.png" alt="" />
                 <div class="courses-overlay">
-                  <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/niosclasses.html">Read
+                  <a class="btn btn-outline-primary border-2 courses-btn-bg" href="../classes/niosclasses.php">Read
                     More</a>
                 </div>
               </div>
@@ -637,8 +641,6 @@
 
   <global-footer></global-footer>
 
-  <!-- Back to Top -->
-
 
   <!-- JavaScript Libraries -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -652,23 +654,25 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
   <!-- Template Javascript -->
-  <script src="../js/main.js"></script>
-  <script src="../assets/js/main.js"></script>
+  <script src="../js/main.js?<?php echo filemtime('../js/main.js'); ?>"></script>
+  <script src="../assets/js/main.js?<?php echo filemtime('../assets/js/main.js'); ?>"></script>
+  
   <!-- Import Header and Footer -->
-  <script src="../js/header-global.js"></script>
-  <script src="../js/footer-global.js"></script>
+  <script src="../js/header-global.js?<?php echo filemtime('../js/header-global.js'); ?>"></script>
+  <script src="../js/footer-global.js?<?php echo filemtime('../js/footer-global.js'); ?>"></script>
+
   <script>
     scriptURL = 'https://script.google.com/macros/s/AKfycbycwxQkSHyTjQ9CUaKqMmWUutWbbBT2K9PmWDOZ6bT_rV-nlXdKDJa6KPlWO2otwBqfZg/exec'
 
-    cplArgentinaForm = document.forms['cplArgentinaForm']
+    cplsouthForm = document.forms['cplsouthForm']
 
-    cplArgentinaForm.addEventListener('submit', e => {
+    cplsouthForm.addEventListener('submit', e => {
       e.preventDefault()
       const submitBtn = document.getElementById('form-submit-btn');
       submitBtn.disabled = true;
       submitBtn.innerText = "Submitting...";
 
-      formData = new FormData(cplArgentinaForm);
+      formData = new FormData(cplsouthForm);
       currentDate = new Date();
 
       formattedDate = currentDate.getFullYear() + '-' +
@@ -678,7 +682,7 @@
         String(currentDate.getMinutes()).padStart(2, '0') + ':' +
         String(currentDate.getSeconds()).padStart(2, '0');
 
-      formName = 'CPL Argentina Form';
+      formName = 'CPL South Form';
       formData.append('formName', formName);
       formData.append('dateTime', formattedDate);
       fetch(scriptURL, { method: 'POST', body: formData })
