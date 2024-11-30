@@ -3,20 +3,23 @@
 
 <head>
   <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PFNNX2Q3');</script>
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PFNNX2Q3');</script>
   <!-- End Google Tag Manager -->
-  
+
   <!-- Google Tag Manager -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16756585547"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-  
+
     gtag('config', 'AW-16756585547');
   </script>
   <!-- End Google Tag Manager -->
@@ -93,9 +96,9 @@
 </head>
 
 <body>
- <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFNNX2Q3"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFNNX2Q3" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
   <div class="demo-class">
@@ -114,76 +117,76 @@
 
 
 
-  	<!-- Detail Start -->
-	<section class="hero py-5 py-lg-2 py-xl-5 py-6 imSection-bg" style="margin-top: -50px" id="demo">
-		<div class="container-xxl grid py-3 mt-xl-1">
-			<div class="row">
-				<div class="hero-text-section col-lg-6 order-lg-1 order-2 py-3 py-sm-5">
-					<div class="hero-text-wrapper text-lg-start text-center px-0 px-sm-4">
-						<!-- <strong>
-							<p class="text-xl">CPL and Type Rating Training</p>
-						</strong> -->
-						<h1 class="pt- display-6">
-							Access to top <span style="display: inline;color: #49aaaa;">instructors</span>  and learning aids
-						</h1>
+  <!-- Detail Start -->
+  <section class="hero py-5 py-lg-2 py-xl-5 py-6 imSection-bg" style="margin-top: -50px" id="demo">
+    <div class="container-xxl grid py-3 mt-xl-1">
+      <div class="row">
+        <div class="hero-text-section col-lg-6 order-lg-1 order-2 py-3 py-sm-5">
+          <div class="hero-text-wrapper text-lg-start text-center px-0 px-sm-4">
+            <!-- <strong>
+              <p class="text-xl">CPL and Type Rating Training</p>
+            </strong> -->
+            <h1 class="pt- display-6">
+              Access to top <span style="display: inline;color: #49aaaa;">instructors</span> and learning aids
+            </h1>
 
-						<div class="d-none d-lg-flex btn-group home-demo">
-							<a href="#topics-covered" class="btn btn-primary"
-								style="border-end-end-radius: 50px; background-color: #49aaaa">Discover More</a>
+            <div class="d-none d-lg-flex btn-group home-demo">
+              <a href="#topics-covered" class="btn btn-primary "
+                style="border-end-end-radius: 50px; background-color: #49aaaa">Discover More</a>
 
-							<!-- <button class="flex-btn" onclick="playDemoClass()" id="demo-trigger"> -->
-                <button class="flex-btn btn-icon" style="background-color: #49aaaa" id="demo-trigger">
-                  <!-- <div class="btn-icon" style="background-color: #49aaaa">
+              <!-- <button class="flex-btn" onclick="playDemoClass()" id="demo-trigger"> -->
+              <button class="flex-btn btn-icon demo-trigger" style="background-color: #49aaaa" id="demo-trigger">
+                <!-- <div class="btn-icon" style="background-color: #49aaaa">
                     <ion-icon name="play" aria-hidden="true"></ion-icon>
                   </div> -->
-                  <span class="span" style="color: white;font-size: 20px;">Book Demo Slot</span>
-                </button>
-						</div>
-					</div>
-				</div>
-				<div class="hero-video-section col-lg-6 order-2 py-5">
-					<img fetchpriority="high" decoding="async" width="900" height="506"
-						class="img-fluid mw-sm-100 w-md-80 w-lg-80" src="../img/thumbnail.png" srcset="
+                <span class="span" style="color: white;font-size: 20px;">Book Demo Slot</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="hero-video-section col-lg-6 order-2 py-5">
+          <img fetchpriority="high" decoding="async" width="900" height="506"
+            class="img-fluid mw-sm-100 w-md-80 w-lg-80" src="../img/thumbnail.png" srcset="
                 ../img/thumbnail.png 900w,
                 ../img/thumbnail.png 300w,
                 ../img/thumbnail.png 768w
               " sizes="(max-width: 900px) 100vw, 900px" />
-					<a href="#">
-						<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
-							onclick="playDemoClass()">
-							<g id="Group_205" data-name="Group 205" transform="translate(-1462 -4918)">
-								<circle id="Ellipse_12" data-name="Ellipse 12" cx="25" cy="25" r="25"
-									transform="translate(1462 4918)" fill="#fff"></circle>
-								<path id="play-svgrepo-com"
-									d="M8.286,3.407A1.5,1.5,0,0,0,6,4.684V19.316a1.5,1.5,0,0,0,2.286,1.277l11.888-7.316a1.5,1.5,0,0,0,0-2.555Z"
-									transform="translate(1475.556 4931)" fill="#49aaaa"></path>
-							</g>
-						</svg>
-					</a>
-					<div class="video-background-lg d-none d-xxl-block"></div>
-				</div>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
+              onclick="playDemoClass()">
+              <g id="Group_205" data-name="Group 205" transform="translate(-1462 -4918)">
+                <circle id="Ellipse_12" data-name="Ellipse 12" cx="25" cy="25" r="25" transform="translate(1462 4918)"
+                  fill="#fff"></circle>
+                <path id="play-svgrepo-com"
+                  d="M8.286,3.407A1.5,1.5,0,0,0,6,4.684V19.316a1.5,1.5,0,0,0,2.286,1.277l11.888-7.316a1.5,1.5,0,0,0,0-2.555Z"
+                  transform="translate(1475.556 4931)" fill="#49aaaa"></path>
+              </g>
+            </svg>
+          </a>
+          <div class="video-background-lg d-none d-xxl-block"></div>
+        </div>
 
-				<div class="d-lg-none btn-group home-demo order-3">
-					<a href="#topics-covered" class="btn btn-primary"
-						style="border-end-end-radius: 50px; background-color: #49aaaa">Discover More</a>
+        <div class="d-lg-none btn-group home-demo order-3">
+          <!-- <a href="#topics-covered" class="btn btn-primary"
+            style="border-end-end-radius: 50px; background-color: #49aaaa">Discover More</a> -->
 
-					<!-- <button class="flex-btn" onclick="playDemoClass()" id="demo-trigger"> -->
-            <button class="flex-btn btn-icon" style="background-color: #49aaaa" id="demo-trigger">
-              <!-- <div class="btn-icon" style="background-color: #49aaaa">
+          <!-- <button class="flex-btn" onclick="playDemoClass()" id="demo-trigger"> -->
+          <button class="flex-btn btn-icon demo-trigger" style="background-color: #49aaaa" id="demo-trigger">
+            <!-- <div class="btn-icon" style="background-color: #49aaaa">
                 <ion-icon name="play" aria-hidden="true"></ion-icon>
               </div> -->
-              <span class="span" style="color: white;font-size: 20px;">Book Demo Slot</span>
-            </button>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Detail End -->
+            <span class="span" style="color: white;font-size: 20px;">Book Demo Slot</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Detail End -->
 
 
 
 
-  <section class="section-course-head pt-5">
+  <section class="section-course-head pt-5" id="topics-covered">
     <div class="container-lg pt-5 mt-2">
       <div class="d-flex align-items-center justify-content-between gap-2">
         <!-- card 1 -->
@@ -614,7 +617,7 @@
   <!-- Section for Appointment -->
 
 
-<!-- demo booking section -->
+  <!-- demo booking section -->
 
   <section class="demo-booking-section">
     <div class="demo-booking-section-close" id="demo-close">
@@ -638,13 +641,13 @@
           <div class="demo-calender">
             <div class="calendar-container">
               <div class="calendar-header">
-                  <button id="prevMonth">
-                    <i class="bi bi-chevron-left"></i>
-                  </button>
-                  <h2 id="monthDisplay"></h2>
-                  <button id="nextMonth">
-                    <i class="bi bi-chevron-right"></i>
-                  </button>
+                <button id="prevMonth">
+                  <i class="bi bi-chevron-left"></i>
+                </button>
+                <h2 id="monthDisplay"></h2>
+                <button id="nextMonth">
+                  <i class="bi bi-chevron-right"></i>
+                </button>
               </div>
               <div class="calendar-grid" id="calendarGrid"></div>
               <div class="selected-date-display" id="selectedDateDisplay"></div>
@@ -710,9 +713,9 @@
               </h3>
               <p>
                 <span class="demo-month" id="demo-month-id">December</span>&nbsp;
-                <span class="demo-day"  id="demo-day-id">13</span>,&nbsp;
-                <span class="demo-year"  id="demo-year-id">2024</span>,&nbsp;
-                <span id="demo-time" >8 : 00 PM</span>
+                <span class="demo-day" id="demo-day-id">13</span>,&nbsp;
+                <span class="demo-year" id="demo-year-id">2024</span>,&nbsp;
+                <span id="demo-time">8 : 00 PM</span>
               </p>
             </div>
             <div class="demo-time-slot">
@@ -764,23 +767,26 @@
               Your demo booking has been aborted.
             </p>
             <p class="abort-status">
-              <a href="https://wa.me/8050076136?text=Hello!%20I%20would%20like%20to%20chat%20with%20you.">Contact Us</a> OR <a href="https://www.adynamics.in?trigger=true">Try Again</a>.
+              <a href="https://wa.me/8050076136?text=Hello!%20I%20would%20like%20to%20chat%20with%20you.">Contact Us</a>
+              OR <a href="https://www.adynamics.in?trigger=true">Try Again</a>.
             </p>
             <p class="cancel-status">
               Your demo booking has been canceled.
             </p>
             <p class="cancel-status">
-              <a href="https://wa.me/8050076136?text=Hello!%20I%20would%20like%20to%20chat%20with%20you.">Contact Us</a> OR <a href="https://www.adynamics.in?trigger=true">Try Again</a>.
+              <a href="https://wa.me/8050076136?text=Hello!%20I%20would%20like%20to%20chat%20with%20you.">Contact Us</a>
+              OR <a href="https://www.adynamics.in?trigger=true">Try Again</a>.
             </p>
             <p class="illegel-status">
               Demo booking failed, Something went wrong.
             </p>
             <p class="illegel-status">
-              <a href="https://wa.me/8050076136?text=Hello!%20I%20would%20like%20to%20chat%20with%20you.">Contact Us</a> OR <a href="https://www.adynamics.in?trigger=true">Try Again</a>.
+              <a href="https://wa.me/8050076136?text=Hello!%20I%20would%20like%20to%20chat%20with%20you.">Contact Us</a>
+              OR <a href="https://www.adynamics.in?trigger=true">Try Again</a>.
             </p>
           </div>
         </div>
-      </div> 
+      </div>
 
 
     </div>
@@ -826,7 +832,7 @@
   <script src="../js/demo-booking.js?<?php echo filemtime('../js/demo-booking.js'); ?>"></script>
 
   <script>
-    scriptURL = 'https://841ef5d6-d95a-4a12-878f-de12e62c0cdc.neodove.com/integration/custom/9ff3680a-3a81-469b-a973-21f306d15f8d/leads'
+    scriptURL = 'https://841ef5d6-d95a-4a12-878f-de12e62c0cdc.neodove.com/integration/custom/c81aac41-8d45-428b-91e3-af232c49454e/leads'
     dgcagroundForm = document.forms['dgcagroundForm']
 
     dgcagroundForm.addEventListener('submit', e => {
@@ -851,29 +857,41 @@
     });
 
 
-           function getQueryParam(param) {
-              const urlParams = new URLSearchParams(window.location.search);
-              return urlParams.get(param);
-            }
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
 
-            window.onload = function () {
+    window.onload = function () {
 
-              const shouldTrigger = getQueryParam('trigger');
+      const shouldTrigger = getQueryParam('trigger');
 
-              if (shouldTrigger === 'true') { // Condition: trigger is "true"
-                const button = document.getElementById('demo-trigger');
-                if (button) {
-                  button.click();
-                }
-              }
-            };
+      if (shouldTrigger === 'true') { // Condition: trigger is "true"
+        const button = document.getElementById('demo-trigger');
+        if (button) {
+          button.click();
+        }
+      }
+    };
 
   </script>
 
-<?php
-echo "
+  <?php
+  echo "
 <script>
+   function isValidJSON(str) {
+      try {
+          JSON.parse(str); // Try parsing
+          return true; // Valid JSON
+      } catch (e) {
+          return false; // Invalid JSON
+      }
+  }
+
   function statusResponse(status){
+
+
+
     const demoBookingSection = document.querySelector(
     'section.demo-booking-section'
   );
@@ -921,12 +939,18 @@ echo "
       bookingStatus.classList.add('illegel');
        button.click();
     }
-
+    const userdata_string = localStorage.getItem('demo_data');
+    if((!isValidJSON(userdata_string)) || userdata_string == null){}else{
+        data = JSON.parse(userdata_string)
+        data.status = status;
+        scriptURL = 'https://script.google.com/macros/s/AKfycbwehUQDn3pe_sW33I6SX9QDRTlKw4NBA9FonODZfQWVgm1Z9jODIQwJ89iuXjuQRrlAHw/exec'
+        fetch(scriptURL, { method: 'POST', body: JSON.stringify(data), mode: 'no-cors' })
+    }
 
   }
 </script>
 ";
-?>
+  ?>
 
   <?php
 

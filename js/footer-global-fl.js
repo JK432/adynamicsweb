@@ -84,7 +84,7 @@ class GlobalFooter extends HTMLElement {
   <button
   style="position: fixed; width: 50px; height: 54px; background-color: #FFFFFF !important; border: 1px solid #ddd !important; z-index: 1000 !important; padding: 5px; right: 23px !important; bottom: 30px !important; border: none; color: green; font-size: 28px; border-radius: 100%; display: flex; align-items: center; justify-content: center; line-height: unset;"
   >
-  <a href="https://wa.me/8050076136?text=Hello!%20I%20would%20like%20to%20chat%20with%20you." target="_blank" title="Connect Whatsapp"
+  <a href="https://wa.me/+918050076136?text=Hello!%20I%20would%20like%20to%20chat%20with%20you." target="_blank" title="Connect Whatsapp"
     class="btn-whtsp"><i class="bi bi-whatsapp"></i>
     </a>
   </button>

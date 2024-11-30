@@ -1,5 +1,18 @@
+function isValidJSON(str) {
+
+    if((!isValidJSON(userdata_string)) || userdata_string == null){}
+
+    try {
+        JSON.parse(str);
+        return true;
+    } catch (e) {
+        return false; 
+    }
+    
+}
+
 document.addEventListener("DOMContentLoaded", () => {
-  const demoTrigger = document.getElementById("demo-trigger");
+  const demoTrigger = document.querySelectorAll('.demo-trigger');
   const demoBookingSection = document.querySelector(
     "section.demo-booking-section"
   );
@@ -7,8 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "section.demo-booking-section .demo-booking-container"
   );
   const demoClose = document.querySelector("#demo-close");
-
-  demoTrigger.addEventListener("click", (event) => {
+  demoTrigger.forEach(button => {
+  button.addEventListener("click", (event) => {
     event.stopPropagation();
     demoBookingSection.style.display = "flex";
     demoBookingSection.classList.add("fade-in");
@@ -17,6 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
       demoContainer.classList.add("active");
     }, 220);
   });
+
+  });
+
 
   demoClose.addEventListener("click", () => {
     demoContainer.classList.remove("active");
@@ -87,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
     demoBookingContainer4.style.visibility = "hidden";
   });
 
-  submitDemoBooking.addEventListener("click", () => {
+  submitDemoBooking.addEventListener("click", async () => {
 
     	submitDemoBooking.disabled = true;
 			submitDemoBooking.innerText = "Loading...";
@@ -112,20 +128,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // send data to google sheets
 
-    scriptURL = 'https://script.google.com/macros/s/AKfycbyPMxgvHAWuF8yrbBkMJP0T5UsDz0dqtlzMMcK-gORibCNYmwtcKMKDFaLpVQU3ybfZRw/exec'
+    scriptURL = 'https://script.google.com/macros/s/AKfycbwehUQDn3pe_sW33I6SX9QDRTlKw4NBA9FonODZfQWVgm1Z9jODIQwJ89iuXjuQRrlAHw/exec'
       const timestamp = Date.now();
       const formData = new FormData();
-			formData.append('name', userName);
-			formData.append('email', userEmail);
-      formData.append("phone", userPhone);
-      formData.append("date", selectedDate);
-      formData.append("order_id",`${userPhone}_${timestamp}`)
+      const data = {
+        name:userName,
+        email:userEmail,
+        phone:userPhone,
+        date:selectedDate,
+        order_id:`${userPhone}_${timestamp}`,
+        status:'intiated'
+      }
+      localStorage.setItem('demo_data', JSON.stringify(data));
 
-      fetch(scriptURL, { method: 'POST', body: formData, mode: "no-cors" })
+			// formData.append('name', userName);
+			// formData.append('email', userEmail);
+      // formData.append("phone", userPhone);
+      // formData.append("date", selectedDate);
+      // formData.append("order_id",`${userPhone}_${timestamp}`);
+      // formData.append("status","intiated");
+
+     await fetch(scriptURL, { method: 'POST', body: JSON.stringify(data), mode: "no-cors" })
       const postData = {
                       merchant_id: "3651020",
                       language: "EN",
-                      amount: "10",
+                      amount: "99",
                       currency: "INR",
                       redirect_url: "https://www.adynamics.in/",
                       cancel_url: "https://www.adynamics.in/",

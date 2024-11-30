@@ -2,25 +2,28 @@
 <html lang="en">
 
 <head>
- 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PFNNX2Q3');</script>
-  <!-- End Google Tag Manager -->
-  
-  
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16756585547"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'AW-16756585547');
-</script>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PFNNX2Q3');</script>
+  <!-- End Google Tag Manager -->
+
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16756585547"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-16756585547');
+  </script>
 
   <!-- Meta Pixel Code -->
   <script>
@@ -129,7 +132,7 @@
 
   <!-- Template Stylesheet -->
   <link href="./css/style.css?<?php echo filemtime('./css/style.css'); ?>" rel="stylesheet" />
- <link rel="stylesheet" href="./css2/style.css?<?php echo filemtime('./css2/style.css'); ?>" />
+  <link rel="stylesheet" href="./css2/style.css?<?php echo filemtime('./css2/style.css'); ?>" />
   <link rel="stylesheet" href="./scss/follower.scss" />
   <link rel="stylesheet" href="./scss/bootstrap/scss/_carousel.scss" />
   <link rel="stylesheet" href="./check.css" />
@@ -306,9 +309,9 @@
 
 
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFNNX2Q3"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFNNX2Q3" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- Spinner Start -->
@@ -364,7 +367,7 @@
           style="border-end-end-radius: 50px; background-color: #49aaaa">Discover More</a>
 
         <!-- <button class="flex-btn" onclick="playDemoClass()" id="demo-trigger"> -->
-        <button class="flex-btn btn-icon" style="background-color: #49aaaa" id="demo-trigger">
+        <button class="flex-btn btn-icon demo-trigger" style="background-color: #49aaaa" id="demo-trigger">
           <!-- <div class="btn-icon" style="background-color: #49aaaa">
             <ion-icon name="play" aria-hidden="true"></ion-icon>
           </div> -->
@@ -889,7 +892,7 @@
                                     href="https://ocfc.com/">https://ocfc.com/</a></span>
                               </p>
                             </li>
-                           
+
                           </ul>
                         </div>
                       </div>
@@ -1071,7 +1074,7 @@
                       <div class="timeline-text">
                         <h6>Moroccan CPL Training </h6>
                         <p>
-                          provide a link to the websites of Moroccan 
+                          provide a link to the websites of Moroccan
                           partner flight schools on the CPL Training section
                           of our ADynamics website
                         </p>
@@ -1081,7 +1084,7 @@
                               <p>
                                 <span style="color: #111">CFPNC Flight Academy: </span><span><a href=" https://groupecfpnc.com/nos-filieres/pilote-de-ligne/ 
 
-                              ">https://groupecfpnc.com/nos-filieres/pilote-de-ligne/ 
+                              ">https://groupecfpnc.com/nos-filieres/pilote-de-ligne/
 
                                   </a></span>
                               </p>
@@ -2043,13 +2046,13 @@
           <div class="demo-calender">
             <div class="calendar-container">
               <div class="calendar-header">
-                  <button id="prevMonth">
-                    <i class="bi bi-chevron-left"></i>
-                  </button>
-                  <h2 id="monthDisplay"></h2>
-                  <button id="nextMonth">
-                    <i class="bi bi-chevron-right"></i>
-                  </button>
+                <button id="prevMonth">
+                  <i class="bi bi-chevron-left"></i>
+                </button>
+                <h2 id="monthDisplay"></h2>
+                <button id="nextMonth">
+                  <i class="bi bi-chevron-right"></i>
+                </button>
               </div>
               <div class="calendar-grid" id="calendarGrid"></div>
               <div class="selected-date-display" id="selectedDateDisplay"></div>
@@ -2114,9 +2117,9 @@
               </h3>
               <p>
                 <span class="demo-month" id="demo-month-id">December</span>&nbsp;
-                <span class="demo-day"  id="demo-day-id">13</span>,&nbsp;
-                <span class="demo-year"  id="demo-year-id">2024</span>,&nbsp;
-                <span id="demo-time" >8 : 00 PM</span>
+                <span class="demo-day" id="demo-day-id">13</span>,&nbsp;
+                <span class="demo-year" id="demo-year-id">2024</span>,&nbsp;
+                <span id="demo-time">8 : 00 PM</span>
               </p>
             </div>
             <div class="demo-time-slot">
@@ -2168,23 +2171,26 @@
               Your demo booking has been aborted.
             </p>
             <p class="abort-status">
-              <a href="https://wa.me/8050076136?text=Hello!%20I%20would%20like%20to%20chat%20with%20you.">Contact Us</a> OR <a href="https://www.adynamics.in?trigger=true">Try Again</a>.
+              <a href="https://wa.me/8050076136?text=Hello!%20I%20would%20like%20to%20chat%20with%20you.">Contact Us</a>
+              OR <a href="https://www.adynamics.in?trigger=true">Try Again</a>.
             </p>
             <p class="cancel-status">
               Your demo booking has been canceled.
             </p>
             <p class="cancel-status">
-              <a href="https://wa.me/8050076136?text=Hello!%20I%20would%20like%20to%20chat%20with%20you.">Contact Us</a> OR <a href="https://www.adynamics.in?trigger=true">Try Again</a>.
+              <a href="https://wa.me/8050076136?text=Hello!%20I%20would%20like%20to%20chat%20with%20you.">Contact Us</a>
+              OR <a href="https://www.adynamics.in?trigger=true">Try Again</a>.
             </p>
             <p class="illegel-status">
               Demo booking failed, Something went wrong.
             </p>
             <p class="illegel-status">
-              <a href="https://wa.me/8050076136?text=Hello!%20I%20would%20like%20to%20chat%20with%20you.">Contact Us</a> OR <a href="https://www.adynamics.in?trigger=true">Try Again</a>.
+              <a href="https://wa.me/8050076136?text=Hello!%20I%20would%20like%20to%20chat%20with%20you.">Contact Us</a>
+              OR <a href="https://www.adynamics.in?trigger=true">Try Again</a>.
             </p>
           </div>
         </div>
-      </div> 
+      </div>
 
 
     </div>
@@ -2230,32 +2236,45 @@
   <script src="js/footer-global-fl.js?<?php echo filemtime('./js/footer-global-fl.js'); ?>"></script>
 
   <!-- Demo Booking Section js-->
-   <script src="./js/demo-booking.js?<?php echo filemtime('./js/demo-booking.js'); ?>"></script>
-   <script src="./js/customCalender.js?<?php echo filemtime('./js/customCalender.js'); ?>"></script>
+  <script src="./js/demo-booking.js?<?php echo filemtime('./js/demo-booking.js'); ?>"></script>
+  <script src="./js/customCalender.js?<?php echo filemtime('./js/customCalender.js'); ?>"></script>
 
   <script>
-       function getQueryParam(param) {
-          const urlParams = new URLSearchParams(window.location.search);
-          return urlParams.get(param);
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    window.onload = function () {
+
+      const shouldTrigger = getQueryParam('trigger');
+
+      if (shouldTrigger === 'true') { // Condition: trigger is "true"
+        const button = document.getElementById('demo-trigger');
+        if (button) {
+          button.click();
         }
-
-        window.onload = function () {
-          
-          const shouldTrigger = getQueryParam('trigger');
-
-          if (shouldTrigger === 'true') { // Condition: trigger is "true"
-            const button = document.getElementById('demo-trigger');
-            if (button) {
-              button.click();
-            }
-          }
-        };
+      }
+    };
   </script>
 
-<?php
-echo "
+  <?php
+  echo "
 <script>
+
+  function isValidJSON(str) {
+      try {
+          JSON.parse(str); // Try parsing
+          return true; // Valid JSON
+      } catch (e) {
+          return false; // Invalid JSON
+      }
+  }
+
   function statusResponse(status){
+
+    
+
     const demoBookingSection = document.querySelector(
     'section.demo-booking-section'
   );
@@ -2304,29 +2323,36 @@ echo "
        button.click();
     }
 
+    const userdata_string = localStorage.getItem('demo_data');
+    if((!isValidJSON(userdata_string)) || userdata_string == null){}else{
+        data = JSON.parse(userdata_string)
+        data.status = status;
+        scriptURL = 'https://script.google.com/macros/s/AKfycbwehUQDn3pe_sW33I6SX9QDRTlKw4NBA9FonODZfQWVgm1Z9jODIQwJ89iuXjuQRrlAHw/exec'
+        fetch(scriptURL, { method: 'POST', body: JSON.stringify(data), mode: 'no-cors' })
+    }
 
   }
 </script>
 ";
-?>
+  ?>
 
 
-<?php
+  <?php
 
-include 'responsehandler.php';
+  include 'responsehandler.php';
 
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['encResp'])) {
-    $encResponse = $_POST['encResp']; 
+  if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['encResp'])) {
+    $encResponse = $_POST['encResp'];
 
-    
+
     $result = processEncResponse($encResponse);
 
 
-    
-  switch (strtolower($result)) {
-    case 'success':
-      echo "
+
+    switch (strtolower($result)) {
+      case 'success':
+        echo "
       <script>
       window.onload = function () {
           statusResponse(" . "'success'" . ");
@@ -2337,9 +2363,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['encResp'])) {
         };
       </script>
       ";
-      break;
-    case 'aborted':
-      echo "
+        break;
+      case 'aborted':
+        echo "
       <script>
       window.onload = function () {
           statusResponse(" . "'abort'" . ");
@@ -2350,9 +2376,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['encResp'])) {
         };
       </script>
       ";
-      break;
-    case 'failure':
-      echo "
+        break;
+      case 'failure':
+        echo "
       <script>
       window.onload = function () {
           statusResponse(" . "'failure'" . ");
@@ -2363,9 +2389,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['encResp'])) {
         };
       </script>
       ";
-      break;
-    default:
-      echo "
+        break;
+      default:
+        echo "
       <script>
       window.onload = function () {
           statusResponse(" . "'illegel'" . ");
@@ -2376,10 +2402,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['encResp'])) {
         };
       </script>
       ";
-      break;
+        break;
+    }
   }
-}
-?>
+  ?>
 
 </body>
 
