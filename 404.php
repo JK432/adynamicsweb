@@ -56,7 +56,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
-  <link rel="manifest" href="./site.webmanifest">
+  <link rel="manifest" href="/site.webmanifest">
 
   <!-- Google Web Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -69,11 +69,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
   <!-- Libraries Stylesheet -->
-  <link href="./lib/animate/animate.min.css" rel="stylesheet">
-  <link href="./lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
   <!-- Customized Bootstrap Stylesheet -->
-  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Template Stylesheet -->
   <link href="/css/style.css?<?php echo filemtime('/css/style.css'); ?>" rel="stylesheet">
@@ -138,7 +138,7 @@
           <h1 class="display-1">404</h1>
           <h1 class="mb-4">Page Not Found</h1>
           <p class="mb-4">We're sorry, the page you have looked for does not exist in our website!</p>
-          <a class="btn btn-primary py-3 px-5" href="./index.php">Go Back To Home</a>
+          <a class="btn btn-primary py-3 px-5" href="/index.php">Go Back To Home</a>
         </div>
       </div>
     </div>
@@ -147,13 +147,13 @@
   <!-- JavaScript Libraries -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/waypoints/waypoints.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="/lib/wow/wow.min.js"></script>
+  <script src="/lib/easing/easing.min.js"></script>
+  <script src="/lib/waypoints/waypoints.min.js"></script>
+  <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
 
   <!-- Template Javascript -->
-  <script src="js/main.js?<?php echo filemtime('js/main.js'); ?>"></script>
+  <script src="/js/main.js?<?php echo filemtime('/js/main.js'); ?>"></script>
 </body>
 
 </html>
