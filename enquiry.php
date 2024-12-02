@@ -105,7 +105,7 @@
   <section class="enquiry-section">
     <div class="form-container">
 
-      <form id="enquiryForm" name="enquiryForm" onsubmit="Sendmail(); reset();">
+      <form id="enquiryForm" name="enquiryForm">
         <h1>Enquiry Form</h1>
         <p>Fill out the form below to get in touch with us.</p>
         <div class="input-container">
@@ -135,7 +135,7 @@
           <span><i class="fa fa-comment"></i></span>
           <textarea id="message" name="message" placeholder="Message" required></textarea>
         </div>
-        <button type="submit">Submit</button>
+        <button id="form-submit-btn" type="submit">Submit</button>
       </form>
       <img src="./assets/img/enquiry-bg-1.jpeg" alt="">
     </div>
@@ -165,6 +165,9 @@
     const Enquiryform = document.forms['enquiryForm']
 
     Enquiryform.addEventListener('submit', e => {
+      const submitBtn = document.getElementById('form-submit-btn');
+			submitBtn.disabled = true;
+			submitBtn.innerText = "Submitting...";
       e.preventDefault()
       formData = new FormData(Enquiryform);
       currentDate = new Date();
@@ -179,9 +182,29 @@
       formName = 'Enquiry Form';
       formData.append('formName', formName);
       formData.append('dateTime', formattedDate);
-      fetch(scriptURL, { method: 'POST', body: formData })
-        .then(response => alert("Thank you! your form is submitted successfully."))
-        .then(() => { window.location.reload(); })
+			const jsonObject = {};
+			formData.forEach((value, key) => {
+				jsonObject[key] = value;
+			});
+
+
+			const jsonString = JSON.stringify(jsonObject);  
+
+			console.log(jsonString);
+
+
+
+			fetch(scriptURL, {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' }, // Proper headers for JSON
+				body: jsonString
+			})
+			.then(response => alert("Thank you! your form is submitted successfully."))
+				.then(() => { 
+				    Enquiryform.reset();
+				    submitBtn.disabled = false;
+					submitBtn.innerText = "Submit";
+				 })
         .catch(error => console.error('Error!', error.message))
     })
 

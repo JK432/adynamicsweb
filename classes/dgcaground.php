@@ -527,7 +527,7 @@
         <div class="imPart-bg p-3 border-r10">
           <h6 class="text-primary text-uppercase mb-2">Apply Now</h6>
           <h5 class="mb-4">Make An Appointment now</h5>
-          <form id="dgcagroundForm" name="dgcagroundForm" onsubmit="Sendmail();reset();">
+          <form id="dgcagroundForm" name="dgcagroundForm">
             <div class="row g-3">
               <div class="col-sm-6">
                 <div class="form-floating">
@@ -606,7 +606,7 @@
                 </div>
               </div>
               <div class="col-12">
-                <button class="btn btn-primary w-100 py-3 border-r8" type="submit">Submit</button>
+                <button id="form-submit-btn" class="btn btn-primary w-100 py-3 border-r8" type="submit">Submit</button>
               </div>
             </div>
           </form>
@@ -836,6 +836,9 @@
     dgcagroundForm = document.forms['dgcagroundForm']
 
     dgcagroundForm.addEventListener('submit', e => {
+      const submitBtn = document.getElementById('form-submit-btn');
+			submitBtn.disabled = true;
+			submitBtn.innerText = "Submitting...";
       e.preventDefault()
       formData = new FormData(dgcagroundForm);
       currentDate = new Date();
@@ -850,9 +853,27 @@
       formName = 'DGCA Ground Form';
       formData.append('formName', formName);
       formData.append('dateTime', formattedDate);
-      fetch(scriptURL, { method: 'POST', body: formData })
+
+      const jsonObject = {};
+      formData.forEach((value, key) => {
+          jsonObject[key] = value;
+      });
+
+
+      const jsonString = JSON.stringify(jsonObject);  
+
+      console.log(jsonString);
+
+
+
+      fetch(scriptURL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' }, // Proper headers for JSON
+        body: jsonString
+    })
         .then(response => alert("Thank you! your form is submitted successfully."))
-        .then(() => { window.location.reload(); })
+        .then(() => { dgcagroundForm.reset(); submitBtn.disabled = false;
+					submitBtn.innerText = "Submit"; })
         .catch(error => console.error('Error!', error.message))
     });
 

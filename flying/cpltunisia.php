@@ -1408,7 +1408,7 @@
 	<script src="../js/footer-global.js?<?php echo filemtime('../js/footer-global.js'); ?>"></script>
 
 	<script>
-		scriptURL = 'https://841ef5d6-d95a-4a12-878f-de12e62c0cdc.neodove.com/integration/custom/4a4deada-9b3d-4086-ac1c-e5126d74760c/leads'
+		scriptURL = 'https://841ef5d6-d95a-4a12-878f-de12e62c0cdc.neodove.com/integration/custom/0935ccbd-f557-45c3-bd15-655e5e76ec5b/leads'
 
 		cpltunisiaForm = document.forms['cpltunisiaForm']
 
@@ -1431,10 +1431,27 @@
 			formName = 'CPL Tunisia Form';
 			formData.append('formName', formName);
 			formData.append('dateTime', formattedDate);
-			fetch(scriptURL, { method: 'POST', body: formData })
-				.then(response => alert("Thank you! your form is submitted successfully."))
-				.then(() => { window.location.reload();
-					submitBtn.disabled = false;
+			const jsonObject = {};
+			formData.forEach((value, key) => {
+				jsonObject[key] = value;
+			});
+
+
+			const jsonString = JSON.stringify(jsonObject);  
+
+			console.log(jsonString);
+
+
+
+			fetch(scriptURL, {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' }, // Proper headers for JSON
+				body: jsonString
+			})
+			.then(response => alert("Thank you! your form is submitted successfully."))
+				.then(() => { 
+				    cpltunisiaForm.reset();
+				    submitBtn.disabled = false;
 					submitBtn.innerText = "Submit";
 				 })
 				.catch(error => console.error('Error!', error.message))
