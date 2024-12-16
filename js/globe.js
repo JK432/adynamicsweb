@@ -136,6 +136,26 @@ const svg = document.getElementById("world-map");
 const originalViewBox = svg.getAttribute("viewBox");
 const tooltip = document.getElementById("countryTooltip");
 
+const contentIndia = document.querySelector(".india-content");
+const contentTunisia = document.querySelector(".tunisia-content");
+const contentSouthAfrica = document.querySelector(".south-africa-content");
+const contentMorocco = document.querySelector(".morocco-content");
+const contentArgentina = document.querySelector(".argentina-content");
+const contentUsa = document.querySelector(".usa-content");
+
+function showCountryContent(currentIndex) {
+  console.log("currentIndex", currentIndex);
+  
+  switch (currentIndex) {
+    case 5:contentUsa.classList.add("active");contentIndia.classList.remove("active");contentTunisia.classList.remove("active");contentSouthAfrica.classList.remove("active");contentMorocco.classList.remove("active");contentArgentina.classList.remove("active");break;
+    case 0:contentIndia.classList.add("active");contentUsa.classList.remove("active");contentTunisia.classList.remove("active");contentSouthAfrica.classList.remove("active");contentMorocco.classList.remove("active");contentArgentina.classList.remove("active");break;
+    case 2:contentTunisia.classList.add("active");contentIndia.classList.remove("active");contentUsa.classList.remove("active");contentSouthAfrica.classList.remove("active");contentMorocco.classList.remove("active");contentArgentina.classList.remove("active");break;
+    case 1:contentSouthAfrica.classList.add("active");contentIndia.classList.remove("active");contentTunisia.classList.remove("active");contentUsa.classList.remove("active");contentMorocco.classList.remove("active");contentArgentina.classList.remove("active");break;
+    case 3:contentMorocco.classList.add("active");contentIndia.classList.remove("active");contentTunisia.classList.remove("active");contentSouthAfrica.classList.remove("active");contentUsa.classList.remove("active");contentArgentina.classList.remove("active");break;
+    case 4:contentArgentina.classList.add("active");contentIndia.classList.remove("active");contentTunisia.classList.remove("active");contentSouthAfrica.classList.remove("active");contentMorocco.classList.remove("active");contentUsa.classList.remove("active");break;
+  }
+}
+
 function showTooltip({countryName,flag}) {
   tooltip.innerHTML = `
     <img src="${flag}" alt="${countryName} Flag" class="tooltip-flag" />
@@ -204,6 +224,7 @@ const updateViewBox = (index) => {
 
   if (window.innerWidth < 578) {
     showTooltip(countryNames[country]);
+    showCountryContent(currentIndex);
   } else {
     hideTooltip();
   }

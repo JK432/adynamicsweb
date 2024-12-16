@@ -116,7 +116,7 @@ line:hover {
 /* Existing styles for the navigation buttons */
 .navigation-buttons {
   position: absolute;
-  top: 9%;
+  top: 38px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -151,6 +151,11 @@ line:hover {
   position: relative;
   border-radius: 2rem;
   overflow: hidden;
+
+  @media(max-width: 640px) {
+    height: 550px;
+  }
+
 }
 
 #india,#usa,#argentina,#morocco,#tunisia,#south_africa {
@@ -186,4 +191,134 @@ line:hover {
 
 
 
+
+/*coutry content containers*/
+
+.country-content {
+  display: none;
+
+  @media(max-width: 640px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    padding: 10px;
+
+    .usa-content{
+      display: none;
+      &.active{
+        display: flex;
+        flex-direction:column;
+        gap:6px;
+        animation: fade-in 300ms ease-in-out 
+      }
+    }
+    .india-content{
+      display: none;
+      &.active{
+        display: flex;
+        flex-direction:column;
+        gap:6px;
+        animation: fade-in 300ms ease-in-out 
+      }
+    }
+    .south-africa-content{
+      display: none;
+      &.active{
+        display: flex;
+        flex-direction:column;
+        gap:6px;
+        animation: fade-in 300ms ease-in-out 
+      }
+    }
+    .tunisia-content{
+      display: none;
+      &.active{
+        display: flex;
+        flex-direction:column;
+        gap:6px;
+        animation: fade-in 300ms ease-in-out 
+      }
+    }
+    .morocco-content{
+      display: none;
+      &.active{
+        display: flex;
+        flex-direction:column;
+        gap:6px;
+        animation: fade-in 300ms ease-in-out 
+      }
+    }
+    .argentina-content{
+      display: none;
+      &.active{
+        display: flex;
+        flex-direction:column;
+        gap:6px;
+        animation: fade-in 300ms ease-in-out 
+      }
+    }
+    .item{
+      padding: 13px 25px;
+      border-radius: 100px;
+      background-color: #439D9D;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      color: white;
+
+      h3{
+        color: white;
+        padding: 0px;
+        margin: 0px;
+        max-width: 98%;
+        text-align: center;
+        font-size: 23px;
+      }
+
+      p{
+        margin: 0;
+        text-align: center;
+        line-height: 17px;
+        font-weight: 300;
+        font-size: 12px;
+      }
+
+      .item-link{
+        display: flex;
+        gap: 4px;
+
+        a{
+          display: flex;
+          gap: 2px;
+          align-items: center;
+          justify-content: center;
+          background-color: white;
+          border-radius: 100px;
+          padding: 3px 10px;
+          color: #439D9D;
+          font-size: 10px;
+          img{
+            width: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@keyframes fade-in{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 
