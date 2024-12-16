@@ -137,11 +137,11 @@
                         a pilot with FAA CPL
                     </p>
                     <div class="item-link">
-                        <a href="#">
+                        <a href="/flying/cplcalifornia.php">
                             <img src="/assets/img/plain-icon.png" alt="plain link">
                             PTC Lantana
                         </a>
-                        <a href="#">
+                        <a href="/flying/cplflorida.php">
                             <img src="/assets/img/plain-icon.png" alt="plain link">
                             OCFC
                         </a>
@@ -158,7 +158,7 @@
                         individuals for a professional pilot career
                     </p>
                     <div class="item-link">
-                        <a href="#">
+                        <a href="/flying/conversion.php">
                             <img src="/assets/img/plain-icon.png" alt="plain link">
                             DGCA CPL
                         </a>
@@ -175,11 +175,11 @@
                         excellent aviation infrastructure and training facilities
                     </p>
                     <div class="item-link">
-                        <a href="#">
+                        <a href="/flying/cplsouth.php">
                             <img src="/assets/img/plain-icon.png" alt="plain link">
                             Eagle Aviation
                         </a>
-                        <a href="#">
+                        <a href="/flying/cplsouth.php">
                             <img src="/assets/img/plain-icon.png" alt="plain link">
                             Sky Hawk Aviation
                         </a>
@@ -196,7 +196,7 @@
                         Tunisia and access student loans for both
                     </p>
                     <div class="item-link">
-                        <a href="#">
+                        <a href="/flying/cpltunisia.php">
                             <img src="/assets/img/plain-icon.png" alt="plain link">
                             AFA
                         </a>
@@ -212,7 +212,7 @@
                         Tunisia and access student loans for both
                     </p>
                     <div class="item-link">
-                        <a href="#">
+                        <a href="/flying/cpltunisia.php">
                             <img src="/assets/img/plain-icon.png" alt="plain link">
                             ACTC
                         </a>
@@ -228,7 +228,7 @@
                         Demanding program intended to ready individuals for a professional pilot career.
                     </p>
                     <div class="item-link">
-                        <a href="#">
+                        <a href="/flying/cplmorocco.php">
                             <img src="/assets/img/plain-icon.png" alt="plain link">
                             B737
                         </a>
@@ -245,7 +245,7 @@
                         aviation infrastructure and training facilities.
                     </p>
                     <div class="item-link">
-                        <a href="#">
+                        <a href="/flying/cplargentina.php">
                             <img src="/assets/img/plain-icon.png" alt="plain link">
                             ANAC
                         </a>
