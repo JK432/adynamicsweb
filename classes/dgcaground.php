@@ -180,7 +180,170 @@
 	</section>
 	<!-- Detail End -->
 
-
+  <!-- Testimonial Start -->
+    <section class="testimonial" id="testi">
+    <div class="container-xxl py-6">
+      <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px">
+          <h6 class="text-primary text-uppercase mb-2">Testimonial</h6>
+          <h1 class="display-6 mb-4">What Our Students Say!</h1>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+              aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row justify-content-center testimonia-bg py-5 personal">
+                <div class="col-lg-7 personail" data-wow-delay="0.1s">
+                  <div class="employee_name">
+                    <h5>Dhruv</h5>
+                    <!-- <span>Profession</span> -->
+                  </div>
+                  <p style="padding-inline: 30px">
+                    The program here is top-notch, with a curriculum that is
+                    both challenging and deeply engaging. The instructors
+                    bring a wealth of real-world experience, making every
+                    lesson both practical and inspiring. ADynamics has
+                    provided me with a strong foundation and the confidence to
+                    pursue my aviation dreams. I'm incredibly grateful to be
+                    part of this fantastic training program and excited for
+                    what's ahead!
+                  </p>
+                </div>
+                <div class="col-lg-5" data-wow-delay="0.3s">
+                  <video muted controls loop>
+                    <source src="../assets/video/testimonial_dhruv.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center testimonia-bg py-5 personal">
+                <div class="col-lg-7 personail" data-wow-delay="0.1s">
+                  <div class="employee_name">
+                    <h5>Ajeesh</h5>
+                    <!-- <span>Profession</span> -->
+                  </div>
+                  <p style="padding-inline: 30px">
+                    From the very first day, I've been thoroughly impressed
+                    with the quality of the instruction and the comprehensive
+                    curriculum. The instructors are not only highly
+                    knowledgeable but also incredibly supportive, ensuring we
+                    grasp every concept thoroughly. I'm excited to continue my
+                    journey here and can't wait to see what the future holds.
+                    Thank you, ADynamics, for providing such an outstanding
+                    training experience!
+                  </p>
+                </div>
+                <div class="col-lg-5" data-wow-delay="0.3s">
+                  <video muted controls loop>
+                    <source src="../assets/video/testimonial_ajeesh.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center testimonia-bg py-5 personal">
+                <div class="col-lg-7 personail" data-wow-delay="0.1s">
+                  <div class="employee_name">
+                    <h5>Akhilesh</h5>
+                    <!-- <span>Profession</span> -->
+                  </div>
+                  <p style="padding-inline: 30px">
+                    Joining ADynamics has been one of the best decisions I've
+                    made for my aviation career. The instructors are
+                    knowledgeable and supportive, and the curriculum is
+                    thorough and practical. Thanks to ADynamics, I now have a
+                    solid foundation and the confidence to chase my aviation
+                    dreams. I'm truly thankful to be part of this incredible
+                    journey and excited for what lies ahead!
+                  </p>
+                </div>
+                <div class="col-lg-5" data-wow-delay="0.3s">
+                  <video muted controls loop>
+                    <source src="../assets/video/testimonial_akhilesh.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center testimonia-bg py-5 personal">
+                <div class="col-lg-7 personail" data-wow-delay="0.1s">
+                  <div class="employee_name">
+                    <h5>Shreyas</h5>
+                    <!-- <span>Profession</span> -->
+                  </div>
+                  <p style="padding-inline: 30px">
+                    Being part of ADynamics has been a transformative
+                    experience. The curriculum is both challenging and
+                    fascinating, ensuring I stay engaged and motivated. The
+                    instructors bring invaluable real-world insights, making
+                    every session practical and enriching. ADynamics has
+                    equipped me with a strong foundation and the confidence to
+                    pursue my aviation ambitions. I am deeply grateful for the
+                    top-tier training and support I've received and look
+                    forward to an exciting future in aviation!
+                  </p>
+                </div>
+                <div class="col-lg-5" data-wow-delay="0.3s">
+                  <video muted controls loop>
+                    <source src="../assets/video/testimonial_shreyas.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center testimonia-bg py-5 personal">
+                <div class="col-lg-7 personail" data-wow-delay="0.1s">
+                  <div class="employee_name">
+                    <h5>Niteesh</h5>
+                    <!-- <span>Profession</span> -->
+                  </div>
+                  <p style="padding-inline: 30px">
+                    ADynamics has been a game-changer for my aviation career.
+                    The training is rigorous and engaging, and the instructors
+                    are incredibly knowledgeable and supportive. Their
+                    real-world experience brings a practical edge to every
+                    lesson. From ground classes to license conversion
+                    assistance, ADynamics covers all aspects of pilot training
+                    thoroughly. I'm grateful for the strong foundation and
+                    confidence they've given me to pursue my aviation dreams.
+                    Thank you, ADynamics, for this incredible journey!
+                  </p>
+                </div>
+                <div class="col-lg-5" data-wow-delay="0.3s">
+                  <video muted controls loop>
+                    <source src="../assets/video/testimonial_niteesh.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonial End -->
 
 
   <section class="section-course-head pt-5" id="topics-covered">
