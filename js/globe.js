@@ -22,9 +22,9 @@ function setupCountryEvents(countryId, cardClass, url) {
   }
 
   // Click event to redirect to the specific URL
-  $(`#${countryId}`).click(function () {
-    window.location.href = url;
-  });
+  // $(`#${countryId}`).click(function () {
+  //   window.location.href = url;
+  // });
 
   // Mouseover event to show the card
   $(`#${countryId}`).mouseover(function () {
@@ -136,12 +136,15 @@ const svg = document.getElementById("world-map");
 const originalViewBox = svg.getAttribute("viewBox");
 const tooltip = document.getElementById("countryTooltip");
 
-function showTooltip(countryName) {
-  tooltip.textContent = countryName;
+function showTooltip({countryName,flag}) {
+  tooltip.innerHTML = `
+    <img src="${flag}" alt="${countryName} Flag" class="tooltip-flag" />
+    <span>${countryName}</span>
+  `;
   gsap.fromTo(
     tooltip,
     { opacity: 0 },
-    { opacity: 1, duration: 0.5, display: "block" }
+    { opacity: 1, duration: 0.5, display: "flex" }
   );
 }
 
@@ -163,13 +166,40 @@ const updateViewBox = (index) => {
     duration: 1,
     ease: "power2.inOut",
   });
+  // const countryNames = {
+  //   india: "India",
+  //   south_africa: "South Africa",
+  //   usa: "USA",
+  //   argentina: "Argentina",
+  //   tunisia: "Tunisia",
+  //   morocco: "Morocco",
+  // };
+
   const countryNames = {
-    india: "India",
-    south_africa: "South Africa",
-    usa: "USA",
-    argentina: "Argentina",
-    tunisia: "Tunisia",
-    morocco: "Morocco",
+    india: {
+      countryName: "India",
+      flag: "/assets/img/flags/india-flag.png",
+    },
+    south_africa: {
+      countryName: "South Africa",
+      flag: "/assets/img/flags/south-africa-flag.png",
+    },
+    usa: {
+      countryName: "USA",
+      flag: "/assets/img/flags/usa-flag.png",
+    },
+    argentina: {
+      countryName: "Argentina",
+      flag: "/assets/img/flags/argentine-flag.png",
+    },
+    tunisia: {
+      countryName: "Tunisia",
+      flag: "/assets/img/flags/tunisia-flag.jpeg",
+    },
+    morocco: {
+      countryName: "Morocco",
+      flag: "/assets/img/flags/morroco-flag.png",
+    },
   };
 
   if (window.innerWidth < 578) {
