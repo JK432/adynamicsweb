@@ -166,6 +166,7 @@
     const Enquiryform = document.forms['enquiryForm']
 
     Enquiryform.addEventListener('submit', e => {
+     
       const submitBtn = document.getElementById('form-submit-btn');
 			submitBtn.disabled = true;
 			submitBtn.innerText = "Submitting...";
@@ -206,7 +207,13 @@
 				    submitBtn.disabled = false;
 					submitBtn.innerText = "Submit";
 				 })
-		.then((r)=>{ fetch(spread_sheet_url, {	method: 'POST',	body: formData	})})
+		.then((r)=>{ 
+      
+      fetch(spread_sheet_url, {	method: 'POST',	body: formData	})
+    
+    }).then((r)=>{
+      window.location.href = 'thankyou/enquiry.php';
+    })
         .catch(error => console.error('Error!', error.message))
     })
 

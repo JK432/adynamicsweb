@@ -994,7 +994,8 @@
     dgcagroundForm = document.forms['dgcagroundForm']
 
     dgcagroundForm.addEventListener('submit', e => {
-        	const submitBtn = document.getElementById('form-submit-btn');
+
+      const submitBtn = document.getElementById('form-submit-btn');
 			submitBtn.disabled = true;
 			submitBtn.innerText = "Submitting...";
       e.preventDefault()
@@ -1029,9 +1030,14 @@
         headers: { 'Content-Type': 'application/json' }, // Proper headers for JSON
         body: jsonString
     })
-        .then(response => alert("Thank you! your form is submitted successfully."))
-        .then(() => { dgcagroundForm.reset(); submitBtn.disabled = false;
-					submitBtn.innerText = "Submit"; })
+        .then(() => { 
+          
+          dgcagroundForm.reset(); 
+          submitBtn.disabled = false;
+					submitBtn.innerText = "Submit";
+          window.location.href = '../../thankyou/classes/dgcaground.php';
+        
+        })
 		.then((r)=>{ fetch(spread_sheet_url, {	method: 'POST',	body: formData	})})
         .catch(error => console.error('Error!', error.message))
     });

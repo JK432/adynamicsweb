@@ -618,10 +618,12 @@
       formData.append('formName', formName);
       formData.append('dateTime', formattedDate);
       fetch(scriptURL, { method: 'POST', body: formData })
-        .then(response => alert("Thank you! your form is submitted successfully."))
-        .then(() => { window.location.reload();
+        .then(() => { 
+          conversionForm.reset();
           submitBtn.disabled = false;
           submitBtn.innerText = "Submit";
+          
+           window.location.href = '../../thankyou/flying/conversion.php';
          })
         .catch(error => console.error('Error!', error.message))
     })
