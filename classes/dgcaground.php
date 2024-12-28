@@ -127,9 +127,11 @@
 							<span style="display: inline;color: #49aaaa;">DGCA</span> <br> Ground Classes
 						</h1>
 
-						<div class="d-none d-lg-flex btn-group home-demo">
-							<a href="#topics-covered" class="btn btn-primary "
-								style="border-end-end-radius: 50px; background-color: #49aaaa">Discover More</a>
+						<div class="d-none d-lg-flex btn-group home-demo flex-column" style="align-items: start;">
+							<!-- <a href="#topics-covered" class="btn btn-primary "
+								style="border-end-end-radius: 50px; background-color: #49aaaa">Discover More</a> -->
+                <p class="m-0 d-flex justify-content-center align-items-center position-relative" style="left:57px;"><strike class="text-dark fs-6 fw-medium">₹ 999</strike> &nbsp; <span class="text-primary fw-bold fs-5">₹ 99</span><span class="position-absolute" style="z-index:-1;opacity:.2;font-weight:900;font-size:35px;">LIMITED</span></p>
+
 
 							<!-- <button class="flex-btn" onclick="playDemoClass()" id="demo-trigger"> -->
                 <button class="flex-btn btn-icon demo-trigger" style="background-color: #49aaaa" id="demo-trigger">
@@ -142,6 +144,7 @@
 					</div>
 				</div>
 				<div class="hero-video-section col-lg-6 order-2 py-5">
+          <span class="position-absolute text-light px-3 py-1 rounded-pill" style="bottom:90px;background-color:#49aaaa;">Why Ground Classes?</span>
 					<img fetchpriority="high" decoding="async" width="900" height="506"
 						class="img-fluid mw-sm-100 w-md-80 w-lg-80" src="../img/thumbnail.png" srcset="
                 ../img/thumbnail.png 900w,
@@ -163,12 +166,15 @@
 					<div class="video-background-lg d-none d-xxl-block"></div>
 				</div>
 
-				<div class="d-lg-none btn-group home-demo order-3">
+				<div class="d-lg-none btn-group home-demo order-3 d-flex flex-column gap-3" style="margin-block-start: 0px;">
 					<!-- <a href="#topics-covered" class="btn btn-primary"
 						style="border-end-end-radius: 50px; background-color: #49aaaa">Discover More</a> -->
 
 					<!-- <button class="flex-btn" onclick="playDemoClass()" id="demo-trigger"> -->
-            <button class="flex-btn btn-icon demo-trigger" style="background-color: #49aaaa" id="demo-trigger">
+
+            <p class="m-0 d-flex justify-content-center align-items-center position-relative"><strike class="text-dark fs-6 fw-medium">₹ 999</strike> &nbsp; <span class="text-primary fw-bold fs-5">₹ 99</span><span class="position-absolute" style="z-index:-1;opacity:.2;font-weight:900;font-size:35px;">LIMITED</span></p>
+
+            <button class="flex-btn btn-icon demo-trigger flex-column gap-0" style="background-color: #49aaaa;" id="demo-trigger">
               <!-- <div class="btn-icon" style="background-color: #49aaaa">
                 <ion-icon name="play" aria-hidden="true"></ion-icon>
               </div> -->
@@ -346,9 +352,9 @@
   <!-- Testimonial End -->
 
 
-  <section class="section-course-head pt-5" id="topics-covered">
+  <section class="section-course-head pt-0 pt-md-5" id="topics-covered">
     <div class="container-lg pt-5 mt-2">
-      <div class="d-flex align-items-center justify-content-between gap-2">
+      <div class="d-none d-md-flex align-items-center justify-content-between gap-2">
         <!-- card 1 -->
         <div class="header-card-selector active" data-content="navigation">
           <img src="./images/airplane-with-travel-navigation.jpg" alt="Navigation" title="" />
@@ -361,6 +367,36 @@
         <div class="header-card-selector" data-content="meteorology">
           <img src="./images/meteorology.jpg" alt="Meteorology" title="" />
         </div>
+      </div>
+
+      <div class="d-md-none">
+        
+        <!-- <div class="header-card-selector active" data-content="navigation">
+          <img src="./images/airplane-with-travel-navigation.jpg" alt="Navigation" title="" />
+        </div>
+        
+        <div class="header-card-selector" data-content="regulations">
+          <img src="./images/customs-clearance.jpg" alt="Regulations" title="" />
+        </div>
+        
+        <div class="header-card-selector" data-content="meteorology">
+          <img src="./images/meteorology.jpg" alt="Meteorology" title="" />
+        </div> -->
+
+        <div class="owl-carousel dynamic-mob d-md-none align-items-center justify-content-between gap-2">
+    <!-- card 1 -->
+    <div class="header-card-selector active" data-content="navigation">
+        <img src="./images/airplane-with-travel-navigation.jpg" alt="Navigation" title="" />
+    </div>
+    <!-- card 2 -->
+    <div class="header-card-selector" data-content="regulations">
+        <img src="./images/customs-clearance.jpg" alt="Regulations" title="" />
+    </div>
+    <!-- card 3 -->
+    <div class="header-card-selector" data-content="meteorology">
+        <img src="./images/meteorology.jpg" alt="Meteorology" title="" />
+    </div>
+</div>
       </div>
 
       <!-- Dynamic Content Sections -->
@@ -972,6 +1008,22 @@
   <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
 
   <!-- Template Javascript -->
+
+  <script>
+    $(document).ready(function() {
+  $('.dynamic-mob').owlCarousel({
+    items: 1.5,
+    loop: true,
+    margin: 10,
+    center: true,
+    responsive: {
+      0: {
+        items: 1.5
+      },
+    }
+  });
+});
+  </script>
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
