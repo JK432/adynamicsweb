@@ -1449,11 +1449,11 @@
 				headers: { 'Content-Type': 'application/json' },
 				body: jsonString
 			})
-			.then(response => alert("Thank you! your form is submitted successfully."))
 				.then(() => { 
 				    cpltunisiaForm.reset();
 				    submitBtn.disabled = false;
 					submitBtn.innerText = "Submit";
+					window.location.href = '../../thankyou/flying/cpltunisia.php';
 				 })
 				 .then((r)=>{ fetch(spread_sheet_url, {	method: 'POST',	body: formData	})})
 				.catch(error => console.error('Error!', error.message))
