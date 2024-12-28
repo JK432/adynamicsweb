@@ -128,9 +128,10 @@
         <div id="countryTooltip" class="country-tooltip"></div>
         <div class="country-content">
             <div class="usa-content">
-                <div class="item">
-                    <h3>
-                        FAA CPL Training
+
+            <div class="item">
+                    <h3 class="fs-6">
+                        FAA CPL Training in California & Oklahoma
                     </h3>
                     <p>
                         accelerate your path to becoming
@@ -141,6 +142,18 @@
                             <img src="/assets/img/plain-icon.png" alt="plain link">
                             PTC Lantana
                         </a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <h3 class="fs-6">
+                        FAA CPL Training in Florida
+                    </h3>
+                    <p>
+                        accelerate your path to becoming
+                        a pilot with FAA CPL
+                    </p>
+                    <div class="item-link">
                         <a href="/flying/cplflorida.php">
                             <img src="/assets/img/plain-icon.png" alt="plain link">
                             OCFC
