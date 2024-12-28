@@ -262,7 +262,7 @@ line:hover {
       }
     }
     .item{
-      padding: 13px 25px;
+      padding: 13px 40px;
       border-radius: 100px;
       background-color: #439D9D;
       display: flex;
@@ -292,6 +292,7 @@ line:hover {
       .item-link{
         display: flex;
         gap: 4px;
+        /* flex-direction: column; */
 
         a{
           display: flex;
@@ -300,9 +301,10 @@ line:hover {
           justify-content: center;
           background-color: white;
           border-radius: 100px;
-          padding: 3px 10px;
+          padding: 8px 18px;
           color: #439D9D;
           font-size: 10px;
+          white-space: nowrap;
           img{
             width: 17px;
           }

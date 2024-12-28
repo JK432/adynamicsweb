@@ -123,8 +123,8 @@
 						<!-- <strong>
 							<p class="text-xl">CPL and Type Rating Training</p>
 						</strong> -->
-						<h1 class="pt- display-6">
-							Access to top <span style="display: inline;color: #49aaaa;">instructors</span>  and learning aids
+						<h1 class="pt- display-6" style="font-size: 36px;">
+							<span style="display: inline;color: #49aaaa;">DGCA</span> <br> Ground Classes
 						</h1>
 
 						<div class="d-none d-lg-flex btn-group home-demo">
