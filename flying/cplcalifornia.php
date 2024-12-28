@@ -588,23 +588,23 @@
     <section class="stats-container wow fadeInUp" data-wow-delay="0.0s">
         <div class="stats-wrapper">
             <div class="stat wow custom-zoom-out-entry" data-wow-delay="0.2s">
-                <h1>225</h1>
+                <h1>278.5</h1>
                 <p>Total Flight <br> Hours</p>
             </div>
             <div class="stat wow custom-zoom-out-entry" data-wow-delay="0.4s">
-                <h1>200</h1>
+                <h1>236.5</h1>
                 <p>Actual Flight <br> Hours</p>
             </div>
             <div class="stat wow custom-zoom-out-entry" data-wow-delay="0.6s">
-                <h1>25</h1>
+                <h1>42</h1>
                 <p>Flight Simulator <br> Hours</p>
             </div>
             <div class="stat wow custom-zoom-out-entry" data-wow-delay="0.8s">
-                <h1>110</h1>
+                <h1>91</h1>
                 <p>PIC Flight <br> Hours </p>
             </div>
             <div class="stat wow custom-zoom-out-entry" data-wow-delay="1.0s">
-                <h1>35</h1>
+                <h1>23</h1>
                 <p>ME Flight <br> Hours</p>
             </div>
         </div>

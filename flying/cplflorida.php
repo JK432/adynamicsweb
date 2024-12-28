@@ -194,24 +194,27 @@
                     <dt>Location : </dt>
                     <dd>
                         <ul>
-                            <li>Santa Ana, California</li>
+                            <li>Lantana, Florida</li>
                             <li>
-                                Airport: John Wayne Airport
+                                Airport: Palm Beach County Park Airport
                             </li>
                             <li>
-                                IATA: SNAICAO: KSNAFAA LID: SNA
+                                IATA: LNA ICAO: KLNA FAA LID: LNA
                             </li>
                             <li>
-                                Elevation AMSL 56 ft / 17 m
+                                Elevation AMSL 14 ft / 4 m
                             </li>
                             <li style="font-weight: 700;">
                                 Runway Info :
                             </li>
                             <li>
-                                Runway: 02L/20R 5,700 ft 
+                                Runway: 4/22  3,256 ft 
                             </li>
                             <li>
-                                Runway: 02R/20L 2,886 ft
+                                Runway: 10/28 3,489 ft
+                            </li>
+                            <li>
+                                Runway: 16/34 3,421 ft 
                             </li>
                         </ul>
                     </dd>
@@ -262,24 +265,27 @@
                                 <dt>Location : </dt>
                                 <dd>
                                     <ul>
-                                        <li>Santa Ana, California</li>
+                                        <li>Lantana, Florida</li>
                                         <li>
-                                            Airport: John Wayne Airport
+                                            Airport: Palm Beach County Park Airport
                                         </li>
                                         <li>
-                                            IATA: SNAICAO: KSNAFAA LID: SNA
+                                            IATA: LNA ICAO: KLNA FAA LID: LNA
                                         </li>
                                         <li>
-                                            Elevation AMSL 56 ft / 17 m
+                                            Elevation AMSL 14 ft / 4 m
                                         </li>
                                         <li style="font-weight: 700;">
                                             Runway Info :
                                         </li>
                                         <li>
-                                            Runway: 02L/20R 5,700 ft 
+                                            Runway: 4/22  3,256 ft 
                                         </li>
                                         <li>
-                                            Runway: 02R/20L 2,886 ft
+                                            Runway: 10/28 3,489 ft
+                                        </li>
+                                        <li>
+                                            Runway: 16/34 3,421 ft
                                         </li>
                                     </ul>
                                 </dd>
@@ -510,23 +516,23 @@
     <section class="stats-container wow fadeInUp" data-wow-delay="0.0s">
         <div class="stats-wrapper">
             <div class="stat wow custom-zoom-out-entry" data-wow-delay="0.2s">
-                <h1>225</h1>
+                <h1>216</h1>
                 <p>Total Flight <br> Hours</p>
             </div>
             <div class="stat wow custom-zoom-out-entry" data-wow-delay="0.4s">
-                <h1>200</h1>
+                <h1>204.5</h1>
                 <p>Actual Flight <br> Hours</p>
             </div>
             <div class="stat wow custom-zoom-out-entry" data-wow-delay="0.6s">
-                <h1>25</h1>
+                <h1>7.5</h1>
                 <p>Flight Simulator <br> Hours</p>
             </div>
             <div class="stat wow custom-zoom-out-entry" data-wow-delay="0.8s">
-                <h1>110</h1>
+                <h1>91</h1>
                 <p>PIC Flight <br> Hours </p>
             </div>
             <div class="stat wow custom-zoom-out-entry" data-wow-delay="1.0s">
-                <h1>35</h1>
+                <h1>15</h1>
                 <p>ME Flight <br> Hours</p>
             </div>
         </div>

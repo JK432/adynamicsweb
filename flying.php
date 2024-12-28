@@ -140,7 +140,7 @@
                     <div class="item-link">
                         <a href="/flying/cplcalifornia.php">
                             <img src="/assets/img/plain-icon.png" alt="plain link">
-                            PTC Lantana
+                            OCFC
                         </a>
                     </div>
                 </div>
@@ -156,7 +156,7 @@
                     <div class="item-link">
                         <a href="/flying/cplflorida.php">
                             <img src="/assets/img/plain-icon.png" alt="plain link">
-                            OCFC
+                            PTC Lantana
                         </a>
                     </div>
                 </div>
