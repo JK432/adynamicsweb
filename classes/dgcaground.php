@@ -353,7 +353,7 @@
 
 
   <section class="section-course-head pt-0 pt-md-5" id="topics-covered">
-    <div class="container-lg pt-5 mt-2">
+    <div class="container-lg pt-0 pt-md-5 mt-2">
       <div class="d-none d-md-flex align-items-center justify-content-between gap-2">
         <!-- card 1 -->
         <div class="header-card-selector active" data-content="navigation">
@@ -368,6 +368,10 @@
           <img src="./images/meteorology.jpg" alt="Meteorology" title="" />
         </div>
       </div>
+
+      <h2 class="text-center d-md-none fw-bold fs-1 mb-4 text-primary">
+        Subjects
+      </h2>
 
       <div class="d-md-none">
         
