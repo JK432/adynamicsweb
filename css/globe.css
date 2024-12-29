@@ -38,6 +38,11 @@
       bottom: -228px;
     }
   }
+  &.morroco-flag{
+    @media(min-width:1200px){
+      bottom: -228px;
+    }
+  }
 
   span{
     font-size: 18px;
@@ -93,6 +98,21 @@
   top: 30%;
   left: 0;
   z-index: 9999;
+
+  @media(min-width:768px){
+    top: -8%;
+    left: 16%;
+  }
+
+  @media(min-width:1024px){
+    top: 7%;
+    left: 16%;
+  }
+
+  @media(min-width:1200px){
+    top: 16%;
+    left: 17%;
+  }
 
   .courses-item {
     background-color: rgb(255, 255, 255);
