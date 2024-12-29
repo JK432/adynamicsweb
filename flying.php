@@ -124,8 +124,14 @@
         </div>
     </div>
 
+
+
     <div class="map" id="map-container">
         <div id="countryTooltip" class="country-tooltip"></div>
+
+
+        <!-- mobile -->
+
         <div class="country-content">
             <div class="usa-content">
 
@@ -945,16 +951,19 @@
             <button id="nextBtn"><i class="fa fa-chevron-right"></i></button>
         </div>
 
-        <div class=" card india" style="background: none; border:none">
-            <div data-wow-delay="0.1s">
-                <div class="courses-item d-flex flex-column flex-xl-row arc-shadow overflow-hidden h-100">
-                    <div class="text-center p-4">
-                        <h5 class="mb-3 mt-2 mt-xl-1">
+        <div class=" card india bg-transparent" style="background: none; border:none;>
+            <div data-wow-delay="0.1s" class="position-relative d-flex flex-column align-items-center justify-content-center">
+                <div class="courses-item d-flex flex-column flex-xl-row overflow-hidden h-100 bg-light rounded-pill shadow-lg">
+                    <div class="text-center py-3 px-5 w-100 d-flex align-items-center justify-content-center flex-column">
+                        <h5 class="mb-1 mt-2 mt-xl-1 fs-18px">
                             DGCA CPL Conversion in India</h5>
-                        <p>
-                            Demanding program intended to ready individuals for a professional pilot career.
+                        <p class="fs-12px">
+                            Demanding program intended to ready <br> individuals for a professional pilot career.
                         </p>
-                        <ol class="breadcrumb justify-content-center mb-0">
+                        <a href="./flying/conversion.php" class="btn btn-outline-primary btn-sm rounded-pill px-3 py-2 fs-10px">
+                            Read more
+                        </a>
+                        <!-- <ol class="breadcrumb justify-content-center mb-0">
                             <li class="breadcrumb-item small">
                                 <i class="fa fa-signal text-primary me-2"></i>Beginner
                             </li>
@@ -964,15 +973,22 @@
                             <li>
                                 <i class="fa fa-map-marker text-primary me-2"></i>Click to learn more
                             </li>
-                        </ol>
+                        </ol> -->
                     </div>
-                    <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
+                    <!-- <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
                         <img class="img-fluid border-r10" src="./img/DgcaCpl2.png" alt="" />
                         <div class="courses-overlay">
                             <a class="btn btn-outline-primary border-2 courses-btn-bg"
                                 href="./flying/conversion.php">Read More</a>
                         </div>
-                    </div>
+                    </div> -->
+                </div>
+
+                <div class="flag-container india-flag bg-light rounded-pill shadow-lg">
+                    <img src="/assets/img/flags/india-flag.png" alt="india">
+                    <span>
+                        INDIA
+                    </span>
                 </div>
             </div>
         </div>

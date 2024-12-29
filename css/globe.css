@@ -1,11 +1,50 @@
+.fs-18px{
+  font-size: 18px !important;
+}
+.fs-12px{
+  font-size: 12px !important;
+}
+.fs-10px{
+  font-size: 10px !important;
+}
+
+.flag-container {
+  position: absolute;
+  bottom: -125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  gap: 10px;
+  padding: 6px 10px;
+
+  &.india-flag{
+    @media(min-width:1200px){
+      bottom: -235px;
+    }
+  }
+
+  span{
+    font-size: 18px;
+    font-weight: 900;
+  }
+  img{
+    width: 30px;
+    border-radius: 50rem;
+  }
+}
 
 .india {
-  width: 50%;
+  /* width: 40%; */
   display: none;
   position: absolute;
   top: 10%;
-  left: 50%;
+  left: 51%;
   z-index: 9999;
+  @media(min-width:1200px){
+    left: 56%;
+    top: 13%;
+  }
 
   .courses-item {
     background-color: rgb(255, 255, 255);
