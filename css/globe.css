@@ -7,6 +7,9 @@
 .fs-10px{
   font-size: 10px !important;
 }
+.w-sm{
+  width: 20px !important;
+}
 
 .flag-container {
   position: absolute;
@@ -24,6 +27,12 @@
     }
   }
 
+  &.south-africa-flag{
+    @media(min-width:1200px){
+      bottom: -169px;
+    }
+  }
+
   span{
     font-size: 18px;
     font-weight: 900;
@@ -38,14 +47,22 @@
   /* width: 40%; */
   display: none;
   position: absolute;
-  top: 10%;
-  left: 51%;
   z-index: 9999;
+
+  @media(min-width:768px){
+    top: 0%;
+    left: 42%;
+  }
+
+  @media(min-width:1024px){
+    top: 10%;
+    left: 51%;
+  }
+
   @media(min-width:1200px){
     left: 56%;
     top: 13%;
   }
-
   .courses-item {
     background-color: rgb(255, 255, 255);
   }
@@ -93,9 +110,22 @@
   width:50%;
   display: none;
   position: absolute;
-  top: 30%;
-  left: 50%;
   z-index: 9999;
+
+  @media(min-width:768px){
+    top: 10%;
+    left: 31%;
+  }
+
+  @media(min-width:1024px){
+    top: 35%;
+    left: 31%;
+  }
+
+  @media(min-width:1200px){
+    left: 30%;
+    top: 43%;
+  }
 
   .courses-item {
     background-color: rgb(255, 255, 255);

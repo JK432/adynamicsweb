@@ -1055,17 +1055,31 @@
                 </div>
             </div>
         </div>
-        <div class="card south-africa" style="background: none; border:none">
-            <div data-wow-delay="0.3s">
-                <div class="courses-item d-flex flex-column flex-xl-row arc-shadow overflow-hidden h-100">
-                    <div class="text-center p-4">
-                        <h5 class="mb-3 mt-2 mt-xl-1">SACAA CPL Training in South Africa</h5>
-                        <p>
-
-                            Many aspiring pilots worldwide choose of its excellent aviation infrastructure and training
+        <div class="card south-africa" style="background: none; border:none;">
+            <div data-wow-delay="0.3s" class="position-relative d-flex flex-column align-items-center justify-content-center">
+                <div class="courses-item d-flex flex-column flex-xl-row arc-shadow overflow-hidden h-100 bg-light rounded-pill shadow-lg">
+                    <div class="text-center py-3 px-5 w-100 d-flex align-items-center justify-content-center flex-column">
+                        <h5 class="mb-1 mt-2 mt-xl-1 fs-18px">SACAA CPL Training in South Africa</h5>
+                        <p class="fs-12px">
+                            Many aspiring pilots worldwide choose of its <br> excellent aviation infrastructure and training
                             facilities.
                         </p>
-                        <ol class="breadcrumb justify-content-center mb-0">
+
+                        <div class="d-flex gap-5 mb-2">
+                            <a href="/flying/cplsouth.php" class="d-flex gap-1 fs-12px text-primary">
+                                <img class="w-sm" src="/assets/img/plain-icon.png" alt="plain link">
+                                Eagle Aviation
+                            </a>
+                            <a href="/flying/cplsouth.php" class="d-flex gap-1 fs-12px text-primary">
+                                <img class="w-sm" src="/assets/img/plain-icon.png" alt="plain link">
+                                Sky Hawk Aviation
+                            </a>
+                        </div>
+
+                        <a href="./flying/cplsouth.php" class="btn btn-outline-primary btn-sm rounded-pill px-3 py-2 fs-10px">
+                            Read more
+                        </a>
+                        <!-- <ol class="breadcrumb justify-content-center mb-0">
                             <li class="breadcrumb-item small">
                                 <i class="fa fa-signal text-primary me-2"></i>Beginner
                             </li>
@@ -1075,15 +1089,22 @@
                             <li>
                                 <i class="fa fa-map-marker text-primary me-2"></i>Click to learn more
                             </li>
-                        </ol>
+                        </ol> -->
                     </div>
-                    <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
+                    <!-- <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
                         <img class="img-fluid border-r10" src="./img/flying_southafrica.png" alt="" />
                         <div class="courses-overlay">
                             <a class="btn btn-outline-primary border-2 courses-btn-bg"
                                 href="./flying/cplsouth.php">Read More</a>
                         </div>
-                    </div>
+                    </div> -->
+                </div>
+
+                <div class="flag-container south-africa-flag bg-light rounded-pill shadow-lg">
+                    <img src="/assets/img/flags/south-africa-flag.png" alt="south africa">
+                    <span>
+                        SOUTH AFRICA
+                    </span>
                 </div>
             </div>
         </div>
