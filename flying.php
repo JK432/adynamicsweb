@@ -951,7 +951,7 @@
             <button id="nextBtn"><i class="fa fa-chevron-right"></i></button>
         </div>
 
-        <div class=" card india bg-transparent" style="background: none; border:none;>
+        <div class=" card india bg-transparent" style="background: none; border:none;">
             <div data-wow-delay="0.1s" class="position-relative d-flex flex-column align-items-center justify-content-center">
                 <div class="courses-item d-flex flex-column flex-xl-row overflow-hidden h-100 bg-light rounded-pill shadow-lg">
                     <div class="text-center py-3 px-5 w-100 d-flex align-items-center justify-content-center flex-column">
