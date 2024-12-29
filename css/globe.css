@@ -55,6 +55,19 @@
     }
   }
 
+  &.usa-flag{
+    @media(min-width:768px){
+      bottom: -56px;
+    }
+    @media(min-width:1024px){
+      bottom: -56px;
+    }
+    @media(min-width:1200px){
+      bottom: -47px;
+      left: 57px;
+    }
+  }
+
 
   span{
     font-size: 18px;
@@ -95,9 +108,23 @@
   width: 50%;
   display: none;
   position: absolute;
-  top: 20%;
-  left: 30%;
   z-index: 9999;
+
+  @media(min-width:768px){
+    top: 1%;
+    left: 26%;
+  }
+
+  @media(min-width:1024px){
+    top: 4%;
+    left: 20%;
+  }
+
+  @media(min-width:1200px){
+    top: 16%;
+    left: 14%;
+  }
+
   .courses-item {
     background-color: rgb(255, 255, 255);
   }
