@@ -1190,14 +1190,17 @@
                 </div>
             </div>
         </div>
-        <div class="card tunisia" style="background: none; border:none">
-            <div class="d-flex gap-5">
-                <div data-wow-delay="0.3s">
-                    <div class="courses-item d-flex flex-column arc-shadow overflow-hidden">
-                        <div class="text-center p-4">
-                            <h5 class="mb-3 mt-2 mt-xl-1">OACA CPL Training in Tunisia</h5>
-                            <p>Complete both CPL and Type Rating at Tunisia and access student loans for both.</p>
-                            <ol class="breadcrumb mb-0" style="
+        <div class="card tunisia" style="background: none; border:none;display: block;">
+            <div class="d-flex flex-column gap-2">
+                <div data-wow-delay="0.3s" class="position-relative d-flex flex-column align-items-center justify-content-center">
+                    <div class="courses-item d-flex flex-column flex-xl-row arc-shadow overflow-hidden h-100 bg-light rounded-pill shadow-lg">
+                        <div class="text-center py-3 px-5 w-100 d-flex align-items-center justify-content-center flex-column">
+                            <h5 class="mb-1 mt-2 mt-xl-1 fs-18px">OACA CPL Training in Tunisia</h5>
+                            <p class="fs-12px">Complete both CPL and Type Rating at <br> Tunisia and access student loans for both.</p>
+                            <a href="./flying/cpltunisia.php" class="btn btn-outline-primary btn-sm rounded-pill px-3 py-2 fs-10px">
+                                Read more
+                            </a>
+                            <!-- <ol class="breadcrumb mb-0" style="
                             display:flex;
                             flex-direction:column;
                             align-items:center;
@@ -1210,23 +1213,26 @@
                                     <i class="fa fa-map-marker text-primary me-2"></i>Click to
                                     learn more
                                 </li>
-                            </ol>
+                            </ol> -->
                         </div>
-                        <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
+                        <!-- <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
                             <img class="img-fluid border-r10" src="./img/cource1.png" alt="" />
                             <div class="courses-overlay">
                                 <a class="btn btn-outline-primary border-2 courses-btn-bg"
                                     href="./flying/cpltunisia.php">Read More</a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
-                <div data-wow-delay="0.3s">
-                    <div class="courses-item d-flex flex-column arc-shadow overflow-hidden">
-                        <div class="text-center p-4 ">
-                            <h5 class="mb-3 mt-2 mt-xl-1">A320 CPL Training in Tunisia</h5>
-                            <p>Complete both CPL and Type Rating at Tunisia and access student loans for both.</p>
-                            <ol class="breadcrumb mb-0" style="
+                <div data-wow-delay="0.3s" class="position-relative d-flex flex-column align-items-center justify-content-center">
+                    <div class="courses-item d-flex flex-column flex-xl-row arc-shadow overflow-hidden h-100 bg-light rounded-pill shadow-lg">
+                        <div class="text-center py-3 px-5 w-100 d-flex align-items-center justify-content-center flex-column">
+                            <h5 class="mb-1 mt-2 mt-xl-1 fs-18px">A320 CPL Training in Tunisia</h5>
+                            <p class="fs-12px">Complete both CPL and Type Rating at <br> Tunisia and access student loans for both.</p>
+                            <a href="./flying/cpltunisia.php" class="btn btn-outline-primary btn-sm rounded-pill px-3 py-2 fs-10px">
+                                Read more
+                            </a>
+                            <!-- <ol class="breadcrumb mb-0" style="
                             display:flex;
                             flex-direction:column;
                             align-items:center;
@@ -1239,16 +1245,23 @@
                                     <i class="fa fa-map-marker text-primary me-2" style="margin-left: 5px;"></i>Click to
                                     learn more
                                 </li>
-                            </ol>
+                            </ol> -->
                         </div>
-                        <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
+                        <!-- <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
                             <img class="img-fluid border-r10" src="./img/cource1.png" alt="" />
                             <div class="courses-overlay">
                                 <a class="btn btn-outline-primary border-2 courses-btn-bg"
                                     href="./flying/cpltunisia.php">Read More</a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
+                </div>
+
+                <div class="flag-container tunisia-flag bg-light rounded-pill shadow-lg">
+                    <img src="/assets/img/flags/tunisia-flag.jpeg" alt="tunisia">
+                    <span>
+                        TUNISIA
+                    </span>
                 </div>
             </div>
         </div>

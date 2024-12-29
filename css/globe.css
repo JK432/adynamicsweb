@@ -43,6 +43,18 @@
       bottom: -228px;
     }
   }
+  &.tunisia-flag{
+    @media(min-width:768px){
+      bottom: -56px;
+    }
+    @media(min-width:1024px){
+      bottom: -56px;
+    }
+    @media(min-width:1200px){
+      bottom: -62px;
+    }
+  }
+
 
   span{
     font-size: 18px;
@@ -122,10 +134,24 @@
 .tunisia {
   display: none;
   gap: 1em;
-  width:60%;
+  /* width:60%; */
   position: absolute;
-  top: 45%;
   z-index: 9999;
+
+  @media(min-width:768px){
+    top: 1%;
+    left: 47%;
+  }
+
+  @media(min-width:1024px){
+    top: 4%;
+    left: 54%;
+  }
+
+  @media(min-width:1200px){
+    top: 16%;
+    left: 53%;
+  }
 
   .courses-item {
     background-color: rgb(255, 255, 255);
