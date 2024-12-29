@@ -33,6 +33,12 @@
     }
   }
 
+  &.argentina-flag{
+    @media(min-width:1200px){
+      bottom: -228px;
+    }
+  }
+
   span{
     font-size: 18px;
     font-weight: 900;
@@ -113,18 +119,18 @@
   z-index: 9999;
 
   @media(min-width:768px){
-    top: 10%;
+    top: -1%;
     left: 31%;
   }
 
   @media(min-width:1024px){
-    top: 35%;
+    top: 30%;
     left: 31%;
   }
 
   @media(min-width:1200px){
     left: 30%;
-    top: 43%;
+    top: 40%;
   }
 
   .courses-item {
@@ -139,6 +145,21 @@
   top: 40%;
   left: 35%;
   z-index: 9999;
+
+  @media(min-width:768px){
+    top: 16%;
+    left: 6%;
+  }
+
+  @media(min-width:1024px){
+    top: 39%;
+    left: 5%;
+  }
+
+  @media(min-width:1200px){
+    left: 4%;
+    top: 45%;
+  }
 
   .courses-item {
     background-color: rgb(255, 255, 255);

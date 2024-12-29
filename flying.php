@@ -1055,7 +1055,7 @@
                 </div>
             </div>
         </div>
-        <div class="card south-africa" style="background: none; border:none;">
+        <div class="card south-africa bg-transparent" style="background: none; border:none;">
             <div data-wow-delay="0.3s" class="position-relative d-flex flex-column align-items-center justify-content-center">
                 <div class="courses-item d-flex flex-column flex-xl-row arc-shadow overflow-hidden h-100 bg-light rounded-pill shadow-lg">
                     <div class="text-center py-3 px-5 w-100 d-flex align-items-center justify-content-center flex-column">
@@ -1139,17 +1139,19 @@
                 </div>
             </div>
         </div>
-        <div class="card argentina" style="background: none; border:none">
-            <div data-wow-delay="0.3s">
-                <div class="courses-item d-flex flex-column flex-xl-row arc-shadow overflow-hidden h-100">
-                    <div class="text-center p-4">
-                        <h5 class="mb-3 mt-2 mt-xl-1">ANAC CPL Training in Argentina</h5>
-                        <p>
-
-                            Many aspiring pilots worldwide choose of its excellent aviation infrastructure and training
+        <div class="card argentina bg-transparent" style="background: none; border:none;display: block;">
+            <div data-wow-delay="0.3s" class="position-relative d-flex flex-column align-items-center justify-content-center">
+                <div class="courses-item d-flex flex-column flex-xl-row arc-shadow overflow-hidden h-100 bg-light rounded-pill shadow-lg">
+                    <div class="text-center py-3 px-5 w-100 d-flex align-items-center justify-content-center flex-column">
+                        <h5 class="mb-1 mt-2 mt-xl-1 fs-18px">ANAC CPL Training in Argentina</h5>
+                        <p class="fs-12px">
+                            Many aspiring pilots worldwide choose of its excellent <br> aviation infrastructure and training
                             facilities.
                         </p>
-                        <ol class="breadcrumb justify-content-center mb-0">
+                        <a href="./flying/cplargentina.php" class="btn btn-outline-primary btn-sm rounded-pill px-3 py-2 fs-10px">
+                            Read more
+                        </a>
+                        <!-- <ol class="breadcrumb justify-content-center mb-0">
                             <li class="breadcrumb-item small">
                                 <i class="fa fa-signal text-primary me-2"></i>Beginner
                             </li>
@@ -1159,15 +1161,22 @@
                             <li>
                                 <i class="fa fa-map-marker text-primary me-2"></i>Click to learn more
                             </li>
-                        </ol>
+                        </ol> -->
                     </div>
-                    <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
+                    <!-- <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
                         <img class="img-fluid border-r10" src="./img/interior.jpg" alt="" />
                         <div class="courses-overlay">
                             <a class="btn btn-outline-primary border-2 courses-btn-bg"
                                 href="./flying/cplargentina.php">Read More</a>
                         </div>
-                    </div>
+                    </div> -->
+                </div>
+
+                <div class="flag-container argentina-flag bg-light rounded-pill shadow-lg">
+                    <img src="/assets/img/flags/argentine-flag.png" alt=" argentina">
+                    <span>
+                        ARGENTINA
+                    </span>
                 </div>
             </div>
         </div>
