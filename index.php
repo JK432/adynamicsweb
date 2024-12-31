@@ -399,6 +399,16 @@
               aria-label="Slide 4"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
               aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+              aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+              aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+              aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+              aria-label="Slide 9"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
+              aria-label="Slide 10"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -523,6 +533,96 @@
                 <div class="col-lg-5" data-wow-delay="0.3s">
                   <video muted controls loop>
                     <source src="./assets/video/testimonial_niteesh.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center testimonia-bg py-5 personal">
+                <div class="col-lg-7 personail" data-wow-delay="0.1s">
+                  <div class="employee_name">
+                    <h5>Mohamad Khalid</h5>
+                    <!-- <span>Profession</span> -->
+                  </div>
+                  <p style="padding-inline: 30px">
+                    My name is Mohamad Khalid, and I am 19 years old from Bihar. I am currently completing my Matriculation and NIOS classes at Adynamics Pilot Training Center. The center has been instrumental in guiding me toward my dream of becoming a pilot. With their support and excellent training, I feel confident about achieving my goals and soaring high in the aviation industry.
+                  </p>
+                </div>
+                <div class="col-lg-5" data-wow-delay="0.3s">
+                  <video muted controls loop>
+                    <source src="./assets/video/mohammed_khalid.MP4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center testimonia-bg py-5 personal">
+                <div class="col-lg-7 personail" data-wow-delay="0.1s">
+                  <div class="employee_name">
+                    <h5>Jeevan</h5>
+                    <!-- <span>Profession</span> -->
+                  </div>
+                  <p style="padding-inline: 30px">
+                    My name is Jeevan, and I am from Bangalore. I am an AME student currently pursuing my dream of a pilot career at Adynamics Pilot Training Center. The center's comprehensive training and guidance have been invaluable in helping me take confident steps toward a successful future in aviation.
+                  </p>
+                </div>
+                <div class="col-lg-5" data-wow-delay="0.3s">
+                  <video muted controls loop>
+                    <source src="./assets/video/jeevan.MP4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center testimonia-bg py-5 personal">
+                <div class="col-lg-7 personail" data-wow-delay="0.1s">
+                  <div class="employee_name">
+                    <h5>Jasper Davidson</h5>
+                    <!-- <span>Profession</span> -->
+                  </div>
+                  <p style="padding-inline: 30px">
+                    My name is Jasper Davidson, and I am from Chennai. I am currently attending ground classes at Adynamics Pilot Training Center. The training here has been incredibly insightful, providing me with a strong foundation to pursue my aviation career with confidence.
+                  </p>
+                </div>
+                <div class="col-lg-5" data-wow-delay="0.3s">
+                  <video muted controls loop>
+                    <source src="./assets/video/jasper.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center testimonia-bg py-5 personal">
+                <div class="col-lg-7 personail" data-wow-delay="0.1s">
+                  <div class="employee_name">
+                    <h5>Anil</h5>
+                    <!-- <span>Profession</span> -->
+                  </div>
+                  <p style="padding-inline: 30px">
+                    My name is Anil, and I am from Haryana. Joining Adynamics Pilot Training Center has been a transformative experience for me. The expert instructors and well-structured programs have provided me with the skills and knowledge I need to excel in my aviation career. I am grateful for the support and opportunities this center has given me to pursue my dreams
+                  </p>
+                </div>
+                <div class="col-lg-5" data-wow-delay="0.3s">
+                  <video muted controls loop>
+                    <source src="./assets/video/anil.MP4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center testimonia-bg py-5 personal">
+                <div class="col-lg-7 personail" data-wow-delay="0.1s">
+                  <div class="employee_name">
+                    <h5>Ganesh</h5>
+                    <!-- <span>Profession</span> -->
+                  </div>
+                  <p style="padding-inline: 30px">
+                    My name is Ganesh, and I am from Anantapur, Andhra Pradesh. Being a part of Adynamics Pilot Training Center has been an incredible journey. The dedicated instructors and comprehensive training programs have equipped me with the confidence and skills needed to achieve my dream of becoming a pilot. This center is truly a stepping stone for anyone aspiring to soar in the aviation industry.
+                  </p>
+                </div>
+                <div class="col-lg-5" data-wow-delay="0.3s">
+                  <video muted controls loop>
+                    <source src="./assets/video/ganesh.mp4" type="video/mp4" />
                   </video>
                 </div>
               </div>
