@@ -1002,7 +1002,7 @@
                             <p class="fs-12px">
                                 Accelerate your path to becoming <br> a pilot with FAA CPL.
                             </p>
-                            <a href="./flying/cplflorida.php.php" class="btn btn-outline-primary btn-sm rounded-pill px-3 py-2 fs-10px">
+                            <a href="./flying/cplflorida.php" class="btn btn-outline-primary btn-sm rounded-pill px-3 py-2 fs-10px">
                                 Read more
                             </a>
                             <!-- <ol class="breadcrumb justify-content-center mb-0">
