@@ -953,36 +953,38 @@
 
         <div class=" card india bg-transparent" style="background: none; border:none;">
             <div data-wow-delay="0.1s" class="position-relative d-flex flex-column align-items-center justify-content-center">
-                <div class="courses-item d-flex flex-column flex-xl-row overflow-hidden h-100 bg-light rounded-pill shadow-lg">
-                    <div class="text-center py-3 px-5 w-100 d-flex align-items-center justify-content-center flex-column">
-                        <h5 class="mb-1 mt-2 mt-xl-1 fs-18px">
-                            DGCA CPL Conversion in India</h5>
-                        <p class="fs-12px">
-                            Demanding program intended to ready <br> individuals for a professional pilot career.
-                        </p>
-                        <a href="./flying/conversion.php" class="btn btn-outline-primary btn-sm rounded-pill px-3 py-2 fs-10px">
-                            Read more
-                        </a>
-                        <!-- <ol class="breadcrumb justify-content-center mb-0">
-                            <li class="breadcrumb-item small">
-                                <i class="fa fa-signal text-primary me-2"></i>Beginner
-                            </li>
-                            <li class="breadcrumb-item small">
-                                <i class="fa fa-calendar-alt text-primary me-2"></i>3 Weeks
-                            </li>
-                            <li>
-                                <i class="fa fa-map-marker text-primary me-2"></i>Click to learn more
-                            </li>
-                        </ol> -->
-                    </div>
-                    <!-- <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
-                        <img class="img-fluid border-r10" src="./img/DgcaCpl2.png" alt="" />
-                        <div class="courses-overlay">
-                            <a class="btn btn-outline-primary border-2 courses-btn-bg"
-                                href="./flying/conversion.php">Read More</a>
+                <a href="/flying/conversion.php">
+                    <div class="courses-item d-flex flex-column flex-xl-row overflow-hidden h-100 bg-light rounded-pill shadow-lg">
+                        <div class="text-center py-3 px-5 w-100 d-flex align-items-center justify-content-center flex-column">
+                            <h5 class="mb-1 mt-2 mt-xl-1 fs-18px">
+                                DGCA CPL Conversion in India</h5>
+                            <p class="fs-12px">
+                                Demanding program intended to ready <br> individuals for a professional pilot career.
+                            </p>
+                            <a href="./flying/conversion.php" class="btn btn-outline-primary btn-sm rounded-pill px-3 py-2 fs-10px">
+                                Read more
+                            </a>
+                            <!-- <ol class="breadcrumb justify-content-center mb-0">
+                                <li class="breadcrumb-item small">
+                                    <i class="fa fa-signal text-primary me-2"></i>Beginner
+                                </li>
+                                <li class="breadcrumb-item small">
+                                    <i class="fa fa-calendar-alt text-primary me-2"></i>3 Weeks
+                                </li>
+                                <li>
+                                    <i class="fa fa-map-marker text-primary me-2"></i>Click to learn more
+                                </li>
+                            </ol> -->
                         </div>
-                    </div> -->
-                </div>
+                        <!-- <div class="position-relative mt-auto p-4 pt-0 pt-lg-4">
+                            <img class="img-fluid border-r10" src="./img/DgcaCpl2.png" alt="" />
+                            <div class="courses-overlay">
+                                <a class="btn btn-outline-primary border-2 courses-btn-bg"
+                                    href="./flying/conversion.php">Read More</a>
+                            </div>
+                        </div> -->
+                    </div>
+                </a>
 
                 <div class="flag-container india-flag bg-light rounded-pill shadow-lg">
                     <img src="/assets/img/flags/india-flag.png" alt="india">
@@ -995,6 +997,7 @@
         <div class="card usa" style="background: none; border:none;">
             <div class="d-flex flex-column gap-2">
                 <div data-wow-delay="0.1s" class="position-relative d-flex flex-column align-items-center justify-content-center">
+                    <a href="/flying/cplflorida.php">
                     <div class="courses-item d-flex flex-column flex-xl-row arc-shadow overflow-hidden h-100 bg-light rounded-pill shadow-lg">
                         <div class="text-center py-3 px-5 w-100 d-flex align-items-center justify-content-center flex-column">
                             <h5 class="mb-1 mt-2 mt-xl-1 fs-18px">
@@ -1025,9 +1028,11 @@
                             </div>
                         </div> -->
                     </div>
+                    </a>
                 </div>
 
                 <div data-wow-delay="0.1s" class="position-relative d-flex flex-column align-items-center justify-content-center">
+                    <a href="/flying/cplcalifornia.php">
                     <div class="courses-item d-flex flex-column flex-xl-row arc-shadow overflow-hidden h-100 bg-light rounded-pill shadow-lg">
                         <div class="text-center py-3 px-5 w-100 d-flex align-items-center justify-content-center flex-column">
                             <h5 class="mb-1 mt-2 mt-xl-1 fs-18px">
@@ -1058,6 +1063,7 @@
                             </div>
                         </div> -->
                     </div>
+                    </a>
                 </div>
 
                 <div class="flag-container usa-flag bg-light rounded-pill shadow-lg">
@@ -1070,6 +1076,7 @@
         </div>
         <div class="card south-africa bg-transparent" style="background: none; border:none;">
             <div data-wow-delay="0.3s" class="position-relative d-flex flex-column align-items-center justify-content-center">
+                <a href="/flying/cplsouth.php">
                 <div class="courses-item d-flex flex-column flex-xl-row arc-shadow overflow-hidden h-100 bg-light rounded-pill shadow-lg">
                     <div class="text-center py-3 px-5 w-100 d-flex align-items-center justify-content-center flex-column">
                         <h5 class="mb-1 mt-2 mt-xl-1 fs-18px">SACAA CPL Training in South Africa</h5>
@@ -1112,6 +1119,7 @@
                         </div>
                     </div> -->
                 </div>
+                </a>
 
                 <div class="flag-container south-africa-flag bg-light rounded-pill shadow-lg">
                     <img src="/assets/img/flags/south-africa-flag.png" alt="south africa">
@@ -1123,6 +1131,7 @@
         </div>
         <div class="card morocco bg-transparent" style="background: none; border:none;">
             <div data-wow-delay="0.1s" class="position-relative d-flex flex-column align-items-center justify-content-center">
+                <a href="/flying/cplmorocco.php">
                 <div class="courses-item d-flex flex-column flex-xl-row arc-shadow overflow-hidden h-100 bg-light rounded-pill shadow-lg">
                     <div class="text-center py-3 px-5 w-100 d-flex align-items-center justify-content-center flex-column">
                         <h5 class="mb-1 mt-2 mt-xl-1 fs-18px">
@@ -1153,6 +1162,7 @@
                         </div>
                     </div> -->
                 </div>
+                </a>
 
                 <div class="flag-container south-africa-flag bg-light rounded-pill shadow-lg">
                     <img src="/assets/img/flags/morroco-flag.png" alt="morocco">
@@ -1164,6 +1174,7 @@
         </div>
         <div class="card argentina bg-transparent" style="background: none; border:none;">
             <div data-wow-delay="0.3s" class="position-relative d-flex flex-column align-items-center justify-content-center">
+                <a href="/flying/cplargentina.php">
                 <div class="courses-item d-flex flex-column flex-xl-row arc-shadow overflow-hidden h-100 bg-light rounded-pill shadow-lg">
                     <div class="text-center py-3 px-5 w-100 d-flex align-items-center justify-content-center flex-column">
                         <h5 class="mb-1 mt-2 mt-xl-1 fs-18px">ANAC CPL Training in Argentina</h5>
@@ -1194,6 +1205,7 @@
                         </div>
                     </div> -->
                 </div>
+                </a>
 
                 <div class="flag-container argentina-flag bg-light rounded-pill shadow-lg">
                     <img src="/assets/img/flags/argentine-flag.png" alt=" argentina">
@@ -1206,6 +1218,7 @@
         <div class="card tunisia" style="background: none; border:none;">
             <div class="d-flex flex-column gap-2">
                 <div data-wow-delay="0.3s" class="position-relative d-flex flex-column align-items-center justify-content-center">
+                    <a href="/flying/cpltunisia.php">
                     <div class="courses-item d-flex flex-column flex-xl-row arc-shadow overflow-hidden h-100 bg-light rounded-pill shadow-lg">
                         <div class="text-center py-3 px-5 w-100 d-flex align-items-center justify-content-center flex-column">
                             <h5 class="mb-1 mt-2 mt-xl-1 fs-18px">OACA CPL Training in Tunisia</h5>
@@ -1236,8 +1249,10 @@
                             </div>
                         </div> -->
                     </div>
+                    </a>
                 </div>
                 <div data-wow-delay="0.3s" class="position-relative d-flex flex-column align-items-center justify-content-center">
+                    <a href="/flying/cpltunisia.php">
                     <div class="courses-item d-flex flex-column flex-xl-row arc-shadow overflow-hidden h-100 bg-light rounded-pill shadow-lg">
                         <div class="text-center py-3 px-5 w-100 d-flex align-items-center justify-content-center flex-column">
                             <h5 class="mb-1 mt-2 mt-xl-1 fs-18px">A320 CPL Training in Tunisia</h5>
@@ -1268,6 +1283,7 @@
                             </div>
                         </div> -->
                     </div>
+                    </a>
                 </div>
 
                 <div class="flag-container tunisia-flag bg-light rounded-pill shadow-lg">
