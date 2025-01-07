@@ -135,141 +135,158 @@
         <div class="country-content">
             <div class="usa-content">
 
-            <div class="item">
-                    <h3 class="fs-6">
-                        FAA CPL Training in California & Oklahoma
-                    </h3>
-                    <p>
-                        accelerate your path to becoming
-                        a pilot with FAA CPL
-                    </p>
-                    <div class="item-link">
-                        <a href="/flying/cplcalifornia.php">
-                            <img src="/assets/img/plain-icon.png" alt="plain link">
-                            OCFC
-                        </a>
+                <a href="/flying/cplcalifornia.php">
+                    <div class="item">
+                        <h3 class="fs-6">
+                            FAA CPL Training in California & Oklahoma
+                        </h3>
+                        <p>
+                            accelerate your path to becoming
+                            a pilot with FAA CPL
+                        </p>
+                        <div class="item-link">
+                            <a class="mob-link" href="/flying/cplcalifornia.php">
+                                <img src="/assets/img/plain-icon.png" alt="plain link">
+                                OCFC
+                            </a>
+                        </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="item">
-                    <h3 class="fs-6">
-                        FAA CPL Training in Florida
-                    </h3>
-                    <p>
-                        accelerate your path to becoming
-                        a pilot with FAA CPL
-                    </p>
-                    <div class="item-link">
-                        <a href="/flying/cplflorida.php">
-                            <img src="/assets/img/plain-icon.png" alt="plain link">
-                            PTC Lantana
-                        </a>
+                <a href="/flying/cplflorida.php">
+                    <div class="item">
+                        <h3 class="fs-6">
+                            FAA CPL Training in Florida
+                        </h3>
+                        <p>
+                            accelerate your path to becoming
+                            a pilot with FAA CPL
+                        </p>
+                        <div class="item-link">
+                            <a class="mob-link" href="/flying/cplflorida.php">
+                                <img src="/assets/img/plain-icon.png" alt="plain link">
+                                PTC Lantana
+                            </a>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
+            
             <div class="india-content">
-                <div class="item">
-                    <h3>
-                        DGCA CPL CONVERSION
-                    </h3>
-                    <p>
-                        Demanding program intended to ready
-                        individuals for a professional pilot career
-                    </p>
-                    <div class="item-link">
-                        <a href="/flying/conversion.php">
-                            <img src="/assets/img/plain-icon.png" alt="plain link">
-                            DGCA CPL
-                        </a>
+                <a href="/flying/conversion.php">
+                    <div class="item">
+                        <h3>
+                            DGCA CPL CONVERSION
+                        </h3>
+                        <p>
+                            Demanding program intended to ready
+                            individuals for a professional pilot career
+                        </p>
+                        <div class="item-link">
+                            <a class="mob-link" href="/flying/conversion.php">
+                                <img src="/assets/img/plain-icon.png" alt="plain link">
+                                DGCA CPL
+                            </a>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="south-africa-content">
-                <div class="item">
-                    <h3>
-                        SACAA CPL Training
-                    </h3>
-                    <p>
-                        Many aspiring pilots worldwide choose of its
-                        excellent aviation infrastructure and training facilities
-                    </p>
-                    <div class="item-link">
-                        <a href="/flying/cplsouth.php">
-                            <img src="/assets/img/plain-icon.png" alt="plain link">
-                            Eagle Aviation
-                        </a>
-                        <a href="/flying/cplsouth.php">
-                            <img src="/assets/img/plain-icon.png" alt="plain link">
-                            Sky Hawk Aviation
-                        </a>
+                <a href="/flying/cplsouth.php">
+                    <div class="item">
+                        <h3>
+                            SACAA CPL Training
+                        </h3>
+                        <p>
+                            Many aspiring pilots worldwide choose of its
+                            excellent aviation infrastructure and training facilities
+                        </p>
+                        <div class="item-link">
+                            <a class="mob-link" href="/flying/cplsouth.php">
+                                <img src="/assets/img/plain-icon.png" alt="plain link">
+                                Eagle Aviation
+                            </a>
+                            <a class="mob-link" href="/flying/cplsouth.php">
+                                <img src="/assets/img/plain-icon.png" alt="plain link">
+                                Sky Hawk Aviation
+                            </a>
+                        </div>
                     </div>
-                </div>
+                </a>
                 </div>
             <div class="tunisia-content">
-                <div class="item">
-                    <h3>
-                        OACA CPL Training
-                    </h3>
-                    <p>
-                        Complete both CPL and Type Rating at
-                        Tunisia and access student loans for both
-                    </p>
-                    <div class="item-link">
-                        <a href="/flying/cpltunisia.php">
-                            <img src="/assets/img/plain-icon.png" alt="plain link">
-                            AFA
-                        </a>
+                <a href="/flying/cpltunisia.php">
+                    <div class="item">
+                        <h3>
+                            OACA CPL Training
+                        </h3>
+                        <p>
+                            Complete both CPL and Type Rating at
+                            Tunisia and access student loans for both
+                        </p>
+                        <div class="item-link">
+                            <a class="mob-link" href="/flying/cpltunisia.php">
+                                <img src="/assets/img/plain-icon.png" alt="plain link">
+                                AFA
+                            </a>
+                        </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="item">
-                    <h3>
-                        A320 Type Rating
-                    </h3>
-                    <p>
-                        Complete both CPL and Type Rating at
-                        Tunisia and access student loans for both
-                    </p>
-                    <div class="item-link">
-                        <a href="/flying/cpltunisia.php">
-                            <img src="/assets/img/plain-icon.png" alt="plain link">
-                            ACTC
-                        </a>
+                <a href="/flying/cpltunisia.php">
+                    <div class="item">
+                        <h3>
+                            A320 Type Rating
+                        </h3>
+                        <p>
+                            Complete both CPL and Type Rating at
+                            Tunisia and access student loans for both
+                        </p>
+                        <div class="item-link">
+                            <a class="mob-link" href="/flying/cpltunisia.php">
+                                <img src="/assets/img/plain-icon.png" alt="plain link">
+                                ACTC
+                            </a>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="morocco-content">
-                <div class="item">
-                    <h3>
-                        B737 Type Rating
-                    </h3>
-                    <p>
-                        Demanding program intended to ready individuals for a professional pilot career.
-                    </p>
-                    <div class="item-link">
-                        <a href="/flying/cplmorocco.php">
-                            <img src="/assets/img/plain-icon.png" alt="plain link">
-                            B737
-                        </a>
+                <a href="/flying/cplmorocco.php">
+                    <div class="item">
+                        <h3>
+                            B737 Type Rating
+                        </h3>
+                        <p>
+                            Demanding program intended to ready individuals for a professional pilot career.
+                        </p>
+                        <div class="item-link">
+                            <a class="mob-link" href="/flying/cplmorocco.php">
+                                <img src="/assets/img/plain-icon.png" alt="plain link">
+                                B737
+                            </a>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="argentina-content">
-                <div class="item">
-                    <h3>
-                        ANAC CPL Training
-                    </h3>
-                    <p>
-                        Many aspiring pilots worldwide choose of its excellent
-                        aviation infrastructure and training facilities.
-                    </p>
-                    <div class="item-link">
-                        <a href="/flying/cplargentina.php">
-                            <img src="/assets/img/plain-icon.png" alt="plain link">
-                            ANAC
-                        </a>
+                <a href="/flying/cplargentina.php">
+                    <div class="item">
+                        <h3>
+                            ANAC CPL Training
+                        </h3>
+                        <p>
+                            Many aspiring pilots worldwide choose of its excellent
+                            aviation infrastructure and training facilities.
+                        </p>
+                        <div class="item-link">
+                            <a class="mob-link" href="/flying/cplargentina.php">
+                                <img src="/assets/img/plain-icon.png" alt="plain link">
+                                ANAC
+                            </a>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
         <svg id="world-map" style="fill: #b9b9b9;" xmlns:dc="http://purl.org/dc/elements/1.1/"

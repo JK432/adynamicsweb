@@ -457,7 +457,7 @@ line:hover {
         gap: 4px;
         /* flex-direction: column; */
 
-        a{
+        a.mob-link{
           display: flex;
           gap: 2px;
           align-items: center;
