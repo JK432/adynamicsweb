@@ -76,6 +76,19 @@
   }
 }
 
+.australia {
+  width: 50%;
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  z-index: 9999;
+
+  .courses-item {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
 path {
   transition: fill 0.1s linear;
 }
@@ -152,7 +165,7 @@ line:hover {
   overflow: hidden;
 }
 
-#india,#usa,#argentina,#morocco,#tunisia,#south_africa {
+#india,#usa,#argentina,#morocco,#tunisia,#south_africa,#australia {
   fill: #46aaaa;
 }
 
