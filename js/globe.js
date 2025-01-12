@@ -68,6 +68,7 @@ setupCountryEvents("argentina", "argentina", "../individual-classes/cplargentina
 setupCountryEvents("tunisia", "tunisia", "../individual-classes/cpltunisia.html");
 setupCountryEvents("morocco", "morocco", "../individual-classes/cplmorocco.html");
 setupCountryEvents("india", "india", "../individual-classes/conversion.html");
+setupCountryEvents("australia", "australia", "../individual-classes/cplaustralia.html");
 
  function createRippleAnimation(ripple, delay) {
   gsap.fromTo(ripple, 
@@ -110,6 +111,7 @@ animatePath(document.getElementById("mor-sa"));
 animatePath(document.getElementById("tun-ag"));
 animatePath(document.getElementById("mor-usa"));
 animatePath(document.getElementById("tun-in"));
+animatePath(document.getElementById("in-aus"));;
 
 
 const viewBoxValues = {
