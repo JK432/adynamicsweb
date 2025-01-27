@@ -281,7 +281,7 @@
   })();
 
 // function redirectEnquiry(){
-// 	window.location.href = "/enquiry.html";
+// 	window.location.href = "/enquiry.php";
 // }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -301,9 +301,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     document.addEventListener("DOMContentLoaded", function() {
-        const link = document.querySelector('a[href="./index.html#roadmap"]');
+        const link = document.querySelector('a[href="./index.php#roadmap"]');
         
-        link.addEventListener('click', function(event) {
+		if(link!==null){
+			link.addEventListener('click', function(event) {
             event.preventDefault(); // Prevent the default anchor link behavior
             
             const targetId = this.getAttribute("href").split("#")[1];
@@ -317,6 +318,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
             }
         });
+		}
+        
+
     });
 
 
