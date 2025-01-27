@@ -1,0 +1,529 @@
+.fs-18px{
+  font-size: 18px !important;
+}
+.fs-12px{
+  font-size: 12px !important;
+}
+.fs-10px{
+  font-size: 10px !important;
+}
+.w-sm{
+  width: 20px !important;
+}
+
+.flag-container {
+  position: absolute;
+  bottom: -125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  gap: 10px;
+  padding: 6px 10px;
+
+  &.india-flag{
+    @media(min-width:1200px){
+      bottom: -235px;
+    }
+  }
+
+  &.australia-flag{
+    @media(min-width:1200px){
+      bottom: -150px;
+    }
+  }
+
+  &.south-africa-flag{
+    @media(min-width:1200px){
+      bottom: -169px;
+    }
+  }
+
+  &.argentina-flag{
+    @media(min-width:1200px){
+      bottom: -228px;
+    }
+  }
+  &.morroco-flag{
+    @media(min-width:1200px){
+      bottom: -228px;
+    }
+  }
+  &.tunisia-flag{
+    @media(min-width:768px){
+      bottom: -56px;
+    }
+    @media(min-width:1024px){
+      bottom: -56px;
+    }
+    @media(min-width:1200px){
+      bottom: -62px;
+    }
+  }
+
+  &.usa-flag{
+    @media(min-width:768px){
+      bottom: -56px;
+    }
+    @media(min-width:1024px){
+      bottom: -56px;
+    }
+    @media(min-width:1200px){
+      bottom: -47px;
+      left: 57px;
+    }
+  }
+
+
+  span{
+    font-size: 18px;
+    font-weight: 900;
+  }
+  img{
+    width: 30px;
+    border-radius: 50rem;
+  }
+}
+
+.india {
+  /* width: 40%; */
+  display: none;
+  position: absolute;
+  z-index: 9999;
+
+  @media(min-width:768px){
+    top: 0%;
+    left: 42%;
+  }
+
+  @media(min-width:1024px){
+    top: 10%;
+    left: 51%;
+  }
+
+  @media(min-width:1200px){
+    left: 56%;
+    top: 13%;
+  }
+  .courses-item {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+.australia {
+  /* width: 40%; */
+  display: none;
+  position: absolute;
+  z-index: 9999;
+
+  @media(min-width:768px){
+    top: 10%;
+    left: 55%;
+  }
+
+  @media(min-width:1024px){
+    top: 18%;
+    left: 60%;
+  }
+
+  @media(min-width:1200px){
+    top: 35%;
+    left: 75%;
+  }
+  .courses-item {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+.usa {
+  width: 50%;
+  display: none;
+  position: absolute;
+  z-index: 9999;
+
+  @media(min-width:768px){
+    top: 1%;
+    left: 26%;
+  }
+
+  @media(min-width:1024px){
+    top: 4%;
+    left: 20%;
+  }
+
+  @media(min-width:1200px){
+    top: 16%;
+    left: 14%;
+  }
+
+  .courses-item {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+.morocco {
+  width: 50%;
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  z-index: 9999;
+
+  @media(min-width:768px){
+    top: -8%;
+    left: 16%;
+  }
+
+  @media(min-width:1024px){
+    top: 7%;
+    left: 16%;
+  }
+
+  @media(min-width:1200px){
+    top: 16%;
+    left: 17%;
+  }
+
+  .courses-item {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+.tunisia {
+  display: none;
+  gap: 1em;
+  /* width:60%; */
+  position: absolute;
+  z-index: 9999;
+
+  @media(min-width:768px){
+    top: 1%;
+    left: 47%;
+  }
+
+  @media(min-width:1024px){
+    top: 4%;
+    left: 54%;
+  }
+
+  @media(min-width:1200px){
+    top: 16%;
+    left: 53%;
+  }
+
+  .courses-item {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+.south-africa {
+  width:50%;
+  display: none;
+  position: absolute;
+  z-index: 9999;
+
+  @media(min-width:768px){
+    top: -1%;
+    left: 31%;
+  }
+
+  @media(min-width:1024px){
+    top: 30%;
+    left: 31%;
+  }
+
+  @media(min-width:1200px){
+    left: 30%;
+    top: 40%;
+  }
+
+  .courses-item {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+.argentina {
+  width: 50%;
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  z-index: 9999;
+
+  @media(min-width:768px){
+    top: 16%;
+    left: 6%;
+  }
+
+  @media(min-width:1024px){
+    top: 39%;
+    left: 5%;
+  }
+
+  @media(min-width:1200px){
+    left: 4%;
+    top: 45%;
+  }
+
+  .courses-item {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+path {
+  transition: fill 0.1s linear;
+}
+
+path:hover {
+  fill: #565656;
+}
+
+.ripple {
+  fill: #1a6969;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.line {
+  fill: none;
+  stroke: #218067; /* Same color as the background countries */
+  stroke-width: 2;
+  pointer-events: none;
+  stroke-dasharray: 5;
+}
+
+line:hover {
+  fill: none;
+}
+
+.map {
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Existing styles for the navigation buttons */
+.navigation-buttons {
+  position: absolute;
+  top: 38px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+  padding: 0 30px;
+}
+
+.navigation-buttons button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  pointer-events: all;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  transition: background-color 0.3s;
+}
+
+.navigation-buttons button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navigation-buttons i {
+  pointer-events: none;
+}
+.map svg {
+  width: 100%;
+  height: auto;
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+
+  @media(max-width: 640px) {
+    height: 550px;
+  }
+
+}
+
+#india,#usa,#argentina,#morocco,#tunisia,#south_africa,#australia {
+  fill: #46aaaa;
+}
+
+.country-tooltip {
+  position: absolute;
+  top: 20px; /* Adjust as necessary */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.829);
+  color: black;
+  font-weight: 600;
+  padding: 8px 13px;
+  border-radius: 5px;
+  display: none; /* Hidden by default */
+  pointer-events: none;
+  z-index: 10;
+  border-radius: 100px;
+  text-transform: uppercase;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.tooltip-flag{
+  width: 33px;
+  border-radius: 50px;
+}
+
+
+
+
+/*coutry content containers*/
+
+.country-content {
+  display: none;
+
+  @media(max-width: 640px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    padding: 10px;
+
+    .usa-content{
+      display: none;
+      &.active{
+        display: flex;
+        flex-direction:column;
+        gap:6px;
+        animation: fade-in 300ms ease-in-out 
+      }
+    }
+    .india-content{
+      display: none;
+      &.active{
+        display: flex;
+        flex-direction:column;
+        gap:6px;
+        animation: fade-in 300ms ease-in-out 
+      }
+    }
+    .australia-content{
+      display: none;
+      &.active{
+        display: flex;
+        flex-direction:column;
+        gap:6px;
+        animation: fade-in 300ms ease-in-out 
+      }
+    }
+    .south-africa-content{
+      display: none;
+      &.active{
+        display: flex;
+        flex-direction:column;
+        gap:6px;
+        animation: fade-in 300ms ease-in-out 
+      }
+    }
+    .tunisia-content{
+      display: none;
+      &.active{
+        display: flex;
+        flex-direction:column;
+        gap:6px;
+        animation: fade-in 300ms ease-in-out 
+      }
+    }
+    .morocco-content{
+      display: none;
+      &.active{
+        display: flex;
+        flex-direction:column;
+        gap:6px;
+        animation: fade-in 300ms ease-in-out 
+      }
+    }
+    .argentina-content{
+      display: none;
+      &.active{
+        display: flex;
+        flex-direction:column;
+        gap:6px;
+        animation: fade-in 300ms ease-in-out 
+      }
+    }
+    .item{
+      padding: 13px 40px;
+      border-radius: 100px;
+      background-color: #439D9D;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      color: white;
+
+      h3{
+        color: white;
+        padding: 0px;
+        margin: 0px;
+        max-width: 98%;
+        text-align: center;
+        font-size: 23px;
+      }
+
+      p{
+        margin: 0;
+        text-align: center;
+        line-height: 17px;
+        font-weight: 300;
+        font-size: 12px;
+      }
+
+      .item-link{
+        display: flex;
+        gap: 4px;
+        /* flex-direction: column; */
+
+        a.mob-link{
+          display: flex;
+          gap: 2px;
+          align-items: center;
+          justify-content: center;
+          background-color: white;
+          border-radius: 100px;
+          padding: 8px 18px;
+          color: #439D9D;
+          font-size: 10px;
+          white-space: nowrap;
+          img{
+            width: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@keyframes fade-in{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+

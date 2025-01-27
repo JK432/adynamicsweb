@@ -1,0 +1,132 @@
+/* General Reset */
+main.programs {
+    background-image: url('/classes/images/bg.jpg'); /* Replace with your actual image path */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-repeat: no-repeat; /* Prevents tiling */
+}
+
+.programs {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Stack the cards vertically */
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.course-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    margin: 0 auto; /* Horizontally center within its parent container */
+  }
+  
+  /* Image Styling */
+.course-image-wrapper {
+    margin-bottom: 0px;
+}
+  
+.training-image {
+    height: 200px;
+    object-fit: cover;
+}
+  
+/* Subtitle Styling */
+.course-subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2b8a7b;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+  
+/* Title Styling */
+.course-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333;
+    line-height: 1.5;
+}
+
+.programs h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #333333;
+    line-height: 1.5;
+}
+  
+  
+
+/* Card Styling */
+.program-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: visible; /* Allows the image to appear outside */
+    margin-bottom: 60px; /* Add space between the cards */
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
+    min-width: 200px;
+}
+
+/* Image Container Styling */
+.image-container {
+    position: absolute;
+    top: -60px; /* Move the image upwards */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #e9f3fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.program-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Card Text Styling */
+.program-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2b8a7b;
+    margin-top: 70px; /* Add space to account for the floating image */
+    margin-bottom: 10px;
+}
+
+.program-description {
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.learn-more {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2b8a7b;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
+}
